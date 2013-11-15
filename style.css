@@ -1517,3 +1517,13 @@ table span.cross {
 	display: inline-block;
 	text-align: center;
 }
+
+
+
+
+
+
+.credits {
+	font-size: 10px;
+	text-align: right;
+}
