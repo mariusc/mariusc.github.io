@@ -1,0 +1,59 @@
+
+<head>
+<meta property="al:ios:url" content="lowki://song/1"/>
+<meta property="al:ios:app_store_id" content="12345" />
+<meta property="al:ios:app_name" content="Lowki" />
+</head>
+<body>
+	
+
+
+<a href=lowki://song/1>Force url scheme</a>
+<br>
+<br>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+
+	$(document).on('click', '.appLink', function(evt) {
+		evt.preventDefault();
+
+		var ua = navigator.userAgent.toLowerCase();
+		var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+
+		if(isAndroid) {
+			document.location = $(this).attr('href');
+		} else {
+			var frame = $("<iframe></iframe>", {
+				src: $(this).attr('href'),
+				style:"display: none;height: 200px; width: 200px; border: 5px solid black;",
+			});
+		}
+		if(isAndroid){
+				var timer = setTimeout(function(){
+			if(confirm('Would you like to open the Google play?')) {
+				document.location = "";
+				return false;
+				}
+			}, 10);
+		}
+		else
+			document.location = "";
+
+		$('body').append(frame);
+
+	});
+
+</script>
+
+	<div class="app">
+        <header></header>
+        <section class="content">
+            <div class="inner-content">
+            	            
+				<a href="lowki://song/1" class="btn appLink button">Open app</a>            </div>
+        </section>
+        <footer></footer>
+    </div>	
+
+  
+</body>
