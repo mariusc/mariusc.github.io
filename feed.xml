@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2014-07-25T20:30:00+02:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Why I didn't start playing around with Swift</title>
+    <link rel="alternate" href="http://blog.url.com/2014-07-25-why-i-didn-t-start-playing-around-with-swift.html"/>
+    <id>http://blog.url.com/2014-07-25-why-i-didn-t-start-playing-around-with-swift.html</id>
+    <published>2014-07-25T20:30:00+02:00</published>
+    <updated>2015-01-31T17:32:03+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;So, as everybody probably knows, Apple launched Swift at WWDC, on June 2nd. Despite my initial perplexity (wasn't expecting that) and my further excitement, I still haven't written a line of Swift code, even though it's been almost 2 months since it was launched.&lt;/p&gt;
+
+&lt;p&gt;Yes, I won't be able to say that I was coding Swift since day 1. But I don't really care about that. I also haven't programmed in Objective C since the first day it was launched, and that never stopped me.&lt;/p&gt;
+
+&lt;p&gt;A lot of people were excited about closures. They're nice, true. I've worked in functional programming languages in University, so I kind of know what they are and how to deal with them. And I didn't quite miss them in Objective C so far. &lt;/p&gt;
+
+&lt;p&gt;Many guys want to try it as soon as possible, so they have a word to say in the "upbringing" and the future of this language. I totally understand their point. But it's not the case for me: I trust other people will do a very good job at finding problems, opening radars, modelling the language and making sure it's going in the right direction. &lt;/p&gt;
+
+&lt;p&gt;But after all, the truth is that Swift is still experimental. A language that is constantly changing every two weeks, with every new beta launched, is definitely not a language I would like to write production code in. Yes, it's nice to experiment with new technologies, I'm a big fan of that. But it's not the right time now to do that with Swift. At least, not for me. But my vacation should start soon, so who knows :D ?&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Singletons</title>
+    <link rel="alternate" href="http://blog.url.com/2014-04-08-singletons.html"/>
+    <id>http://blog.url.com/2014-04-08-singletons.html</id>
+    <published>2014-04-08T22:55:00+02:00</published>
+    <updated>2015-01-31T17:32:10+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I like Singletons. This was the first design pattern I learned while studying OOP and it's by far the one I'm most comfortable with. &lt;/p&gt;
+
+&lt;p&gt;In (almost) all my projects that need networking, I create a singleton NetworkManager, which handles all the network communication done throughout the app. I think that this is a very good example of a situation where a Singleton is useful.&lt;/p&gt;
+
+&lt;h3 id="how-i-write-my-singletons"&gt;How I write my singletons&lt;/h3&gt;
+&lt;p&gt;I simply include the following code in the &lt;code&gt;pch&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;#ifndef SHARED_SINGLETON
+    #define SHARED_SINGLETON(class)               \
+    + (id)sharedInstance {                        \
+        static dispatch_once_t pred = 0;          \
+        __strong static id _shared##class = nil;  \
+        dispatch_once(&amp;amp;pred, ^{                   \
+            _shared##class = [[self alloc] init]; \
+        });                                       \
+        return _shared##class;                    \
+    }
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, in the header file of the class I want to make a singleton, I add the function &lt;/p&gt;
+
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;`+ (id)sharedInstance;`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And in the associated .m, &lt;/p&gt;
+
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;`SHARED_SINGLETON(Open311);` 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;is the implementation of the sharedInstance method. From now on, every time I need this object, I call it with &lt;code&gt;[ClassName sharedObject]&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id="good-or-bad"&gt;Good or bad&lt;/h3&gt;
+&lt;p&gt;This is quite subjective, and depends really on how you use this pattern. It can be both good and bad. And it depends on how you write your singletons. ALWAYS use &lt;code&gt;dispatch_once&lt;/code&gt; to instantiate your shared instance. The older method of &lt;code&gt;@synchronized&lt;/code&gt; is also acceptable, although arguably slower. This way, you are sure that your singleton is thread-safe.&lt;/p&gt;
+
+&lt;p&gt;Some refuse to use Singletons because they are just glorified globals. But where do you put that data instead? If you need it all through the app? AppDelegate? But.. surprise.. the app delegate is actually a Singleton.&lt;/p&gt;
+
+&lt;h3 id="conclusion"&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;You can like or you can hate the Singleton pattern. Actually, as long as you know what you're doing, I don't see any point in avoiding singletons.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>My Middleman powered blog, hosted on GitHub Pages</title>
+    <link rel="alternate" href="http://blog.url.com/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html"/>
+    <id>http://blog.url.com/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html</id>
+    <published>2013-11-14T22:34:00+01:00</published>
+    <updated>2015-02-01T11:35:43+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I would say I have quite some experience with Wordpress. I've first used it in 2007, and I've continued to use Wordpress as a CMS for almost all the websites I needed to create. I did this because it was an easy solution for what we needed.&lt;/p&gt;
+
+&lt;h3 id="why-middleman"&gt;Why Middleman&lt;/h3&gt;
+&lt;p&gt;But when I decided to create my own website, Wordpress wasn't really my first option. I'm not really sure why I chose Middleman, but now that I'm using it, I know exactly why I like it. &lt;/p&gt;
+
+&lt;p&gt;Middleman builds static websites. There's no database required, all you need to do is write the articles using markdown, and they will be built into static html webpages. For me, the biggest advantage of this is that I can host it on GitHub Pages. I couldn't have installed Wordpress, for example, on a GitHub Pages website, because Wordpress needs a database on the server. Another very nice feature is that each article is basically a text file, which can be easily kept on git. Also, because it's written in markdown, it's very easy to add code in the articles, and it looks very good. And finally, writing your articles in a simple text editor (or maybe even in &lt;code&gt;vim&lt;/code&gt;) gives you that geekish feel, which can't be accomplished by using Wordpress, Joomla or other WYSIWYG engines.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, middleman is not as easy to use as Wordpress. For technical guys it's ok, but I wouldn't imagine, for example, my dentist using Middleman to maintain a blog. Wordpress is much more accessible.&lt;/p&gt;
+
+&lt;h3 id="how-i-did-it"&gt;How I did it&lt;/h3&gt;
+
+&lt;p&gt;Middleman comes as a Ruby gem. You have to open a terminal and then 
+&lt;code&gt;sudo gem install middleman-blog&lt;/code&gt;. Now you have the blogging extension of middleman installed on your computer. To start a website, all you have to do is &lt;code&gt;middleman init MYBLOG --template=blog&lt;/code&gt;. This generates the following:&lt;/p&gt;
+
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;MYBLOG
+- .gitignore
+- config.rb
+- Gemfile
+- Gemfile.lock
+- source
+	- 2012-01-01-example-article.html.markdown
+	- calendar.html.erb
+	- feed.xml.builder
+	- images
+	- index.html.erb
+	- javascripts
+	- layout.erb
+	- stylesheets
+	- tag.html.erb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course you can replace &lt;code&gt;MYBLOG&lt;/code&gt; with a name of your choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Erb&lt;/code&gt; is the default templating language of Middleman. &lt;code&gt;Haml&lt;/code&gt;, &lt;code&gt;Sass&lt;/code&gt;, &lt;code&gt;Scss&lt;/code&gt; and others are also supported, but when I started this project, I didn't find any good reason to switch from the default. I still don't.&lt;/p&gt;
+
+&lt;p&gt;A very important file is the &lt;code&gt;config.rb&lt;/code&gt;. This is where all the configurations of the site are. Middleman has a very god documentation, and it's easy to understand how it works. But just for inspiration, my sources are &lt;a href="http://github.com/mariusc/blog"&gt;public on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To &lt;strong&gt;add an article&lt;/strong&gt;, you can go to Terminal and write &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;middleman article "Your Title"&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;A new file is created in the &lt;code&gt;source&lt;/code&gt; folder, corresponding to this article. The articles are written in markdown language, and all they contains are the text, maybe images, links and metainfo such as date and tags. All the styling information is somewhere else, and we will talk about this in a short while. The file created in the &lt;code&gt;source&lt;/code&gt; folder has only the title, date and an empty list of tags for the article. Write something as the content of the article.&lt;/p&gt;
+
+&lt;p&gt;At this moment, you can run &lt;code&gt;bundle exec middleman server&lt;/code&gt; and go to the link shown in Terminal (&lt;code&gt;http://localhost:4567&lt;/code&gt;). You will see a very plain html blog, with your first article.&lt;/p&gt;
+
+&lt;p&gt;To improve the appearance of the website, you will need to use your HTML and CSS knowledge and create or adapt a template. 
+The file layout.erb is the one containing the layout of the website. Here you can add the code for the header, footer, maybe a sidebar, etc. The layour.erb is kind of a frame, which appears on all the pages of your blog. &lt;code&gt;&amp;lt;%= yield %&amp;gt;&lt;/code&gt; is the part which is actually framed using this layout.
+The &lt;code&gt;index.html.erb&lt;/code&gt; file contains the styling of the content which is yielded in the layout.erb file. For example, here you can write and style the title, tags, date of an article.
+My advice is to get a free HTML template you like and adjust it to fit you needs. Very important, in my opinion, is to choose a responsive layout, one that looks good on all resolutions, including phone or tablet. I learnt this the hard way, and in the beginnig of 2014 I will probably change the layout of my site.&lt;/p&gt;
+
+&lt;h3 id="publishing-your-blog-on-github-pages"&gt;Publishing your blog on GitHub Pages&lt;/h3&gt;
+
+&lt;p&gt;GitHub offers &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;, mainly for creating a small site about each of your projects. But this can be used also to host your personal developer website :). I chose to have this blog as a separate repo than the rest of the site. The nice thing is that Middleman is perfectly integrated with GitHub pages, all thanks to the middleman-gh-pages gem. I included it in the Gemfile&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gem "middleman-gh-pages"&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and required it in a Rakefile:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;require 'middleman-gh-pages'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you have to bundle install again, and now you are ready to push to your gh-pages branch, in order to publish your built website. And middleman-gh-pages does this for you, with&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bundle exec rake publish&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The contents of your &lt;code&gt;gh-pages&lt;/code&gt; branch will then be published at &lt;code&gt;username.github.io/repo_name&lt;/code&gt;. The &lt;code&gt;master&lt;/code&gt; branch will contain the source files, and the &lt;code&gt;gh-pages&lt;/code&gt; branch will contain the built website. Running the &lt;em&gt;publish&lt;/em&gt; builds your website and pushes it to the &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;That's about it. There are some references I found very useful below, and the sources for this blog. For discussions about this articles, send me a &lt;a href="http://www.twitter.com/marius_const"&gt;tweet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="resources"&gt;Resources:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://middlemanapp.com/getting-started/"&gt;Middleman documentation: getting started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://middlemanapp.com/templates/"&gt;Middleman templating&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://12devs.co.uk/articles/204/"&gt;12devs - building static websites with Middleman&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://joey.aghion.com/building-a-blog-with-middleman-and-github-pages/"&gt;Joey Aghion - Building a blog with Middleman and GitHub Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/"&gt;Joel Hans - Building a middleman blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/mariusc/blog"&gt;Repo for my blog&lt;/a&gt;&lt;/strong&gt; - have a look at both the &lt;em&gt;master&lt;/em&gt; and the &lt;em&gt;gh-pages&lt;/em&gt; branch&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+</feed>
