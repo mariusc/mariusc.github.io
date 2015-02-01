@@ -1,0 +1,54 @@
+---
+title: Work
+---
+
+<!-- Page Header -->
+<%= partial("header", :locals => { :title => "Portfolio", :subtitle => "Thigs I make", :background_image => "img/work.jpg", :style => "site-heading" }) %>
+
+<div class="container">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="row">	
+    	<p>I currently work at <b><a href = "http://www.nodesagency.com/"> Nodes</a></b> in Copenhagen, where we build awesome <b><a href = "http://www.nodesagency.com/cases/">apps</a></b> for various clients.</p>
+
+    	<p>Before or apart from the projects for Nodes, I worked on several other small projects.</p>
+
+    	<h3>SmartExplorer</h3>
+    	<h5>September - November 2014</h5>
+    	<img src = "img/portfolio/smartexplorer.jpg" class="img-responsive"/>
+    	<p> SmartExplorer is our master thesis project. We wanted to take the idea of CityExplorer further, and we created a system that not only gives recommendations of points of interest for students, but it also creates a personalized itinerary, for each of the day of the vacation of the user. The itinerary takes into account the user's preferences, the place and duration of the visit and the opening hours for the points of interest.</p>
+    	<p>The system consists of an iOS app, a mongoDB database and a backend, written in Python and Java. The Backend is the one taking data form external sources (DBPedia and Foursquare) and serving them to the mobile app through an API.</p>
+    	<p>The project was created together with <a href = "http://twitter.com/ruxandranistor" target="_blank">Ruxandra Nistor</a>, and it served as our master thises, which was appreciated with the maximum grade :D.</p>
+
+    	<h3>Beercyclopedia</h3>
+    	<h5>January 2014</h5>
+    	<img src = "img/portfolio/beercyclopedia.jpg" class="img-responsive"/>
+    	<p>Beercyclopedia aims to be a place where the user enters the beers he has drinked and gives them a rating, so he can easily keep track of the beers he tasted. </p>
+    	<p>The app uses the <a href = "http://www.brewerydb.com/developers">BreweryDB API</a> for the beer-related data and uses Core Data to store the information on the device. This was my playground project to experiment with Core Data, Collection Views and Dynamic Animators. I was working on this project before I started working for Nodes, and it got somehow abandoned. However, I still hope that I will find some time to finish it.
+
+
+    	<h3>CityExplorer</h3>
+    	<h5>October - December 2013</h5>
+    	<img src = "img/portfolio/cityexplorer.jpg" class="img-responsive"/>
+
+    	<p>CityExplorer is an iOS app that gives personalized travel recommendations to the users. The users create a profile, select their interests and the app recommends them various points of interest, based on their preferences. The app shows the recommended points of interest colour-coded on a map, depending on their "compatibility" score with the user. They can also be viewd as a simple list. Each recommended place comes with details such as address, phone number, opening hours and a short description from Wikipedia.</p>
+    	<p>The app has a backend created with <a href = "https://parse.com/">Parse</a>, JavaScript and Python.</p>
+	    <p>The app was created in a team of two people, together with <a href = "http://twitter.com/ruxandranistor" target="_blank">Ruxandra Nistor</a>.</p>
+
+    	<h3>GeoReporter</h3>
+    	<h5>June - September 2013</h5>
+    	<img src = "img/portfolio/georeporter.jpg" class="img-responsive"/>
+
+		<p>GeoReporter is an iOS app that allows users to report non-emergency issues to their local Open311 server. I started working on this project as part of the Google Summer of Code 2013 program, and continued working on it for a while afterwards. When I joined the project, the app already existed on the AppStore. </p>
+		<p>My proposal for the GSoC contained a new user interface and an iPad version. I implemented the transition ot iOS7, updated the user interface and made the user experience more pleasant. I also added an iPad version. My contribution can be found on <a href = "https://github.com/mariusc/open311-mobile" target="_blank"> GitHub.</a> </p>
+
+		<h3>Hungry Tux</h3>
+		<h5>Macrh 2012</h5>
+		<img src = "img/portfolio/hungrytux.jpg" class="img-responsive"/>
+		<p>Hungry Tux is a small game prototype created with Cocos2D. It was created just for fun, as an excuse for me to try out the Cocos2D framework. The purpose of the game is to control a penguin and eat as much fish as possible in 60 seconds. Hungry Tux was created in March 2012. I updated this project to a newer version of Cocos2D in the autumn of 2013. However, the game is still a prototype, a proof of concept, and will most likely never be on the AppStore.</p>
+		<p>The code for this project is on <a href = "https://github.com/mariusc/TuxDemo2">my GitHub profile.</a></p>
+
+
+
+    </div>
+  </div>
+</div>

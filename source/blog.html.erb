@@ -1,0 +1,66 @@
+---
+pageable: true
+per_page: 7
+---
+
+
+<!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('/img/mac.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Tech Blog</h1>
+                        <hr class="small">
+                        <span class="subheading">Marius Constantinescu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <% page_articles.each_with_index do |article, i| %>
+                <div class="post-preview">
+                    <a href="post.html">
+                      <h1 class="post-title">
+                        <%= link_to article.title, article %>
+                      </h1>
+                      <!-- <h3 class="post-subtitle">
+                          Problems look mighty small from 150 miles up
+                      </h3> -->
+                    </a>
+                    <p class="post-meta"><%= article.date.strftime('%B %e, %Y') %></p></p>
+                    <%= article.body %>
+
+                    <!-- Add hr between each article -->
+                    <% if (i != page_articles.size - 1) %>
+                      <hr>
+                    <% end %>
+                </div>
+              <% end %>
+
+               
+                <!-- Pager -->
+                <% if paginate && num_pages > 1 %>
+                  <ul class="pager">
+                    <% if next_page %>
+                       <li class="next">
+                            <%= link_to 'Next page', next_page %>
+                       </li>
+                     <% end %>
+                     <% if prev_page %>
+                       <li class="previous">
+                            <%= link_to 'Previous page', prev_page %>
+                       </li>
+                     <% end %>
+                  </ul>
+                <% end %>
+            </div>
+        </div>
+    </div>

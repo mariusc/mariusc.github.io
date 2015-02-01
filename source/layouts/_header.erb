@@ -1,0 +1,35 @@
+<%
+image_name = data.site.default_background_image
+if defined? background_image
+  image_name = background_image 
+end
+header_style = "site-heading"
+if defined? style
+  header_style = style
+end
+header_element = nil
+if subtitle.length == 0
+  header_element = <<-eos
+      <div class="#{ header_style }">
+        <h1>#{ title }</h1>
+      </div>
+      eos
+else
+  header_element = <<-eos
+      <div class="#{ header_style }">
+        <h1>#{ title }</h1>
+        <hr class="small">
+        <span class="subheading">#{ subtitle }</span>
+      </div>
+      eos
+end
+%>
+<header class="intro-header" id="image-header" style="background-image: url('<%= image_name %>');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <%= header_element %>
+      </div>
+    </div>
+  </div>
+</header>
