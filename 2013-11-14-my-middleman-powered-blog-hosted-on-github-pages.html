@@ -109,46 +109,46 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <article>
-          <p>I would say I have quite some experience with Wordpress. I've first used it in 2007, and I've continued to use Wordpress as a CMS for almost all the websites I needed to create. I did this because it was an easy solution for what we needed.</p>
+          <p>I would say I have quite some experience with Wordpress. I&rsquo;ve first used it in 2007, and I&rsquo;ve continued to use Wordpress as a CMS for almost all the websites I needed to create. I did this because it was an easy solution for what we needed.</p>
 
 <h3 id="why-middleman">Why Middleman</h3>
-<p>But when I decided to create my own website, Wordpress wasn't really my first option. I'm not really sure why I chose Middleman, but now that I'm using it, I know exactly why I like it. </p>
 
-<p>Middleman builds static websites. There's no database required, all you need to do is write the articles using markdown, and they will be built into static html webpages. For me, the biggest advantage of this is that I can host it on GitHub Pages. I couldn't have installed Wordpress, for example, on a GitHub Pages website, because Wordpress needs a database on the server. Another very nice feature is that each article is basically a text file, which can be easily kept on git. Also, because it's written in markdown, it's very easy to add code in the articles, and it looks very good. And finally, writing your articles in a simple text editor (or maybe even in <code>vim</code>) gives you that geekish feel, which can't be accomplished by using Wordpress, Joomla or other WYSIWYG engines.</p>
+<p>But when I decided to create my own website, Wordpress wasn&rsquo;t really my first option. I&rsquo;m not really sure why I chose Middleman, but now that I&rsquo;m using it, I know exactly why I like it. </p>
 
-<p>On the other hand, middleman is not as easy to use as Wordpress. For technical guys it's ok, but I wouldn't imagine, for example, my dentist using Middleman to maintain a blog. Wordpress is much more accessible.</p>
+<p>Middleman builds static websites. There&rsquo;s no database required, all you need to do is write the articles using markdown, and they will be built into static html webpages. For me, the biggest advantage of this is that I can host it on GitHub Pages. I couldn&rsquo;t have installed Wordpress, for example, on a GitHub Pages website, because Wordpress needs a database on the server. Another very nice feature is that each article is basically a text file, which can be easily kept on git. Also, because it&rsquo;s written in markdown, it&rsquo;s very easy to add code in the articles, and it looks very good. And finally, writing your articles in a simple text editor (or maybe even in <code>vim</code>) gives you that geekish feel, which can&rsquo;t be accomplished by using Wordpress, Joomla or other WYSIWYG engines.</p>
+
+<p>On the other hand, middleman is not as easy to use as Wordpress. For technical guys it&rsquo;s ok, but I wouldn&rsquo;t imagine, for example, my dentist using Middleman to maintain a blog. Wordpress is much more accessible.</p>
 
 <h3 id="how-i-did-it">How I did it</h3>
 
 <p>Middleman comes as a Ruby gem. You have to open a terminal and then 
 <code>sudo gem install middleman-blog</code>. Now you have the blogging extension of middleman installed on your computer. To start a website, all you have to do is <code>middleman init MYBLOG --template=blog</code>. This generates the following:</p>
-
 <pre class="highlight plaintext"><code>MYBLOG
 - .gitignore
 - config.rb
 - Gemfile
 - Gemfile.lock
 - source
-	- 2012-01-01-example-article.html.markdown
-	- calendar.html.erb
-	- feed.xml.builder
-	- images
-	- index.html.erb
-	- javascripts
-	- layout.erb
-	- stylesheets
-	- tag.html.erb
+    - 2012-01-01-example-article.html.markdown
+    - calendar.html.erb
+    - feed.xml.builder
+    - images
+    - index.html.erb
+    - javascripts
+    - layout.erb
+    - stylesheets
+    - tag.html.erb
 </code></pre>
 
 <p>Of course you can replace <code>MYBLOG</code> with a name of your choice.</p>
 
-<p><code>Erb</code> is the default templating language of Middleman. <code>Haml</code>, <code>Sass</code>, <code>Scss</code> and others are also supported, but when I started this project, I didn't find any good reason to switch from the default. I still don't.</p>
+<p><code>Erb</code> is the default templating language of Middleman. <code>Haml</code>, <code>Sass</code>, <code>Scss</code> and others are also supported, but when I started this project, I didn&rsquo;t find any good reason to switch from the default. I still don&rsquo;t.</p>
 
-<p>A very important file is the <code>config.rb</code>. This is where all the configurations of the site are. Middleman has a very god documentation, and it's easy to understand how it works. But just for inspiration, my sources are <a href="http://github.com/mariusc/blog">public on GitHub</a>.</p>
+<p>A very important file is the <code>config.rb</code>. This is where all the configurations of the site are. Middleman has a very god documentation, and it&rsquo;s easy to understand how it works. But just for inspiration, my sources are <a href="http://github.com/mariusc/blog">public on GitHub</a>.</p>
 
 <p>To <strong>add an article</strong>, you can go to Terminal and write </p>
 
-<p><code>middleman article "Your Title"</code></p>
+<p><code>middleman article &quot;Your Title&quot;</code></p>
 
 <p>A new file is created in the <code>source</code> folder, corresponding to this article. The articles are written in markdown language, and all they contains are the text, maybe images, links and metainfo such as date and tags. All the styling information is somewhere else, and we will talk about this in a short while. The file created in the <code>source</code> folder has only the title, date and an empty list of tags for the article. Write something as the content of the article.</p>
 
@@ -163,11 +163,11 @@ My advice is to get a free HTML template you like and adjust it to fit you needs
 
 <p>GitHub offers <a href="http://pages.github.com/">GitHub Pages</a>, mainly for creating a small site about each of your projects. But this can be used also to host your personal developer website :). I chose to have this blog as a separate repo than the rest of the site. The nice thing is that Middleman is perfectly integrated with GitHub pages, all thanks to the middleman-gh-pages gem. I included it in the Gemfile</p>
 
-<p><code>gem "middleman-gh-pages"</code></p>
+<p><code>gem &quot;middleman-gh-pages&quot;</code></p>
 
 <p>and required it in a Rakefile:</p>
 
-<p><code>require 'middleman-gh-pages'</code></p>
+<p><code>require &#39;middleman-gh-pages&#39;</code></p>
 
 <p>Then you have to bundle install again, and now you are ready to push to your gh-pages branch, in order to publish your built website. And middleman-gh-pages does this for you, with</p>
 
@@ -175,16 +175,17 @@ My advice is to get a free HTML template you like and adjust it to fit you needs
 
 <p>The contents of your <code>gh-pages</code> branch will then be published at <code>username.github.io/repo_name</code>. The <code>master</code> branch will contain the source files, and the <code>gh-pages</code> branch will contain the built website. Running the <em>publish</em> builds your website and pushes it to the <code>gh-pages</code>.</p>
 
-<p>That's about it. There are some references I found very useful below, and the sources for this blog. For discussions about this articles, send me a <a href="http://www.twitter.com/marius_const">tweet</a>.</p>
+<p>That&rsquo;s about it. There are some references I found very useful below, and the sources for this blog. For discussions about this articles, send me a <a href="http://www.twitter.com/marius_const">tweet</a>.</p>
 
-<h3 id="resources">Resources:</h3>
+<h3 id="resources:">Resources:</h3>
+
 <ul>
-  <li><a href="http://middlemanapp.com/getting-started/">Middleman documentation: getting started</a></li>
-  <li><a href="http://middlemanapp.com/templates/">Middleman templating</a></li>
-  <li><a href="http://12devs.co.uk/articles/204/">12devs - building static websites with Middleman</a></li>
-  <li><a href="http://joey.aghion.com/building-a-blog-with-middleman-and-github-pages/">Joey Aghion - Building a blog with Middleman and GitHub Pages</a></li>
-  <li><a href="http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/">Joel Hans - Building a middleman blog</a></li>
-  <li><strong><a href="https://github.com/mariusc/blog">Repo for my blog</a></strong> - have a look at both the <em>master</em> and the <em>gh-pages</em> branch</li>
+<li><a href="http://middlemanapp.com/getting-started/">Middleman documentation: getting started</a></li>
+<li><a href="http://middlemanapp.com/templates/">Middleman templating</a></li>
+<li><a href="http://12devs.co.uk/articles/204/">12devs - building static websites with Middleman</a></li>
+<li><a href="http://joey.aghion.com/building-a-blog-with-middleman-and-github-pages/">Joey Aghion - Building a blog with Middleman and GitHub Pages</a></li>
+<li><a href="http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/">Joel Hans - Building a middleman blog</a></li>
+<li><strong><a href="https://github.com/mariusc/blog">Repo for my blog</a></strong> - have a look at both the <em>master</em> and the <em>gh-pages</em> branch</li>
 </ul>
 
         </article>

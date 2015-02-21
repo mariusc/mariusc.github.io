@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Singletons - Marius Constantinescu</title>
+<title>Self sizing UITableViewCells - Marius Constantinescu</title>
 
 <!-- Bootstrap Core CSS -->
 <!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -40,7 +40,7 @@
 
 </script>
 <!--End of Google Analytics-->
-    <!--<title>Singletons</title>-->
+    <!--<title>Self sizing UITableViewCells</title>-->
   </head>
   <body>
     
@@ -87,12 +87,12 @@
 
     <!-- Main Content -->
       <!-- Page Header -->
-  <header class="intro-header" id="image-header" style="background-image: url('/img/blogposts/calanques.jpg');">
+  <header class="intro-header" id="image-header" style="background-image: url('/img/blogposts/mons_klint.JPG');">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-        <h1>Singletons</h1>
+        <h1>Self sizing UITableViewCells</h1>
       </div>
 
       </div>
@@ -109,51 +109,33 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <article>
-          <p>I like Singletons. This was the first design pattern I learned while studying OOP and it&rsquo;s by far the one I&rsquo;m most comfortable with at this point. </p>
+          <p>Among all the new features brought by iOS 8, and the launching of Swift, there was also a minor thing that not many people talked about. iOS 8 brought auto-sizing table cells.</p>
 
-<p>In (almost) all my projects that need networking, I created a singleton NetworkManager, which handles all the network communication done throughout the app. I think that this is a very good example of a situation where a Singleton is useful.</p>
+<p>This is probably one of the iOS 8 features I was most excited about. Probably everyone who developed an iOS app has used a UITableView. It&rsquo;s one of the most basic and most used components. And we all know the pain of computing the <code>tableView:heightForRowAtIndexPath:</code> for custom cells with different heights depending, for example, on the data you get from an API. And then, setting frames by hand in the <code>layoutSubviews</code> in the UITableViewCell. It probably never was a good approach, but I&rsquo;ve seen code like that and I&rsquo;ve written code like that (not proud of it).</p>
 
-<h3 id="how-i-write-my-singletons">How I write my singletons</h3>
+<p>Then, Auto Layout came along, and we had a way to get rid of all the frame computing in the <code>layoutSubivews</code> in the cell. But we still had to compute the height of the cell in the view controller, and the only way I found to make Auto Layout work well with dynamically sized cells was to actually instantiate a table cell in <code>heightForRowAtIndexPath</code> and use it just for sizing the cell. Not very nice.</p>
 
-<p>If there&rsquo;s nothing fancy about the classes I want to be singletons, I simply include the following code in the <code>.pch</code> file:</p>
-<pre class="highlight plaintext"><code>#ifndef SHARED_SINGLETON
-    #define SHARED_SINGLETON(class)               \
-    + (id)sharedInstance {                        \
-        static dispatch_once_t pred = 0;          \
-        __strong static id _shared##class = nil;  \
-        dispatch_once(&amp;pred, ^{                   \
-            _shared##class = [[self alloc] init]; \
-        });                                       \
-        return _shared##class;                    \
-    }
-#endif
-</code></pre>
+<p>iOS 8 is the one that finally brings us a good solution: self-sizing cells. In other words, if you add the right Auto Layout constraints in your cells, you won&rsquo;t have to tell the tableView the height of the cells, but he will know to get it himself.</p>
 
-<p>Then, in the header file of the class I want to make a singleton, I add the function </p>
-<pre class="highlight plaintext"><code>+ (id)sharedInstance;
-</code></pre>
+<p>Before jumping with joy, please note that this is only possible in iOS 8. So if you have to support iOS 7 as well, this is not a good solution for you.</p>
 
-<p>And in the associated .m, </p>
-<pre class="highlight plaintext"><code>SHARED_SINGLETON(Open311);
-</code></pre>
+<p>I created a small project, to test this new feature. We have a <code>UITableView</code> with custom cells. The data for the it will be fetched as a JSON from <a href="https://api.myjson.com/bins/3x4p3">here</a>. I&rsquo;m not going in details about fetching data from a URL or parsing a JSON to custom objet, these are pretty basic things and don&rsquo;t make the object of this article. </p>
 
-<p>is the implementation of the sharedInstance method. From now on, every time I need this object, I call it with <code>[ClassName sharedObject]</code>.</p>
+<p>The key to get auto-resizing cells is to set the constraints inside the cell in the right way.</p>
 
-<p>Of course, if you need to do other things when fetching that Singleton, you need to add the method in your .m file and do it there.</p>
+<p><center><img src = "img/blogposts/inline/self_sizing_cells_cell.png" class="img-responsive"/></center></p>
 
-<h3 id="good-or-bad">Good or bad</h3>
+<p>TitleLabel is pinned to top, left, right and has the bottom pinned to the nearest neightbour (the imageView). The UIImageView is pinned to the left, right, has the height set and its botton is pinned to the nearest neighbour (the DetailLabel). The DetailLabel is pinned to left, right and the bottom is pinned to the bottom of the cell.</p>
 
-<p>This is quite subjective, and depends really on how you use this pattern. It can be both good and bad. And it depends on how you write your singletons. ALWAYS use <code>dispatch_once</code> to instantiate your shared instance. The older method of <code>@synchronized</code> is also acceptable, although arguably slower. This way, you are sure that your singleton is thread-safe.</p>
+<p>That&rsquo;s it. This is all. You don&rsquo;t have to do anything else. Well, of course, set you tableView delegate and datasource, return the cell for each row, the nubmer of rows and that&rsquo;s it. No <code>heightForRowAtIndexPath</code>. And make sure you don&rsquo;t set any Row Height for the table view in the storyboard. Leave it the default (which is 44). Setting it to anything else seems to make all the cells that size.</p>
 
-<p>Some refuse to use Singletons because they are just glorified globals. But where do you put that data instead, if you need it all through the app? AppDelegate? But.. surprise.. the app delegate is actually a Singleton.</p>
+<p>You can find the demo project on <a href="https://github.com/mariusc/SelfSizingCells">my GitHub</a>. Don&rsquo;t try running it on iOS 7, because it will crash (conflicting constraints; it assumes the height is 44, but the inner constraints of the cell make its size to be much bigger; so it crashes).</p>
 
-<h3 id="conclusion">Conclusion</h3>
-
-<p>You can like or you can hate the Singleton pattern. Actually, as long as you know what you&rsquo;re doing, I don&rsquo;t see any point in avoiding singletons.</p>
+<p>I think the self sizing cells are a big step forward and I&rsquo;m looking forward to have an iOS 8 - only app, so I can actually use them in production.</p>
 
         </article>
         <hr>
-        <span class="meta">Posted on April  8, 2014</span>
+        <span class="meta">Posted on February 21, 2015</span>
         <hr />
 
         </ul>
