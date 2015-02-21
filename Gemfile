@@ -11,3 +11,5 @@ gem "builder", "~> 3.0"
 
 gem "middleman-gh-pages"
 gem 'middleman-deploy', '~> 1.0'
+
+gem 'redcarpet'

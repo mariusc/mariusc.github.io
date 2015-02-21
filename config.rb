@@ -10,6 +10,11 @@ helpers CustomHelpers
 
 # Time.zone = "UTC"
 
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true
+
+activate :syntax
+
 activate :blog do |blog|
   # blog.prefix = "blog"
   blog.permalink = ":year-:month-:day-:title.html"
@@ -32,7 +37,7 @@ activate :blog do |blog|
 end
 
 #activate :directory_indexes
-activate :syntax
+
 page "/feed.xml", :layout => false
 page "/articles/*", :layout => "posts"
 
