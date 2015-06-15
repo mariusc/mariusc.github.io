@@ -5,7 +5,7 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-06-12T10:48:00+03:00</updated>
+  <updated>2015-06-12T09:48:00+02:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
@@ -13,12 +13,12 @@
     <title>The epicenter of improvement</title>
     <link rel="alternate" href="http://blog.url.com/2015-06-12-the-epicenter-of-improvement.html"/>
     <id>http://blog.url.com/2015-06-12-the-epicenter-of-improvement.html</id>
-    <published>2015-06-12T10:48:00+03:00</published>
-    <updated>2015-06-13T20:54:57+03:00</updated>
+    <published>2015-06-12T09:48:00+02:00</published>
+    <updated>2015-06-15T22:16:34+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;I&amp;rsquo;ve been paying more attention to WWDCs only recently. Probably, WWDC 2014 was people&amp;rsquo;s favourite, because of the huge and revolutionary changes it brought. However, for me, WWDC 2015 is far better than the previous one, because it seems that we got what I always want form a platform and programming language that I use full time in my work: stability and improvements. Evolution and not revolution. I finally think that the Swift 2.0 that will come out of beta will be ready for production. &lt;/p&gt;
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve been paying more attention to WWDCs only recently. Probably, WWDC 2014 was people&amp;rsquo;s favourite, because of the huge and revolutionary changes it brought. However, for me, WWDC 2015 is far better than the previous one, because it seems that we got what I always wanted from a platform and programming language that I use full time in my work: stability and improvements. Evolution and not revolution. I finally think that the Swift 2.0 that will come out of beta will be ready for production. &lt;/p&gt;
 
 &lt;p&gt;The WWDC main keynote is becoming more and more an event for journalists and press, and less for the developers. Platforms State of the Union is actually much much more important for a developer. If you&amp;rsquo;re an iOS developer and you&amp;rsquo;re too busy to watch more than one video from the WWDC, that should definitely be Platforms State of the Union.&lt;/p&gt;
 
@@ -51,8 +51,8 @@
     <title>Self sizing UITableViewCells</title>
     <link rel="alternate" href="http://blog.url.com/2015-02-21-self-sizing-uitableviewcell.html"/>
     <id>http://blog.url.com/2015-02-21-self-sizing-uitableviewcell.html</id>
-    <published>2015-02-21T20:45:00+02:00</published>
-    <updated>2015-02-22T01:42:39+02:00</updated>
+    <published>2015-02-21T19:45:00+01:00</published>
+    <updated>2015-02-22T00:42:39+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -85,8 +85,8 @@
     <title>Why I didn't start playing around with Swift</title>
     <link rel="alternate" href="http://blog.url.com/2014-07-25-why-i-didn-t-start-playing-around-with-swift.html"/>
     <id>http://blog.url.com/2014-07-25-why-i-didn-t-start-playing-around-with-swift.html</id>
-    <published>2014-07-25T21:30:00+03:00</published>
-    <updated>2015-01-31T18:32:03+02:00</updated>
+    <published>2014-07-25T20:30:00+02:00</published>
+    <updated>2015-01-31T17:32:03+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -105,8 +105,8 @@
     <title>Singletons</title>
     <link rel="alternate" href="http://blog.url.com/2014-04-08-singletons.html"/>
     <id>http://blog.url.com/2014-04-08-singletons.html</id>
-    <published>2014-04-08T23:55:00+03:00</published>
-    <updated>2015-02-22T01:42:39+02:00</updated>
+    <published>2014-04-08T22:55:00+02:00</published>
+    <updated>2015-02-22T00:42:39+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -157,8 +157,8 @@
     <title>My Middleman powered blog, hosted on GitHub Pages</title>
     <link rel="alternate" href="http://blog.url.com/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html"/>
     <id>http://blog.url.com/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html</id>
-    <published>2013-11-14T23:34:00+02:00</published>
-    <updated>2015-02-01T12:35:43+02:00</updated>
+    <published>2013-11-14T22:34:00+01:00</published>
+    <updated>2015-02-01T11:35:43+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
