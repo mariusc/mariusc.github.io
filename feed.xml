@@ -5,10 +5,33 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-07-03T15:33:00+02:00</updated>
+  <updated>2015-11-01T19:26:00+01:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Writing Challenge</title>
+    <link rel="alternate" href="http://blog.url.com/2015-11-01-writing-challenge.html"/>
+    <id>http://blog.url.com/2015-11-01-writing-challenge.html</id>
+    <published>2015-11-01T19:26:00+01:00</published>
+    <updated>2015-11-01T19:55:15+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;There’s this thing I found out about on Twitter that people call “&lt;em&gt;NaBloWriMo&lt;/em&gt;”. It actually is a derived version of “&lt;em&gt;NaNoWriMo&lt;/em&gt;”, which stands for National Novel Writing Month. Shortly, &lt;em&gt;NaNoWriMo&lt;/em&gt; is a challenge where people have to write daily for one month, and in the end have a 50.000 words fictional novel. I didn’t know this exists, but I found of its other version, “&lt;em&gt;NaBloWriMo&lt;/em&gt;” (ok, I’ve got to admit, I think this name sounds silly) from &lt;a href="https://twitter.com/mennenia/status/660769278715633664"&gt;Maxim Cramer&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;The rules I’ll follow during this challenge are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;write every day&lt;/li&gt;
+&lt;li&gt;publish at least one article per week&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One article per week isn’t very much, but compared to my usual writing frequency, it’s a lot. And in the end, the goal of this is to create a habit for writing, not just to add 4 more articles to my blog. Because, as &lt;a href="https://www.youtube.com/watch?v=SjjvnrqDjpM"&gt;Ash Furrow says&lt;/a&gt;, sharing your knowledge makes you a better developer in the end.&lt;/p&gt;
+
+&lt;p&gt;Here’s to hoping I can finish the challenge🍷!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>One week with the Apple Watch</title>
     <link rel="alternate" href="http://blog.url.com/2015-07-03-one-week-with-the-apple-watch.html"/>
@@ -173,95 +196,6 @@
 &lt;h3 id="conclusion"&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;You can like or you can hate the Singleton pattern. Actually, as long as you know what you&amp;rsquo;re doing, I don&amp;rsquo;t see any point in avoiding singletons.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>My Middleman powered blog, hosted on GitHub Pages</title>
-    <link rel="alternate" href="http://blog.url.com/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html"/>
-    <id>http://blog.url.com/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html</id>
-    <published>2013-11-14T22:34:00+01:00</published>
-    <updated>2015-02-01T11:35:43+01:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;I would say I have quite some experience with Wordpress. I&amp;rsquo;ve first used it in 2007, and I&amp;rsquo;ve continued to use Wordpress as a CMS for almost all the websites I needed to create. I did this because it was an easy solution for what we needed.&lt;/p&gt;
-
-&lt;h3 id="why-middleman"&gt;Why Middleman&lt;/h3&gt;
-
-&lt;p&gt;But when I decided to create my own website, Wordpress wasn&amp;rsquo;t really my first option. I&amp;rsquo;m not really sure why I chose Middleman, but now that I&amp;rsquo;m using it, I know exactly why I like it. &lt;/p&gt;
-
-&lt;p&gt;Middleman builds static websites. There&amp;rsquo;s no database required, all you need to do is write the articles using markdown, and they will be built into static html webpages. For me, the biggest advantage of this is that I can host it on GitHub Pages. I couldn&amp;rsquo;t have installed Wordpress, for example, on a GitHub Pages website, because Wordpress needs a database on the server. Another very nice feature is that each article is basically a text file, which can be easily kept on git. Also, because it&amp;rsquo;s written in markdown, it&amp;rsquo;s very easy to add code in the articles, and it looks very good. And finally, writing your articles in a simple text editor (or maybe even in &lt;code&gt;vim&lt;/code&gt;) gives you that geekish feel, which can&amp;rsquo;t be accomplished by using Wordpress, Joomla or other WYSIWYG engines.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, middleman is not as easy to use as Wordpress. For technical guys it&amp;rsquo;s ok, but I wouldn&amp;rsquo;t imagine, for example, my dentist using Middleman to maintain a blog. Wordpress is much more accessible.&lt;/p&gt;
-
-&lt;h3 id="how-i-did-it"&gt;How I did it&lt;/h3&gt;
-
-&lt;p&gt;Middleman comes as a Ruby gem. You have to open a terminal and then 
-&lt;code&gt;sudo gem install middleman-blog&lt;/code&gt;. Now you have the blogging extension of middleman installed on your computer. To start a website, all you have to do is &lt;code&gt;middleman init MYBLOG --template=blog&lt;/code&gt;. This generates the following:&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;MYBLOG
-- .gitignore
-- config.rb
-- Gemfile
-- Gemfile.lock
-- source
-    - 2012-01-01-example-article.html.markdown
-    - calendar.html.erb
-    - feed.xml.builder
-    - images
-    - index.html.erb
-    - javascripts
-    - layout.erb
-    - stylesheets
-    - tag.html.erb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Of course you can replace &lt;code&gt;MYBLOG&lt;/code&gt; with a name of your choice.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Erb&lt;/code&gt; is the default templating language of Middleman. &lt;code&gt;Haml&lt;/code&gt;, &lt;code&gt;Sass&lt;/code&gt;, &lt;code&gt;Scss&lt;/code&gt; and others are also supported, but when I started this project, I didn&amp;rsquo;t find any good reason to switch from the default. I still don&amp;rsquo;t.&lt;/p&gt;
-
-&lt;p&gt;A very important file is the &lt;code&gt;config.rb&lt;/code&gt;. This is where all the configurations of the site are. Middleman has a very god documentation, and it&amp;rsquo;s easy to understand how it works. But just for inspiration, my sources are &lt;a href="http://github.com/mariusc/blog"&gt;public on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To &lt;strong&gt;add an article&lt;/strong&gt;, you can go to Terminal and write &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;middleman article &amp;quot;Your Title&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;A new file is created in the &lt;code&gt;source&lt;/code&gt; folder, corresponding to this article. The articles are written in markdown language, and all they contains are the text, maybe images, links and metainfo such as date and tags. All the styling information is somewhere else, and we will talk about this in a short while. The file created in the &lt;code&gt;source&lt;/code&gt; folder has only the title, date and an empty list of tags for the article. Write something as the content of the article.&lt;/p&gt;
-
-&lt;p&gt;At this moment, you can run &lt;code&gt;bundle exec middleman server&lt;/code&gt; and go to the link shown in Terminal (&lt;code&gt;http://localhost:4567&lt;/code&gt;). You will see a very plain html blog, with your first article.&lt;/p&gt;
-
-&lt;p&gt;To improve the appearance of the website, you will need to use your HTML and CSS knowledge and create or adapt a template. 
-The file layout.erb is the one containing the layout of the website. Here you can add the code for the header, footer, maybe a sidebar, etc. The layour.erb is kind of a frame, which appears on all the pages of your blog. &lt;code&gt;&amp;lt;%= yield %&amp;gt;&lt;/code&gt; is the part which is actually framed using this layout.
-The &lt;code&gt;index.html.erb&lt;/code&gt; file contains the styling of the content which is yielded in the layout.erb file. For example, here you can write and style the title, tags, date of an article.
-My advice is to get a free HTML template you like and adjust it to fit you needs. Very important, in my opinion, is to choose a responsive layout, one that looks good on all resolutions, including phone or tablet. I learnt this the hard way, and in the beginnig of 2014 I will probably change the layout of my site.&lt;/p&gt;
-
-&lt;h3 id="publishing-your-blog-on-github-pages"&gt;Publishing your blog on GitHub Pages&lt;/h3&gt;
-
-&lt;p&gt;GitHub offers &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;, mainly for creating a small site about each of your projects. But this can be used also to host your personal developer website :). I chose to have this blog as a separate repo than the rest of the site. The nice thing is that Middleman is perfectly integrated with GitHub pages, all thanks to the middleman-gh-pages gem. I included it in the Gemfile&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;gem &amp;quot;middleman-gh-pages&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and required it in a Rakefile:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;require &amp;#39;middleman-gh-pages&amp;#39;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Then you have to bundle install again, and now you are ready to push to your gh-pages branch, in order to publish your built website. And middleman-gh-pages does this for you, with&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;bundle exec rake publish&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The contents of your &lt;code&gt;gh-pages&lt;/code&gt; branch will then be published at &lt;code&gt;username.github.io/repo_name&lt;/code&gt;. The &lt;code&gt;master&lt;/code&gt; branch will contain the source files, and the &lt;code&gt;gh-pages&lt;/code&gt; branch will contain the built website. Running the &lt;em&gt;publish&lt;/em&gt; builds your website and pushes it to the &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s about it. There are some references I found very useful below, and the sources for this blog. For discussions about this articles, send me a &lt;a href="http://www.twitter.com/marius_const"&gt;tweet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="resources:"&gt;Resources:&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://middlemanapp.com/getting-started/"&gt;Middleman documentation: getting started&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://middlemanapp.com/templates/"&gt;Middleman templating&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://12devs.co.uk/articles/204/"&gt;12devs - building static websites with Middleman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://joey.aghion.com/building-a-blog-with-middleman-and-github-pages/"&gt;Joey Aghion - Building a blog with Middleman and GitHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://designbyjoel.com/blog/2012-10-20-building-a-blog-in-middleman/"&gt;Joel Hans - Building a middleman blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/mariusc/blog"&gt;Repo for my blog&lt;/a&gt;&lt;/strong&gt; - have a look at both the &lt;em&gt;master&lt;/em&gt; and the &lt;em&gt;gh-pages&lt;/em&gt; branch&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
