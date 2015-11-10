@@ -5,10 +5,32 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-11-01T19:26:00+01:00</updated>
+  <updated>2015-11-09T22:10:00+01:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Making an app for tvOS - part 1</title>
+    <link rel="alternate" href="http://blog.url.com/2015-11-09-making-an-app-for-tvos-part-1.html"/>
+    <id>http://blog.url.com/2015-11-09-making-an-app-for-tvos-part-1.html</id>
+    <published>2015-11-09T22:10:00+01:00</published>
+    <updated>2015-11-10T22:12:37+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;As curious iOS developers, having had the Apple TV for a week, &lt;a href="http://twitter.com/ruxandranistor"&gt;@RuxandraNistor&lt;/a&gt; and I decided that it’s time to try and make an Apple TV app. We didn’t have an idea for an app, but we knew we wanted to make one.  &lt;/p&gt;
+
+&lt;p&gt;Being two iOS developers with limited time for side projects, a lack of experience when it comes to digital design and a strong desire to not make any APIs or backend development, it was quite hard for us to come up with a good idea for an app. &lt;/p&gt;
+
+&lt;p&gt;As we had no content, we thought that we could either build a game, or find an external API to give us content. The one thing we always kept coming back to was that it’s very hard and annoying to input text in an Apple TV app. &lt;em&gt;So whatever app we were building, if we showed content to the user, that content had to be browsable, and not searchable.&lt;/em&gt; So I could say goodbye to my idea of making a beer journal (like Vivino, but for beers), an iOS project I started and never finished. &lt;/p&gt;
+
+&lt;p&gt;As I like tennis, I’d like an app that gives me real time scores for tennis games, ATP and WTA rankings, tournament draws and results and all other kind of tennis news. But all that content was not easy to find in a way that made it easy for us to show it on the Apple TV. &lt;/p&gt;
+
+&lt;p&gt;Then we thought that the idea was to complex: we just wanted to make a simple app to see what’s up with tvOS. So we thought of making 9GAG for Apple TV. We were very pleased with the idea, until we realised that there’s no official API for 9GAG, nor an RSS feed for it. So we looked into other similar websites (BoredPanda, BuzzFeed, etc), with no success: none of them had a good API or RSS feed.&lt;/p&gt;
+
+&lt;p&gt;So in the end, we chose to make a simple game. Three hours later, we had our first prototype running. Now we need to add more complexity, make it pretty and make it catchy. More about that in a future post.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Writing Challenge</title>
     <link rel="alternate" href="http://blog.url.com/2015-11-01-writing-challenge.html"/>
@@ -144,58 +166,6 @@
 &lt;p&gt;Many guys want to try it as soon as possible, so they have a word to say in the &amp;ldquo;upbringing&amp;rdquo; and the future of this language. I totally understand their point. But it&amp;rsquo;s not the case for me: I trust other people will do a very good job at finding problems, opening radars, modelling the language and making sure it&amp;rsquo;s going in the right direction. &lt;/p&gt;
 
 &lt;p&gt;But after all, the truth is that Swift is still experimental. A language that is constantly changing every two weeks, with every new beta launched, is definitely not a language I would like to write production code in. Yes, it&amp;rsquo;s nice to experiment with new technologies, I&amp;rsquo;m a big fan of that. But it&amp;rsquo;s not the right time now to do that with Swift. At least, not for me. But my vacation should start soon, so who knows :D ?&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Singletons</title>
-    <link rel="alternate" href="http://blog.url.com/2014-04-08-singletons.html"/>
-    <id>http://blog.url.com/2014-04-08-singletons.html</id>
-    <published>2014-04-08T22:55:00+02:00</published>
-    <updated>2015-02-22T00:42:39+01:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;I like Singletons. This was the first design pattern I learned while studying OOP and it&amp;rsquo;s by far the one I&amp;rsquo;m most comfortable with at this point. &lt;/p&gt;
-
-&lt;p&gt;In (almost) all my projects that need networking, I created a singleton NetworkManager, which handles all the network communication done throughout the app. I think that this is a very good example of a situation where a Singleton is useful.&lt;/p&gt;
-
-&lt;h3 id="how-i-write-my-singletons"&gt;How I write my singletons&lt;/h3&gt;
-
-&lt;p&gt;If there&amp;rsquo;s nothing fancy about the classes I want to be singletons, I simply include the following code in the &lt;code&gt;.pch&lt;/code&gt; file:&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;#ifndef SHARED_SINGLETON
-    #define SHARED_SINGLETON(class)               \
-    + (id)sharedInstance {                        \
-        static dispatch_once_t pred = 0;          \
-        __strong static id _shared##class = nil;  \
-        dispatch_once(&amp;amp;pred, ^{                   \
-            _shared##class = [[self alloc] init]; \
-        });                                       \
-        return _shared##class;                    \
-    }
-#endif
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, in the header file of the class I want to make a singleton, I add the function &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;+ (id)sharedInstance;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And in the associated .m, &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;SHARED_SINGLETON(Open311);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;is the implementation of the sharedInstance method. From now on, every time I need this object, I call it with &lt;code&gt;[ClassName sharedObject]&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Of course, if you need to do other things when fetching that Singleton, you need to add the method in your .m file and do it there.&lt;/p&gt;
-
-&lt;h3 id="good-or-bad"&gt;Good or bad&lt;/h3&gt;
-
-&lt;p&gt;This is quite subjective, and depends really on how you use this pattern. It can be both good and bad. And it depends on how you write your singletons. ALWAYS use &lt;code&gt;dispatch_once&lt;/code&gt; to instantiate your shared instance. The older method of &lt;code&gt;@synchronized&lt;/code&gt; is also acceptable, although arguably slower. This way, you are sure that your singleton is thread-safe.&lt;/p&gt;
-
-&lt;p&gt;Some refuse to use Singletons because they are just glorified globals. But where do you put that data instead, if you need it all through the app? AppDelegate? But.. surprise.. the app delegate is actually a Singleton.&lt;/p&gt;
-
-&lt;h3 id="conclusion"&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;You can like or you can hate the Singleton pattern. Actually, as long as you know what you&amp;rsquo;re doing, I don&amp;rsquo;t see any point in avoiding singletons.&lt;/p&gt;
 </content>
   </entry>
 </feed>
