@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2015-11-29-uiviewcontentmodes.html"/>
     <id>http://blog.url.com/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T11:46:00+01:00</published>
-    <updated>2015-11-29T13:13:22+01:00</updated>
+    <updated>2015-11-29T13:34:19+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -37,7 +37,7 @@
 &lt;li&gt;&lt;code&gt;Aspect fit&lt;/code&gt;, &lt;code&gt;Aspect fill&lt;/code&gt;, &lt;code&gt;Center&lt;/code&gt;, &lt;code&gt;Top&lt;/code&gt;, &lt;code&gt;Bottom&lt;/code&gt;, &lt;code&gt;Left&lt;/code&gt;, &lt;code&gt;Right&lt;/code&gt;, &lt;code&gt;Top left&lt;/code&gt;, &lt;code&gt;Top right&lt;/code&gt;, &lt;code&gt;Bottom left&lt;/code&gt; and &lt;code&gt;Bottom right&lt;/code&gt; are non-distorting content modes, they keep the original aspect ratio.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Aspect fit&lt;/code&gt; will scale the image while keeping the aspect ratio in order to fit the whole image in the &lt;code&gt;UIImageView&lt;/code&gt;. So its biggest side will fit perfectly in the view, and its smallest side will be scaled proportionally.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Aspect fill&lt;/code&gt; will scale the image while keeping the aspect ratio in order to fill the whole &lt;code&gt;UIImageView&lt;/code&gt;. So its smallest side will fit perfectly in the view, and its biggest side will be scaled proportionally. This one will be bigger than the view, so depending on the &lt;code&gt;clipsToBounds&lt;/code&gt; value, it will either go out of the &lt;code&gt;UIImageView&lt;/code&gt;, or show only the portion that fits in it.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Scale to fill&lt;/code&gt; will scale both sides of the image to fill the entire view. This will obviously change the aspect ration and stretch the image.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Scale to fill&lt;/code&gt; will scale both sides of the image to fill the entire view. This will obviously change the aspect ratio and stretch the image.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
