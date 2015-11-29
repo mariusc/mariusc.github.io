@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2015-11-29-uiviewcontentmodes.html"/>
     <id>http://blog.url.com/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T11:46:00+01:00</published>
-    <updated>2015-11-29T13:34:19+01:00</updated>
+    <updated>2015-11-29T15:14:41+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -38,6 +38,7 @@
 &lt;li&gt;&lt;code&gt;Aspect fit&lt;/code&gt; will scale the image while keeping the aspect ratio in order to fit the whole image in the &lt;code&gt;UIImageView&lt;/code&gt;. So its biggest side will fit perfectly in the view, and its smallest side will be scaled proportionally.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Aspect fill&lt;/code&gt; will scale the image while keeping the aspect ratio in order to fill the whole &lt;code&gt;UIImageView&lt;/code&gt;. So its smallest side will fit perfectly in the view, and its biggest side will be scaled proportionally. This one will be bigger than the view, so depending on the &lt;code&gt;clipsToBounds&lt;/code&gt; value, it will either go out of the &lt;code&gt;UIImageView&lt;/code&gt;, or show only the portion that fits in it.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Scale to fill&lt;/code&gt; will scale both sides of the image to fill the entire view. This will obviously change the aspect ratio and stretch the image.&lt;/li&gt;
+&lt;li&gt;Even though &lt;code&gt;Redraw&lt;/code&gt; has the same effect here as &lt;code&gt;Scale to fill&lt;/code&gt;, behind the scenes they are very different. &lt;code&gt;Redraw&lt;/code&gt; forces a redraw of the view (calls &lt;code&gt;drawRect:&lt;/code&gt; in your view) in response to geometry changes (for example, a change of the frame&amp;rsquo;s value). It&amp;rsquo;s not generally used, and it doesn&amp;rsquo;t make sense to use it on standard system views. In this case, the result is the same because we used &lt;code&gt;Redraw&lt;/code&gt; on a standard view, with the default implementation of &lt;code&gt;drawRect:&lt;/code&gt; (which appears to be using the &lt;code&gt;Scale to fill&lt;/code&gt; mode).&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

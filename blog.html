@@ -137,6 +137,7 @@
 <li><code>Aspect fit</code> will scale the image while keeping the aspect ratio in order to fit the whole image in the <code>UIImageView</code>. So its biggest side will fit perfectly in the view, and its smallest side will be scaled proportionally.</li>
 <li><code>Aspect fill</code> will scale the image while keeping the aspect ratio in order to fill the whole <code>UIImageView</code>. So its smallest side will fit perfectly in the view, and its biggest side will be scaled proportionally. This one will be bigger than the view, so depending on the <code>clipsToBounds</code> value, it will either go out of the <code>UIImageView</code>, or show only the portion that fits in it.</li>
 <li><code>Scale to fill</code> will scale both sides of the image to fill the entire view. This will obviously change the aspect ratio and stretch the image.</li>
+<li>Even though <code>Redraw</code> has the same effect here as <code>Scale to fill</code>, behind the scenes they are very different. <code>Redraw</code> forces a redraw of the view (calls <code>drawRect:</code> in your view) in response to geometry changes (for example, a change of the frame&rsquo;s value). It&rsquo;s not generally used, and it doesn&rsquo;t make sense to use it on standard system views. In this case, the result is the same because we used <code>Redraw</code> on a standard view, with the default implementation of <code>drawRect:</code> (which appears to be using the <code>Scale to fill</code> mode).</li>
 </ul>
 
 
