@@ -5,10 +5,42 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-11-09T22:10:00+01:00</updated>
+  <updated>2015-11-29T11:46:00+01:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>UIViewContentModes</title>
+    <link rel="alternate" href="http://blog.url.com/2015-11-29-uiviewcontentmodes.html"/>
+    <id>http://blog.url.com/2015-11-29-uiviewcontentmodes.html</id>
+    <published>2015-11-29T11:46:00+01:00</published>
+    <updated>2015-11-29T13:13:22+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;This is going to be a very simple and visual post, showing the differences in what an image looks like using different &lt;code&gt;UIViewContentMode&lt;/code&gt;s. It&amp;rsquo;s something I really needed in my early days as an iOS developer. So a couple of years later, I decided to make this visual guide.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ll use this &lt;a href="http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/12254/SITours/day-trip-to-sinaia-from-bucharest-including-peles-castle-in-sinaia-211359.jpg"&gt;image here&lt;/a&gt; of the Peleș castle in Romania:
+&lt;center&gt;&lt;img src = "img/blogposts/inline/peles_castle.jpg" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;And we will show it in a square 200 x 200 &lt;code&gt;UIImageView&lt;/code&gt;, going through all the possible &lt;code&gt;UIViewContentMode&lt;/code&gt;s. The 1x asset used in this project was sized to 224 x 148, with the @2x and @3x being scaled proportionally. For a better understanding, the background color of the &lt;code&gt;UIImageView&lt;/code&gt; was set to black and &lt;code&gt;clipsToBounds&lt;/code&gt; was set to &lt;code&gt;false&lt;/code&gt;. Here are the results:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/Scale_to_fill.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Aspect_fit.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Aspect_fill_no_clip.png" width=33%/&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src = "img/blogposts/inline/Redraw.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Center.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Top.png" width=33%/&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src = "img/blogposts/inline/Bottom.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Left.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Right.png" width=33%/&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src = "img/blogposts/inline/Top_left.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Top_right.png" width=33%/&gt;&lt;img src = "img/blogposts/inline/Bottom_left.png" width=33%/&gt;&lt;/center&gt;
+&lt;center&gt;&lt;img src = "img/blogposts/inline/Bottom_right.png" class="img-responsive" width=33%/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Some observations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Aspect fit&lt;/code&gt;, &lt;code&gt;Aspect fill&lt;/code&gt;, &lt;code&gt;Center&lt;/code&gt;, &lt;code&gt;Top&lt;/code&gt;, &lt;code&gt;Bottom&lt;/code&gt;, &lt;code&gt;Left&lt;/code&gt;, &lt;code&gt;Right&lt;/code&gt;, &lt;code&gt;Top left&lt;/code&gt;, &lt;code&gt;Top right&lt;/code&gt;, &lt;code&gt;Bottom left&lt;/code&gt; and &lt;code&gt;Bottom right&lt;/code&gt; are non-distorting content modes, they keep the original aspect ratio.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Aspect fit&lt;/code&gt; will scale the image while keeping the aspect ratio in order to fit the whole image in the &lt;code&gt;UIImageView&lt;/code&gt;. So its biggest side will fit perfectly in the view, and its smallest side will be scaled proportionally.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Aspect fill&lt;/code&gt; will scale the image while keeping the aspect ratio in order to fill the whole &lt;code&gt;UIImageView&lt;/code&gt;. So its smallest side will fit perfectly in the view, and its biggest side will be scaled proportionally. This one will be bigger than the view, so depending on the &lt;code&gt;clipsToBounds&lt;/code&gt; value, it will either go out of the &lt;code&gt;UIImageView&lt;/code&gt;, or show only the portion that fits in it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Scale to fill&lt;/code&gt; will scale both sides of the image to fill the entire view. This will obviously change the aspect ration and stretch the image.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Making an app for tvOS - part 1</title>
     <link rel="alternate" href="http://blog.url.com/2015-11-09-making-an-app-for-tvos-part-1.html"/>
@@ -146,26 +178,6 @@
 &lt;p&gt;You can find the demo project on &lt;a href="https://github.com/mariusc/SelfSizingCells"&gt;my GitHub&lt;/a&gt;. Don&amp;rsquo;t try running it on iOS 7, because it will crash (conflicting constraints; it assumes the height is 44, but the inner constraints of the cell make its size to be much bigger; so it crashes).&lt;/p&gt;
 
 &lt;p&gt;I think the self sizing cells are a big step forward and I&amp;rsquo;m looking forward to have an iOS 8 - only app, so I can actually use them in production.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Why I didn't start playing around with Swift</title>
-    <link rel="alternate" href="http://blog.url.com/2014-07-25-why-i-didn-t-start-playing-around-with-swift.html"/>
-    <id>http://blog.url.com/2014-07-25-why-i-didn-t-start-playing-around-with-swift.html</id>
-    <published>2014-07-25T20:30:00+02:00</published>
-    <updated>2015-01-31T17:32:03+01:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;So, as everybody probably knows, Apple launched Swift at WWDC, on June 2nd. Despite my initial perplexity (wasn&amp;rsquo;t expecting that) and my further excitement, I still haven&amp;rsquo;t written a line of Swift code, even though it&amp;rsquo;s been almost 2 months since it was launched.&lt;/p&gt;
-
-&lt;p&gt;Yes, I won&amp;rsquo;t be able to say that I was coding Swift since day 1. But I don&amp;rsquo;t really care about that. I also haven&amp;rsquo;t programmed in Objective C since the first day it was launched, and that never stopped me.&lt;/p&gt;
-
-&lt;p&gt;A lot of people were excited about closures. They&amp;rsquo;re nice, true. I&amp;rsquo;ve worked in functional programming languages in University, so I kind of know what they are and how to deal with them. And I didn&amp;rsquo;t quite miss them in Objective C so far. &lt;/p&gt;
-
-&lt;p&gt;Many guys want to try it as soon as possible, so they have a word to say in the &amp;ldquo;upbringing&amp;rdquo; and the future of this language. I totally understand their point. But it&amp;rsquo;s not the case for me: I trust other people will do a very good job at finding problems, opening radars, modelling the language and making sure it&amp;rsquo;s going in the right direction. &lt;/p&gt;
-
-&lt;p&gt;But after all, the truth is that Swift is still experimental. A language that is constantly changing every two weeks, with every new beta launched, is definitely not a language I would like to write production code in. Yes, it&amp;rsquo;s nice to experiment with new technologies, I&amp;rsquo;m a big fan of that. But it&amp;rsquo;s not the right time now to do that with Swift. At least, not for me. But my vacation should start soon, so who knows :D ?&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -110,6 +110,62 @@
                 <div class="post-preview">
                     <a href="post.html">
                       <h1 class="post-title">
+                        <a href="/2014-04-08-singletons.html">Singletons</a>
+                      </h1>
+                      <!-- <h3 class="post-subtitle">
+                          Problems look mighty small from 150 miles up
+                      </h3> -->
+                    </a>
+                    <p class="post-meta">April  8, 2014</p></p>
+                    <p>I like Singletons. This was the first design pattern I learned while studying OOP and it&rsquo;s by far the one I&rsquo;m most comfortable with at this point. </p>
+
+<p>In (almost) all my projects that need networking, I created a singleton NetworkManager, which handles all the network communication done throughout the app. I think that this is a very good example of a situation where a Singleton is useful.</p>
+
+<h3 id="how-i-write-my-singletons">How I write my singletons</h3>
+
+<p>If there&rsquo;s nothing fancy about the classes I want to be singletons, I simply include the following code in the <code>.pch</code> file:</p>
+<pre class="highlight plaintext"><code>#ifndef SHARED_SINGLETON
+    #define SHARED_SINGLETON(class)               \
+    + (id)sharedInstance {                        \
+        static dispatch_once_t pred = 0;          \
+        __strong static id _shared##class = nil;  \
+        dispatch_once(&amp;pred, ^{                   \
+            _shared##class = [[self alloc] init]; \
+        });                                       \
+        return _shared##class;                    \
+    }
+#endif
+</code></pre>
+
+<p>Then, in the header file of the class I want to make a singleton, I add the function </p>
+<pre class="highlight plaintext"><code>+ (id)sharedInstance;
+</code></pre>
+
+<p>And in the associated .m, </p>
+<pre class="highlight plaintext"><code>SHARED_SINGLETON(Open311);
+</code></pre>
+
+<p>is the implementation of the sharedInstance method. From now on, every time I need this object, I call it with <code>[ClassName sharedObject]</code>.</p>
+
+<p>Of course, if you need to do other things when fetching that Singleton, you need to add the method in your .m file and do it there.</p>
+
+<h3 id="good-or-bad">Good or bad</h3>
+
+<p>This is quite subjective, and depends really on how you use this pattern. It can be both good and bad. And it depends on how you write your singletons. ALWAYS use <code>dispatch_once</code> to instantiate your shared instance. The older method of <code>@synchronized</code> is also acceptable, although arguably slower. This way, you are sure that your singleton is thread-safe.</p>
+
+<p>Some refuse to use Singletons because they are just glorified globals. But where do you put that data instead, if you need it all through the app? AppDelegate? But.. surprise.. the app delegate is actually a Singleton.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>You can like or you can hate the Singleton pattern. Actually, as long as you know what you&rsquo;re doing, I don&rsquo;t see any point in avoiding singletons.</p>
+
+
+                    <!-- Add hr between each article -->
+                      <hr>
+                </div>
+                <div class="post-preview">
+                    <a href="post.html">
+                      <h1 class="post-title">
                         <a href="/2013-11-14-my-middleman-powered-blog-hosted-on-github-pages.html">My Middleman powered blog, hosted on GitHub Pages</a>
                       </h1>
                       <!-- <h3 class="post-subtitle">

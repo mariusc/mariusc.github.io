@@ -40,7 +40,7 @@
 
 </script>
 <!--End of Google Analytics-->
-    <!--<title>Singletons</title>-->
+    <!--<title>Why I didn't start playing around with Swift</title>-->
   </head>
   <body>
     
@@ -107,6 +107,42 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="post.html">
+                      <h1 class="post-title">
+                        <a href="/2015-11-29-uiviewcontentmodes.html">UIViewContentModes</a>
+                      </h1>
+                      <!-- <h3 class="post-subtitle">
+                          Problems look mighty small from 150 miles up
+                      </h3> -->
+                    </a>
+                    <p class="post-meta">November 29, 2015</p></p>
+                    <p>This is going to be a very simple and visual post, showing the differences in what an image looks like using different <code>UIViewContentMode</code>s. It&rsquo;s something I really needed in my early days as an iOS developer. So a couple of years later, I decided to make this visual guide.</p>
+
+<p>We&rsquo;ll use this <a href="http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/12254/SITours/day-trip-to-sinaia-from-bucharest-including-peles-castle-in-sinaia-211359.jpg">image here</a> of the Peleș castle in Romania:
+<center><img src = "img/blogposts/inline/peles_castle.jpg" class="img-responsive"/></center></p>
+
+<p>And we will show it in a square 200 x 200 <code>UIImageView</code>, going through all the possible <code>UIViewContentMode</code>s. The 1x asset used in this project was sized to 224 x 148, with the @2x and @3x being scaled proportionally. For a better understanding, the background color of the <code>UIImageView</code> was set to black and <code>clipsToBounds</code> was set to <code>false</code>. Here are the results:</p>
+
+<p><center><img src = "img/blogposts/inline/Scale_to_fill.png" width=33%/><img src = "img/blogposts/inline/Aspect_fit.png" width=33%/><img src = "img/blogposts/inline/Aspect_fill_no_clip.png" width=33%/></center>
+<center><img src = "img/blogposts/inline/Redraw.png" width=33%/><img src = "img/blogposts/inline/Center.png" width=33%/><img src = "img/blogposts/inline/Top.png" width=33%/></center>
+<center><img src = "img/blogposts/inline/Bottom.png" width=33%/><img src = "img/blogposts/inline/Left.png" width=33%/><img src = "img/blogposts/inline/Right.png" width=33%/></center>
+<center><img src = "img/blogposts/inline/Top_left.png" width=33%/><img src = "img/blogposts/inline/Top_right.png" width=33%/><img src = "img/blogposts/inline/Bottom_left.png" width=33%/></center>
+<center><img src = "img/blogposts/inline/Bottom_right.png" class="img-responsive" width=33%/></center></p>
+
+<p>Some observations:</p>
+
+<ul>
+<li><code>Aspect fit</code>, <code>Aspect fill</code>, <code>Center</code>, <code>Top</code>, <code>Bottom</code>, <code>Left</code>, <code>Right</code>, <code>Top left</code>, <code>Top right</code>, <code>Bottom left</code> and <code>Bottom right</code> are non-distorting content modes, they keep the original aspect ratio.</li>
+<li><code>Aspect fit</code> will scale the image while keeping the aspect ratio in order to fit the whole image in the <code>UIImageView</code>. So its biggest side will fit perfectly in the view, and its smallest side will be scaled proportionally.</li>
+<li><code>Aspect fill</code> will scale the image while keeping the aspect ratio in order to fill the whole <code>UIImageView</code>. So its smallest side will fit perfectly in the view, and its biggest side will be scaled proportionally. This one will be bigger than the view, so depending on the <code>clipsToBounds</code> value, it will either go out of the <code>UIImageView</code>, or show only the portion that fits in it.</li>
+<li><code>Scale to fill</code> will scale both sides of the image to fill the entire view. This will obviously change the aspect ration and stretch the image.</li>
+</ul>
+
+
+                    <!-- Add hr between each article -->
+                      <hr>
+                </div>
                 <div class="post-preview">
                     <a href="post.html">
                       <h1 class="post-title">
@@ -285,62 +321,6 @@
 <p>Many guys want to try it as soon as possible, so they have a word to say in the &ldquo;upbringing&rdquo; and the future of this language. I totally understand their point. But it&rsquo;s not the case for me: I trust other people will do a very good job at finding problems, opening radars, modelling the language and making sure it&rsquo;s going in the right direction. </p>
 
 <p>But after all, the truth is that Swift is still experimental. A language that is constantly changing every two weeks, with every new beta launched, is definitely not a language I would like to write production code in. Yes, it&rsquo;s nice to experiment with new technologies, I&rsquo;m a big fan of that. But it&rsquo;s not the right time now to do that with Swift. At least, not for me. But my vacation should start soon, so who knows :D ?</p>
-
-
-                    <!-- Add hr between each article -->
-                      <hr>
-                </div>
-                <div class="post-preview">
-                    <a href="post.html">
-                      <h1 class="post-title">
-                        <a href="/2014-04-08-singletons.html">Singletons</a>
-                      </h1>
-                      <!-- <h3 class="post-subtitle">
-                          Problems look mighty small from 150 miles up
-                      </h3> -->
-                    </a>
-                    <p class="post-meta">April  8, 2014</p></p>
-                    <p>I like Singletons. This was the first design pattern I learned while studying OOP and it&rsquo;s by far the one I&rsquo;m most comfortable with at this point. </p>
-
-<p>In (almost) all my projects that need networking, I created a singleton NetworkManager, which handles all the network communication done throughout the app. I think that this is a very good example of a situation where a Singleton is useful.</p>
-
-<h3 id="how-i-write-my-singletons">How I write my singletons</h3>
-
-<p>If there&rsquo;s nothing fancy about the classes I want to be singletons, I simply include the following code in the <code>.pch</code> file:</p>
-<pre class="highlight plaintext"><code>#ifndef SHARED_SINGLETON
-    #define SHARED_SINGLETON(class)               \
-    + (id)sharedInstance {                        \
-        static dispatch_once_t pred = 0;          \
-        __strong static id _shared##class = nil;  \
-        dispatch_once(&amp;pred, ^{                   \
-            _shared##class = [[self alloc] init]; \
-        });                                       \
-        return _shared##class;                    \
-    }
-#endif
-</code></pre>
-
-<p>Then, in the header file of the class I want to make a singleton, I add the function </p>
-<pre class="highlight plaintext"><code>+ (id)sharedInstance;
-</code></pre>
-
-<p>And in the associated .m, </p>
-<pre class="highlight plaintext"><code>SHARED_SINGLETON(Open311);
-</code></pre>
-
-<p>is the implementation of the sharedInstance method. From now on, every time I need this object, I call it with <code>[ClassName sharedObject]</code>.</p>
-
-<p>Of course, if you need to do other things when fetching that Singleton, you need to add the method in your .m file and do it there.</p>
-
-<h3 id="good-or-bad">Good or bad</h3>
-
-<p>This is quite subjective, and depends really on how you use this pattern. It can be both good and bad. And it depends on how you write your singletons. ALWAYS use <code>dispatch_once</code> to instantiate your shared instance. The older method of <code>@synchronized</code> is also acceptable, although arguably slower. This way, you are sure that your singleton is thread-safe.</p>
-
-<p>Some refuse to use Singletons because they are just glorified globals. But where do you put that data instead, if you need it all through the app? AppDelegate? But.. surprise.. the app delegate is actually a Singleton.</p>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>You can like or you can hate the Singleton pattern. Actually, as long as you know what you&rsquo;re doing, I don&rsquo;t see any point in avoiding singletons.</p>
 
 
                     <!-- Add hr between each article -->
