@@ -1,5 +1,5 @@
 require "lib/custom_helpers"
-
+require 'builder'
 
 helpers CustomHelpers
 
@@ -39,6 +39,7 @@ end
 #activate :directory_indexes
 
 page "/feed.xml", :layout => false
+page "/sitemap.xml", :layout => false
 page "/articles/*", :layout => "posts"
 
 activate :deploy do |deploy|
