@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog Name</title>
-  <subtitle>Blog subtitle</subtitle>
-  <id>http://blog.url.com/</id>
-  <link href="http://blog.url.com/"/>
-  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <title>Marius Constantinescu</title>
+  <subtitle>Tech blog</subtitle>
+  <id>https://mariusc.github.io/</id>
+  <link href="https://mariusc.github.io/"/>
+  <link href="https://mariusc.github.io/feed.xml" rel="self"/>
   <updated>2016-02-03T20:48:00+01:00</updated>
   <author>
-    <name>Blog Author</name>
+    <name>Marius Constantinescu</name>
   </author>
   <entry>
     <title>How I got my first job as an iOS developer</title>
-    <link rel="alternate" href="http://blog.url.com/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
-    <id>http://blog.url.com/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html</id>
+    <link rel="alternate" href="https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
+    <id>https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html</id>
     <published>2016-02-03T20:48:00+01:00</published>
     <updated>2016-02-04T19:47:18+01:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Marius Constantinescu</name>
     </author>
     <content type="html">&lt;p&gt;I read &lt;a href="https://twitter.com/orta"&gt;@orta&lt;/a&gt;&amp;rsquo;s excellent &lt;a href="http://artsy.github.io/blog/2016/01/30/iOS-Junior-Interviews/"&gt;article&lt;/a&gt; about how to get your first job as an iOS developer, and that made me think a bit about the process through which I got my first iOS job.&lt;/p&gt;
 
@@ -59,12 +59,12 @@
   </entry>
   <entry>
     <title>UIViewContentModes</title>
-    <link rel="alternate" href="http://blog.url.com/2015-11-29-uiviewcontentmodes.html"/>
-    <id>http://blog.url.com/2015-11-29-uiviewcontentmodes.html</id>
+    <link rel="alternate" href="https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html"/>
+    <id>https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T11:46:00+01:00</published>
     <updated>2015-11-29T15:14:41+01:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Marius Constantinescu</name>
     </author>
     <content type="html">&lt;p&gt;This is going to be a very simple and visual post, showing the differences in what an image looks like using different &lt;code&gt;UIViewContentMode&lt;/code&gt;s. It&amp;rsquo;s something I really needed in my early days as an iOS developer. So a couple of years later, I decided to make this visual guide.&lt;/p&gt;
 
@@ -92,12 +92,12 @@
   </entry>
   <entry>
     <title>Making an app for tvOS - part 1</title>
-    <link rel="alternate" href="http://blog.url.com/2015-11-09-making-an-app-for-tvos-part-1.html"/>
-    <id>http://blog.url.com/2015-11-09-making-an-app-for-tvos-part-1.html</id>
+    <link rel="alternate" href="https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html"/>
+    <id>https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html</id>
     <published>2015-11-09T22:10:00+01:00</published>
     <updated>2015-11-10T22:12:37+01:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Marius Constantinescu</name>
     </author>
     <content type="html">&lt;p&gt;As curious iOS developers, having had the Apple TV for a week, &lt;a href="http://twitter.com/ruxandranistor"&gt;@RuxandraNistor&lt;/a&gt; and I decided that it’s time to try and make an Apple TV app. We didn’t have an idea for an app, but we knew we wanted to make one.  &lt;/p&gt;
 
@@ -114,12 +114,12 @@
   </entry>
   <entry>
     <title>Writing Challenge</title>
-    <link rel="alternate" href="http://blog.url.com/2015-11-01-writing-challenge.html"/>
-    <id>http://blog.url.com/2015-11-01-writing-challenge.html</id>
+    <link rel="alternate" href="https://mariusc.github.io/2015-11-01-writing-challenge.html"/>
+    <id>https://mariusc.github.io/2015-11-01-writing-challenge.html</id>
     <published>2015-11-01T19:26:00+01:00</published>
     <updated>2015-11-01T20:13:50+01:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Marius Constantinescu</name>
     </author>
     <content type="html">&lt;p&gt;There’s this thing I found out about on Twitter that people call “&lt;em&gt;NaBloWriMo&lt;/em&gt;”. It actually is a derived version of “&lt;em&gt;NaNoWriMo&lt;/em&gt;”, which stands for National Novel Writing Month. Shortly, &lt;em&gt;NaNoWriMo&lt;/em&gt; is a challenge where people have to write daily for one month, and in the end have a 50.000 words fictional novel. I didn’t know this exists, but I found of its other version, “&lt;em&gt;NaBloWriMo&lt;/em&gt;” (ok, I’ve got to admit, I think this name sounds silly) from &lt;a href="https://twitter.com/mennenia/status/660769278715633664"&gt;Maxim Cramer&lt;/a&gt;. &lt;/p&gt;
 
@@ -137,12 +137,12 @@
   </entry>
   <entry>
     <title>One week with the Apple Watch</title>
-    <link rel="alternate" href="http://blog.url.com/2015-07-03-one-week-with-the-apple-watch.html"/>
-    <id>http://blog.url.com/2015-07-03-one-week-with-the-apple-watch.html</id>
+    <link rel="alternate" href="https://mariusc.github.io/2015-07-03-one-week-with-the-apple-watch.html"/>
+    <id>https://mariusc.github.io/2015-07-03-one-week-with-the-apple-watch.html</id>
     <published>2015-07-03T15:33:00+02:00</published>
     <updated>2015-07-03T23:00:49+02:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Marius Constantinescu</name>
     </author>
     <content type="html">&lt;p&gt;When we got the Apple Watch delivered at Nodes, I was very happy and I was hoping that I would get to use it for a while, to see how it is and what it can do. I got to try it for about one week, and my first impression wasn&amp;rsquo;t very flattering for the company in Cupertino. &lt;/p&gt;
 
@@ -159,12 +159,12 @@
   </entry>
   <entry>
     <title>The epicenter of improvement</title>
-    <link rel="alternate" href="http://blog.url.com/2015-06-12-the-epicenter-of-improvement.html"/>
-    <id>http://blog.url.com/2015-06-12-the-epicenter-of-improvement.html</id>
+    <link rel="alternate" href="https://mariusc.github.io/2015-06-12-the-epicenter-of-improvement.html"/>
+    <id>https://mariusc.github.io/2015-06-12-the-epicenter-of-improvement.html</id>
     <published>2015-06-12T09:48:00+02:00</published>
     <updated>2015-06-15T22:16:34+02:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Marius Constantinescu</name>
     </author>
     <content type="html">&lt;p&gt;I&amp;rsquo;ve been paying more attention to WWDCs only recently. Probably, WWDC 2014 was people&amp;rsquo;s favourite, because of the huge and revolutionary changes it brought. However, for me, WWDC 2015 is far better than the previous one, because it seems that we got what I always wanted from a platform and programming language that I use full time in my work: stability and improvements. Evolution and not revolution. I finally think that the Swift 2.0 that will come out of beta will be ready for production. &lt;/p&gt;
 
