@@ -45,7 +45,7 @@ page "/articles/*", :layout => "posts"
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
-  # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+  deploy.remote   = 'git@github.com:mariusc/mariusc.github.io.git' # remote name or git url, default: origin. # had to specify that because otherwise it would ask for username and password for github
   deploy.build_before = true
   deploy.branch   = 'master' # default: gh-pages
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
