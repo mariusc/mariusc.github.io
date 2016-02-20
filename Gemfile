@@ -13,3 +13,4 @@ gem "middleman-gh-pages"
 gem 'middleman-deploy', '~> 1.0'
 
 gem 'redcarpet'
+gem 'middleman-search_engine_sitemap'

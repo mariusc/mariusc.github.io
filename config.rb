@@ -52,6 +52,9 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
+set :url_root, 'https://mariusc.github.io'
+activate :search_engine_sitemap
+
 
 ### 
 # Compass
