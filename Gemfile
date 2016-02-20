@@ -14,3 +14,4 @@ gem 'middleman-deploy', '~> 1.0'
 
 gem 'redcarpet'
 gem 'middleman-search_engine_sitemap'
+gem "middleman-minify-html"
