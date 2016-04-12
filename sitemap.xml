@@ -67,6 +67,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://mariusc.github.io/2016-04-12-my-first-ios-app.html</loc>
+    <lastmod>2016-04-12T22:58:01+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mariusc.github.io/blog.html</loc>
     <lastmod>2016-02-15T21:39:37+01:00</lastmod>
     <changefreq>monthly</changefreq>

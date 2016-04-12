@@ -5,10 +5,38 @@
   <id>https://mariusc.github.io/</id>
   <link href="https://mariusc.github.io/"/>
   <link href="https://mariusc.github.io/feed.xml" rel="self"/>
-  <updated>2016-02-03T20:48:00+01:00</updated>
+  <updated>2016-04-12T21:01:00+02:00</updated>
   <author>
     <name>Marius Constantinescu</name>
   </author>
+  <entry>
+    <title>My first iOS app</title>
+    <link rel="alternate" href="https://mariusc.github.io/2016-04-12-my-first-ios-app.html"/>
+    <id>https://mariusc.github.io/2016-04-12-my-first-ios-app.html</id>
+    <published>2016-04-12T21:01:00+02:00</published>
+    <updated>2016-04-12T22:58:01+02:00</updated>
+    <author>
+      <name>Marius Constantinescu</name>
+    </author>
+    <content type="html">&lt;p&gt;This week I read Becky Hansmeyer&amp;rsquo;s article &lt;a href="http://beckyhansmeyer.com/2016/04/09/we-all-have-to-start-somewhere/"&gt;&amp;ldquo;We all have to start somewhere&amp;rdquo;&lt;/a&gt;, and it surprised me. Becky says she only knows one person in real life that develops iOS apps. &lt;/p&gt;
+
+&lt;p&gt;My first contact with iOS development was during my BSc. studies. We were a bunch of students and a passionate teaching assistant, and we were learning iOS development on our own, outside of the university curriculum, following Paul Hegarty&amp;rsquo;s Stanford CS193P course on iTunes U. &lt;/p&gt;
+
+&lt;p&gt;Hearing that there are iOS developers who only know one other iOS developer in real life made me realise that I was fortunate to not be alone in my journey. This makes me put even more value on our great iOS community, on all the knowledge that is shared out there through blog posts, video talks, open source apps, libraries and frameworks, and also on all the conferences and meetups that enable developers to meet each other.&lt;/p&gt;
+
+&lt;p&gt;Regarding Becky&amp;rsquo;s challenge, it&amp;rsquo;s hard to say what my very first iOS app was. The very first iOS app I wrote and compiled was probably a calculator, one of the first homeworks on Paul Hegarty course. &lt;/p&gt;
+
+&lt;p&gt;The first project I did on my own (without it being an assignment) was a Cocos2D game, inspired by the &lt;a href="http://www.helicoptergame.net/"&gt;2d flash helicopter game&lt;/a&gt;. The user could control a bird and had to avoid flying too high, too low or crashing into baloons.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/birdie.png" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;All the graphic resources used in the game were found online. I&amp;rsquo;m not sure if they were in the public domain or not, but I never wanted to publish the game, I just wanted to learn. That was also the moment when I realised it&amp;rsquo;s very hard to create iOS games without also having a graphics designer in your team.&lt;/p&gt;
+
+&lt;p&gt;And if it comes to the first app I worked on that made it to the App Store, then it must be &lt;a href="https://itunes.apple.com/us/app/georeporter/id487304759?mt=8"&gt;GeoReporter&lt;/a&gt;, my Google Summer of Code 2013 project.&lt;/p&gt;
+
+&lt;p&gt;Yes, we all start somewhere. Not everybody starts in the same place. But fortunately, we have lots of examples in the community showing that it doesn&amp;rsquo;t really matter where you start as long as you love what you&amp;rsquo;re doing and you&amp;rsquo;re doing your best&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How I got my first job as an iOS developer</title>
     <link rel="alternate" href="https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
@@ -155,44 +183,6 @@
 &lt;p&gt;Another very cool thing is the way it vibrates. The taptic engine gives a much more human touch to it, instead of the artificial vibration we are used to. This somehow reminds me of the power LED on the MacBook Pros, that instead of flashing intermitently and mecanical, at regular intervals, it mimics the breathing frequency of a human being. It&amp;rsquo;s a nice touch which I really appreciated. As a downside, after not wearing the watch anymore, I thought I felt a couple of ghost taps on my wrist. &lt;/p&gt;
 
 &lt;p&gt;My conclusion for the Apple Watch is that it&amp;rsquo;s a decent device, with some features that I find as nice to have, some that I don&amp;rsquo;t need and one that I absolutely loved. The downsides are the huge price, the fact that I&amp;rsquo;m not fond of how it looks and that in order to wear one, I have to give up my current watch, which has sentimental value to me, and it&amp;rsquo;s not something I&amp;rsquo;m prepared to let go easily. I&amp;rsquo;m definitely not going to get an Apple Watch soon. But who knows what future models will bring?&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The epicenter of improvement</title>
-    <link rel="alternate" href="https://mariusc.github.io/2015-06-12-the-epicenter-of-improvement.html"/>
-    <id>https://mariusc.github.io/2015-06-12-the-epicenter-of-improvement.html</id>
-    <published>2015-06-12T09:48:00+02:00</published>
-    <updated>2015-06-15T22:16:34+02:00</updated>
-    <author>
-      <name>Marius Constantinescu</name>
-    </author>
-    <content type="html">&lt;p&gt;I&amp;rsquo;ve been paying more attention to WWDCs only recently. Probably, WWDC 2014 was people&amp;rsquo;s favourite, because of the huge and revolutionary changes it brought. However, for me, WWDC 2015 is far better than the previous one, because it seems that we got what I always wanted from a platform and programming language that I use full time in my work: stability and improvements. Evolution and not revolution. I finally think that the Swift 2.0 that will come out of beta will be ready for production. &lt;/p&gt;
-
-&lt;p&gt;The WWDC main keynote is becoming more and more an event for journalists and press, and less for the developers. Platforms State of the Union is actually much much more important for a developer. If you&amp;rsquo;re an iOS developer and you&amp;rsquo;re too busy to watch more than one video from the WWDC, that should definitely be Platforms State of the Union.&lt;/p&gt;
-
-&lt;p&gt;It looks like Apple is changing, it&amp;rsquo;s becoming more open, more diverse. In the keynote and Platforms State of the Union, as well as in the other sessions, we saw more than only adult white males presenting. This is a great move by Apple, it shows that they want to change the current situation in the IT industry, and it will probably inspire more and more diverse people to join this industry. Another move, which I personally really appreciate, is that the recorded sessions are not screencasts anymore, and that they actually put a face on the persons behind the technologies we use every day. I hope this move will make people more ambitious, make them want to join Apple and/or contribute to the tools and technologies that allow us to do what we love to do. &lt;/p&gt;
-
-&lt;p&gt;All in all, the WWDC brought us many improvements, out of which I&amp;rsquo;d like to highlight the ones that excited me the most.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Swift 2.0&lt;/strong&gt;. A lot of improvements here, and it looks like soon I will have no more reasons to prefere Objective-C over Swift. &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Objective-C generics&lt;/strong&gt;. Something that I missed when I moved from Java to Objective-C, which we saw in Swift and which is now also available in Objective-C. You will only get a compiler warning if you don&amp;rsquo;t respect the collection&amp;rsquo;s type, but that&amp;rsquo;s good enough for me.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Multitasking for iPad&lt;/strong&gt;. iPad multitasking fuels the rumours of a 12 inch iPad Pro. But what I like most about the iPad multitasking is the brilliant way in which it was implemented. Size classes become now a huge deal, and using them makes supporting multitasking super easy.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- * **No need to unregister the observers from notifications**. As far as I saw, the observers used for notifications are now weak, which means that they will be removed when the object that is observed is deallocated. *I saw this on Twitter, I'm pretty sure I found something in the Aple docs for mac (not iOS), but now I can't find the reference for this neither on Twitter nor on Apple Docs. So take this with a pinch of salt until I find the reference.*--&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;UIStackView&lt;/strong&gt;. We now have a UIStackView, which as far as I can tell is great if you don&amp;rsquo;t want to use a UICollectionView for a simple situation.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Address sanitizer in Xcode 7&lt;/strong&gt;. I saw the session that showed Address sanitizer, and it loks great. Finally, it looks like we have a better way to debug that annoying &lt;code&gt;EXC_BAD_ACCESS&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;UI testing in Xcode 7&lt;/strong&gt;. For someone that doesn&amp;rsquo;t do much testing, I&amp;rsquo;m very impressed by the session showing how UI testing in Xcode works. It is possible to create UI tests, and also to record UI tests. I&amp;rsquo;m looking forward to giving it a try.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There were also other announcements that made me happy, such as improvements in storyboards, storyboard referencing and others as well.&lt;/p&gt;
-
-&lt;p&gt;Also, we saw a change in the Apple Developer Program membership. There&amp;rsquo;s no need to have a developer account to run your app on your own device. Also, the mac developer program and iOS developer program have now merged. It is possible to register 100 devices of each type, not 100 in total (100 iPads, 100 iPhones, etc). And also, the Apple TV category appears now in the devices list, which raises my hope for a new Apple TV (maybe, an TV), with an SDK and lots of content. We&amp;rsquo;ll see.&lt;/p&gt;
-
-&lt;p&gt;We have exciting times ahead of us. Let&amp;rsquo;s take advantage of everything we have and build great stuff.&lt;/p&gt;
 </content>
   </entry>
 </feed>
