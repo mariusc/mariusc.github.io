@@ -45,7 +45,7 @@ page "/articles/*", :layout => "posts"
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
-  deploy.remote   = 'git@github.com:mariusc/mariusc.github.io.git' # remote name or git url, default: origin. # had to specify that because otherwise it would ask for username and password for github
+  deploy.remote   = 'origin' #'git@github.com:mariusc/mariusc.github.io.git' # remote name or git url, default: origin. # had to specify that because otherwise it would ask for username and password for github
   deploy.build_before = true
   deploy.branch   = 'master' # default: gh-pages
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
@@ -142,3 +142,22 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+#Filewatcher ignore list
+set :file_watcher_ignore,[
+    /^bin(\/|$)/,
+    /^\.bundle(\/|$)/,
+#        /^vendor(\/|$)/,
+    /^node_modules(\/|$)/,
+    /^\.sass-cache(\/|$)/,
+    /^\.cache(\/|$)/,
+    /^\.git(\/|$)/,
+    /^\.gitignore$/,
+    /\.DS_Store/,
+    /^\.rbenv-.*$/,
+    /^Gemfile$/,
+    /^Gemfile\.lock$/,
+    /~$/,
+    /(^|\/)\.?#/,
+    /^tmp\//
+  ]
