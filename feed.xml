@@ -5,16 +5,94 @@
   <id>https://mariusc.github.io/</id>
   <link href="https://mariusc.github.io/"/>
   <link href="https://mariusc.github.io/feed.xml" rel="self"/>
-  <updated>2016-04-12T19:01:00+00:00</updated>
+  <updated>2016-07-03T13:15:00+00:00</updated>
   <author>
     <name>Marius Constantinescu</name>
   </author>
+  <entry>
+    <title>Testing Danger</title>
+    <link rel="alternate" href="https://mariusc.github.io/2016-07-03-testing-danger.html"/>
+    <id>https://mariusc.github.io/2016-07-03-testing-danger.html</id>
+    <published>2016-07-03T13:15:00+00:00</published>
+    <updated>2016-07-03T13:22:31+00:00</updated>
+    <author>
+      <name>Marius Constantinescu</name>
+    </author>
+    <content type="html">&lt;p&gt;Almost all word processing programs come equipped with a tool for checking both spelling and grammar. However, writers should be wary of the dangers of relying too heavily on these tools. For example:&lt;/p&gt;
+
+&lt;p&gt;Spell check will not fined words witch are miss used butt spelled rite!&lt;/p&gt;
+
+&lt;p&gt;An ordinary spell checker will find few or no errors in the above sentence. This is because spell checkers can only detect if words are spelled correctly, not if they are used correctly.&lt;/p&gt;
+
+&lt;p&gt;That being said, a spell checker is a handy tool and, therefore, should not be completely abandoned. However, writers should be cautioned from relying on it to catch every error. Spell check should be your first step in editing your document, not the only step!&lt;/p&gt;
+
+&lt;p&gt;Below are just some of the dangers of relying on spell check:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Spell check cannot help you with some proper names, such as Heston or Jolie.&lt;/li&gt;
+&lt;li&gt;Spell check will not detect the improper use of homonyms, such as their and there.&lt;/li&gt;
+&lt;li&gt;Spell check may flag words as errors which are indeed correct.&lt;/li&gt;
+&lt;li&gt;Spell check does not always offer useful spelling suggestions for severely misspelled words.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For example, the following are some commonly misused words that standard spellcheckers will not catch: advise/advice; loose/lose; passed/past; dessert/desert; weather/whether; then/than; and site/sight/cite.&lt;/p&gt;
+
+&lt;p&gt;The limitation of traditional spell checkers is epitomized by the anonymously authored and often quoted poem, “Ode to My Spell Checker.”&lt;/p&gt;
+
+&lt;p&gt;Eye halve a spelling checker
+It came with my pea sea.
+It plainly marks four my revue miss steaks eye kin knot sea.
+Eye strike a quay and type a word and weight for it to say
+Weather eye yam wrong oar write.
+It shows me strait a weigh as soon as a mist ache is maid.
+It nose bee fore two long and eye can put the error rite.
+Its rare lea ever wrong.
+Eye have run this poem threw it,
+I am shore your pleased to no.
+Its letter perfect awl the way.
+My checker told me sew.&lt;/p&gt;
+
+&lt;p&gt;Along these same lines, there is an amusing story that has circulated in the legal community regarding the dangers of spell check. According to the story, an attorney inadvertently replaced the words sua sponte (a Latin phrase for “on its motion”) with the words sea sponge throughout his brief. This lead to some very embarrassing sentences, such as:&lt;/p&gt;
+
+&lt;p&gt;“An appropriate instruction limiting the judge&amp;rsquo;s criminal liability in such a prosecution must be given sea sponge explaining that certain acts or omissions by themselves are not sufficient to support a conviction.”&lt;/p&gt;
+
+&lt;p&gt;And: “It is well settled that a trial court must instruct sea sponge on any defense, including a mistake of fact defense.”&lt;/p&gt;
+
+&lt;p&gt;As one would expect, the attorney’s error, while certainly entertaining to the rest of us, drastically weakened his credibility in the eyes of the court and made him the butt of many of his colleagues’ jokes.&lt;/p&gt;
+
+&lt;p&gt;Although spell checkers are fairly straight forward and user-friendly, they are only as good as the writer’s ability to use them. For example, most spell checkers include options to customize the dictionary to include proper nouns and acronyms. Other features include setting the spell checker to “auto correct” which automatically corrects the spelling of frequently misspelled words. These features can all improve the tool’s effectiveness.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, grammar checkers are similarly limited. They are, in fact, more limited than spell checkers. The limitations have nothing to do with technology or software, but rather are caused by the nature of grammar itself.&lt;/p&gt;
+
+&lt;p&gt;For example, a traditional grammar checker will detect no problems with the following passage.&lt;/p&gt;
+
+&lt;p&gt;“Marketing are bad for brand big and small. You Know What I am Saying? It is no wondering that advertisings are bad for company in America, Chicago and Germany. &amp;hellip; McDonald&amp;rsquo;s and Coca Cola are good brand. &amp;hellip; Gates do good marketing job in Microsoft.”&lt;/p&gt;
+
+&lt;p&gt;This is truly frightening considering that each sentences in the passage contains numerous grammatical errors!&lt;/p&gt;
+
+&lt;p&gt;Also, consider the following sentence.&lt;/p&gt;
+
+&lt;p&gt;“Thinking it was open, the door was really closed.”&lt;/p&gt;
+
+&lt;p&gt;Grammar check will alert the writer that the main clause may contain a verb in the passive voice. But there is no passive voice here, just a thinking door.&lt;/p&gt;
+
+&lt;p&gt;Grammar check also frequently flags perfectly good grammar as bad. Type the following sentence into a document.&lt;/p&gt;
+
+&lt;p&gt;“How was your son’s wedding?”&lt;/p&gt;
+
+&lt;p&gt;When you run grammar check, “was your son’s” is flagged as incorrect and the phrase “your son was’s” is suggested.” In this case, your grammar check has turned a perfectly fine sentence into a garbled mess! Therefore, it is wise to think about the change suggested, rather than simply accept it as correct.&lt;/p&gt;
+
+&lt;p&gt;Looking up the correct spelling of a word is as easy as using an online dictionary; looking up proper grammar, however, can be more difficult. Most of us do not remember the finer points of grammar that we learned in the sixth grade, such as gerunds and dangling modifiers. Therefore, it is helpful to have a reference book on grammar handy. Strunk and White’s “The Elements of Style” is the classic book on the subject, but professional writers are also fond of “Working with Words” and “When Words Collide.”&lt;/p&gt;
+
+&lt;p&gt;The bottom line is that technology, while useful and time saving, is still not advanced enough to substitute for old-fashioned human proofreading. Therefore, writers should always allow ample time for proofreading and learn tools to improve their proofreading skills. One of the best ideas I have learned is to make a list of spelling and grammar errors that you make frequently so that you can proofread every document with special attention to these problem areas. Remember, you need to pick up where your spell checker and grammar checker leave off!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>My first iOS app</title>
     <link rel="alternate" href="https://mariusc.github.io/2016-04-12-my-first-ios-app.html"/>
     <id>https://mariusc.github.io/2016-04-12-my-first-ios-app.html</id>
     <published>2016-04-12T19:01:00+00:00</published>
-    <updated>2016-07-03T13:13:50+00:00</updated>
+    <updated>2016-07-03T13:22:31+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -42,7 +120,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
     <id>https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html</id>
     <published>2016-02-03T19:48:00+00:00</published>
-    <updated>2016-07-03T13:13:50+00:00</updated>
+    <updated>2016-07-03T13:22:31+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -90,7 +168,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html"/>
     <id>https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T10:46:00+00:00</published>
-    <updated>2016-07-03T13:13:50+00:00</updated>
+    <updated>2016-07-03T13:22:31+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -123,7 +201,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html"/>
     <id>https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html</id>
     <published>2015-11-09T21:10:00+00:00</published>
-    <updated>2016-07-03T13:13:50+00:00</updated>
+    <updated>2016-07-03T13:22:31+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -145,7 +223,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-01-writing-challenge.html"/>
     <id>https://mariusc.github.io/2015-11-01-writing-challenge.html</id>
     <published>2015-11-01T18:26:00+00:00</published>
-    <updated>2016-07-03T13:13:50+00:00</updated>
+    <updated>2016-07-03T13:22:31+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -161,28 +239,6 @@
 &lt;p&gt;One article per week isn’t very much, but compared to my usual writing frequency, it’s a lot. And in the end, the goal of this is to create a habit for writing, not just to add 4 more articles to my blog. Because, as &lt;a href="https://www.youtube.com/watch?v=SjjvnrqDjpM"&gt;Ash Furrow says&lt;/a&gt;, sharing your knowledge makes you a better developer in the end.&lt;/p&gt;
 
 &lt;p&gt;Here’s to hoping I can finish the challenge🍷!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>One week with the Apple Watch</title>
-    <link rel="alternate" href="https://mariusc.github.io/2015-07-03-one-week-with-the-apple-watch.html"/>
-    <id>https://mariusc.github.io/2015-07-03-one-week-with-the-apple-watch.html</id>
-    <published>2015-07-03T13:33:00+00:00</published>
-    <updated>2016-07-03T13:13:50+00:00</updated>
-    <author>
-      <name>Marius Constantinescu</name>
-    </author>
-    <content type="html">&lt;p&gt;When we got the Apple Watch delivered at Nodes, I was very happy and I was hoping that I would get to use it for a while, to see how it is and what it can do. I got to try it for about one week, and my first impression wasn&amp;rsquo;t very flattering for the company in Cupertino. &lt;/p&gt;
-
-&lt;p&gt;Most of the features that are advertised so hard by Apple didn&amp;rsquo;t really impress me. Yes, I could get all the notifications on my wrist too, not only on the phone. The important question is if I really want that. I&amp;rsquo;m not sure I want to feel a tap on my wrist every time a work colleague assigns me a Trello ticket, or when another recruiter wants to connect with me on LinkedIn. And yes, I know I can disable some or all of the notifications, but if I do that, what am I left with? An overpriced watch that doesn&amp;rsquo;t really look that good and that needs to be charged daily. However, towards the end of my week wearing the Apple Watch, I also found some nice features that I really appreciated. &lt;/p&gt;
-
-&lt;p&gt;When at home, I usually leave my phone in a room and don&amp;rsquo;t carry it with me around the house or in the yard. This means that I can&amp;rsquo;t hear it when it rings. However, with the Apple Watch, this problem is solved, because the watch vibrates when I get a call. This is probably the feature that I appreciated the most.&lt;/p&gt;
-
-&lt;p&gt;Another thing I really liked about the watch was the glance in which I could ping the iPhone. It sometimes (more often than I&amp;rsquo;d like to) happens to me to forget where I left my iPhone. One way to find it would be to ask someone to give me a call, but if the phone is on silent mode, this doesn&amp;rsquo;t help. I could also log in to iCloud and use Find my iPhone to make it ring. But that&amp;rsquo;s a bit more hassle than I&amp;rsquo;d like to. Using the Apple Watch, I can ping my iPhone in just 2 taps.&lt;/p&gt;
-
-&lt;p&gt;Another very cool thing is the way it vibrates. The taptic engine gives a much more human touch to it, instead of the artificial vibration we are used to. This somehow reminds me of the power LED on the MacBook Pros, that instead of flashing intermitently and mecanical, at regular intervals, it mimics the breathing frequency of a human being. It&amp;rsquo;s a nice touch which I really appreciated. As a downside, after not wearing the watch anymore, I thought I felt a couple of ghost taps on my wrist. &lt;/p&gt;
-
-&lt;p&gt;My conclusion for the Apple Watch is that it&amp;rsquo;s a decent device, with some features that I find as nice to have, some that I don&amp;rsquo;t need and one that I absolutely loved. The downsides are the huge price, the fact that I&amp;rsquo;m not fond of how it looks and that in order to wear one, I have to give up my current watch, which has sentimental value to me, and it&amp;rsquo;s not something I&amp;rsquo;m prepared to let go easily. I&amp;rsquo;m definitely not going to get an Apple Watch soon. But who knows what future models will bring?&lt;/p&gt;
 </content>
   </entry>
 </feed>
