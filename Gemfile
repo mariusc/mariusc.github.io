@@ -15,4 +15,5 @@ gem 'middleman-deploy', '~> 1.0'
 gem 'redcarpet'
 gem 'middleman-search_engine_sitemap'
 gem "middleman-minify-html"
-gem 'danger'
+gem 'danger', '~> 0.8.4'
+gem 'danger-prose', :git => "https://github.com/dbgrandi/danger-proselint"

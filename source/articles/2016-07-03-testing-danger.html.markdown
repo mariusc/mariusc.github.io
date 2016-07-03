@@ -37,7 +37,7 @@ I am shore your pleased to no.
 Its letter perfect awl the way.
 My checker told me sew.
 
-Along these same lines, there is an amusing story that has circulated in the legal community regarding the dangers of spell check. According to the story, an attorney inadvertently replaced the words sua sponte (a Latin phrase for “on its motion”) with the words sea sponge throughout his brief. This lead to some very embarrassing sentences, such as:
+Alng these same lines, there is an amusing story that has circulated in the legal community regarding the dangers of spell check. According to the story, an attorney inadvertently replaced the words sua sponte (a Latin phrase for “on its motion”) with the words sea sponge throughout his brief. This lead to some very embarrassing sentences, such as:
 
 “An appropriate instruction limiting the judge's criminal liability in such a prosecution must be given sea sponge explaining that certain acts or omissions by themselves are not sufficient to support a conviction.”
 
@@ -49,7 +49,7 @@ Although spell checkers are fairly straight forward and user-friendly, they are 
 
 Unfortunately, grammar checkers are similarly limited. They are, in fact, more limited than spell checkers. The limitations have nothing to do with technology or software, but rather are caused by the nature of grammar itself.
 
-For example, a traditional grammar checker will detect no problems with the following passage.
+For exemple, a traditional grammar checker will detect no problems with the following passage.
 
 “Marketing are bad for brand big and small. You Know What I am Saying? It is no wondering that advertisings are bad for company in America, Chicago and Germany. ... McDonald's and Coca Cola are good brand. ... Gates do good marketing job in Microsoft.”
 
@@ -59,7 +59,7 @@ Also, consider the following sentence.
 
 “Thinking it was open, the door was really closed.”
 
-Grammar check will alert the writer that the main clause may contain a verb in the passive voice. But there is no passive voice here, just a thinking door.
+Grummar check will alert the writer that the main clause may contain a verb in the passive voice. But there is no passive voice here, just a thinking door.
 
 Grammar check also frequently flags perfectly good grammar as bad. Type the following sentence into a document.
 
@@ -67,6 +67,6 @@ Grammar check also frequently flags perfectly good grammar as bad. Type the foll
 
 When you run grammar check, “was your son’s” is flagged as incorrect and the phrase “your son was’s” is suggested.” In this case, your grammar check has turned a perfectly fine sentence into a garbled mess! Therefore, it is wise to think about the change suggested, rather than simply accept it as correct.
 
-Looking up the correct spelling of a word is as easy as using an online dictionary; looking up proper grammar, however, can be more difficult. Most of us do not remember the finer points of grammar that we learned in the sixth grade, such as gerunds and dangling modifiers. Therefore, it is helpful to have a reference book on grammar handy. Strunk and White’s “The Elements of Style” is the classic book on the subject, but professional writers are also fond of “Working with Words” and “When Words Collide.”
+Loking up the correct spelling of a word is as easy as using an online dictionary; looking up proper grammar, however, can be more difficult. Most of us do not remember the finer points of grammar that we learned in the sixth grade, such as gerunds and dangling modifiers. Therefore, it is helpful to have a reference book on grammar handy. Strunk and White’s “The Elements of Style” is the classic book on the subject, but professional writers are also fond of “Working with Words” and “When Words Collide.”
 
-The bottom line is that technology, while useful and time saving, is still not advanced enough to substitute for old-fashioned human proofreading. Therefore, writers should always allow ample time for proofreading and learn tools to improve their proofreading skills. One of the best ideas I have learned is to make a list of spelling and grammar errors that you make frequently so that you can proofread every document with special attention to these problem areas. Remember, you need to pick up where your spell checker and grammar checker leave off!
+The bottom line is that technology, whle usefull and time saving, is still not advanced enough to substitute for old-fashioned human proofreading. Therefore, writers should always allow ample time for proofreading and learn tools to improve their proofreading skills. One of the best ideas I have learned is to make a list of spelling and grammar errors that you make frequently so that you can proofread every document with special attention to these problem areas. Remember, you need to pick up where your spell checker and grammar checker leave off!
