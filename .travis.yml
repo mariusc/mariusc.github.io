@@ -19,5 +19,5 @@ script:
 - git remote set-url origin https://mariusc:${GH_TOKEN}@github.com/mariusc/mariusc.github.io
 - bundle exec middleman build
 
-after_success:
-- ./travis-deploy.sh
+# after_success:
+# - ./travis-deploy.sh
