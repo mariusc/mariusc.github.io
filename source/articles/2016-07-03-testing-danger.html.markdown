@@ -70,3 +70,26 @@ When you run grammar check, “was your son’s” is flagged as incorrect and t
 Loking up the correct spelling of a word is as easy as using an online dictionary; looking up proper grammar, however, can be more difficult. Most of us do not remember the finer points of grammar that we learned in the sixth grade, such as gerunds and dangling modifiers. Therefore, it is helpful to have a reference book on grammar handy. Strunk and White’s “The Elements of Style” is the classic book on the subject, but professional writers are also fond of “Working with Words” and “When Words Collide.”
 
 The bottom line is that technology, whle usefull and time saving, is still not advanced enough to substitute for old-fashioned human proofreading. Therefore, writers should always allow ample time for proofreading and learn tools to improve their proofreading skills. One of the best ideas I have learned is to make a list of spelling and grammar errors that you make frequently so that you can proofread every document with special attention to these problem areas. Remember, you need to pick up where your spell checker and grammar checker leave off!
+
+# Illogic and redundancy
+he is very smart
+approximately about 5 atm machines
+atm machine
+we associate together
+it's blatantly obvious that this obviously works.
+a very unique idea
+a more perfect union
+the surrounding circumstances
+he filled a much-needed gap
+To coin a phrase from the movie,
+
+# Blowing the punchline
+Suddenly, the car came to a stop.
+All hell broke loose on the farm.
+
+# Clichés
+under the weather
+He's a chip off the old block
+a quantum leap
+Our cutting edge decision-making process will make your life crystal clear.
+He's a thought leader.
