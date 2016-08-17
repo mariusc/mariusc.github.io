@@ -1,12 +1,11 @@
-# Sometimes its a README fix, or something like that - which isn't relevant for
-# including in a CHANGELOG for example
-declared_trivial = pr_title.include? "#trivial"
+# Sometimes it's a README fix, or something like that - which isn't relevant for
+# including in a project's CHANGELOG for example
+declared_trivial = github.pr_title.include? "#trivial"
 
-# If draft, it shouldn't be merged yet
-warn("PR is classed as Draft", sticky: false) if pr_title.include? "[Draft]"
+# Make it more obvious that a PR is a work in progress and shouldn't be merged yet
+warn("PR is classed as Draft") if github.pr_title.include? "[Draft]"
 
-
-# Thanks artsy/artsy.github.io
+# From https://github.com/artsy/artsy.github.io/blob/source/Dangerfile
 
 # Determine if proselint is currently installed in the system paths.
 # @return  [Bool]
@@ -26,8 +25,8 @@ def check_spelling(files, ignored_words = [])
     return
   end
 
-  markdown_files = files ? Dir.glob(files) : (modified_files + added_files)
-  markdown_files.select! do |line| (line.end_with?(".markdown") || line.end_with?(".md")) end
+  markdown_files = files ? Dir.glob(files) : (git.modified_files + git.added_files)
+  markdown_files.select! do |line| line.end_with?(".markdown") end
 
   result_texts = Hash[markdown_files.uniq.collect { |md| [md, `mdspell #{md} -r`.strip] }]
   spell_issues = result_texts.select { |path, output| output.include? "spelling errors found" }
@@ -65,10 +64,9 @@ end
 
 
 # Look through all changed Markdown files
-# markdown_files = (modified_files + added_files).select do |line|
-#   line.start_with?("_posts") && (line.end_with?(".markdown") || line.end_with?(".md"))
-# end
+markdown_files = (git.modified_files + git.added_files).select do |line|
+  line.start_with?("source/blog") && line.end_with?(".markdown")
+end
 
 prose.lint_files markdown_files
 check_spelling markdown_files
-
