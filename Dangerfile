@@ -65,7 +65,7 @@ end
 
 # Look through all changed Markdown files
 markdown_files = (git.modified_files + git.added_files).select do |line|
-  line.start_with?("source/blog") && line.end_with?(".markdown")
+  line.end_with?(".markdown")
 end
 
 prose.lint_files markdown_files
