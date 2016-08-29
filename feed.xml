@@ -5,16 +5,86 @@
   <id>https://mariusc.github.io/</id>
   <link href="https://mariusc.github.io/"/>
   <link href="https://mariusc.github.io/feed.xml" rel="self"/>
-  <updated>2016-04-12T19:01:00+00:00</updated>
+  <updated>2016-08-29T07:36:00+00:00</updated>
   <author>
     <name>Marius Constantinescu</name>
   </author>
+  <entry>
+    <title>Being more efficient in Xcode - Part 1</title>
+    <link rel="alternate" href="https://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html"/>
+    <id>https://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html</id>
+    <published>2016-08-29T07:36:00+00:00</published>
+    <updated>2016-08-29T20:58:48+00:00</updated>
+    <author>
+      <name>Marius Constantinescu</name>
+    </author>
+    <content type="html">&lt;p&gt;One way to increase your productivity as a developer is to know very well your IDE. Xcode is the IDE I&amp;rsquo;ve always used for developing iOS projects. While it still has some problems, and is lacking basic features such as Swift refactoring, it also has lots of cool features. Using Xcode faster and better is a great way to speed up a bit your development process, and keyboard shortcuts are the best way to start doing that.&lt;/p&gt;
+
+&lt;p&gt;For this article, I&amp;rsquo;ll be using the classic notations: &lt;strong&gt;⌘&lt;/strong&gt; - command, &lt;strong&gt;^&lt;/strong&gt; - control, &lt;strong&gt;⌥&lt;/strong&gt; - alt (option), &lt;strong&gt;⇧&lt;/strong&gt; - shift, &lt;strong&gt;↑&lt;/strong&gt; - up arrow, &lt;strong&gt;↓&lt;/strong&gt; - down arrow, &lt;strong&gt;→&lt;/strong&gt; - right arrow, &lt;strong&gt;←&lt;/strong&gt; - left arrow. For the sake of clarity, I will be writing the letters in the keyboard shortcuts in capitals. This doesn&amp;rsquo;t mean that they have to be capital letters, lowercase letters are the ones you need in that keyboard shortcut command.&lt;/p&gt;
+
+&lt;p&gt;In my opinion, it&amp;rsquo;s very important to read this article just to inform yourself on what keyboard shortcuts you could use, and not try to learn them all at once. Trying to remember too many shortcuts at once could probably end up confusing you  and decreasing your productivity and speed. Here are the shortcuts I use most often in Xcode.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Basic editor shortcuts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Xcode&amp;rsquo;s source code editor has all the usual keyboard shortcuts you would expect: &lt;strong&gt;⌘N&lt;/strong&gt;, &lt;strong&gt;⌘O&lt;/strong&gt;, &lt;strong&gt;⌘S&lt;/strong&gt;, &lt;strong&gt;⌘C&lt;/strong&gt;, &lt;strong&gt;⌘V&lt;/strong&gt;, &lt;strong&gt;⌘X&lt;/strong&gt;, &lt;strong&gt;⌘Z&lt;/strong&gt;, etc. All those are so common to almost every application and they&amp;rsquo;re spread system-wide, that I&amp;rsquo;m not going to waste time talking about them. (Small side note, I never use &lt;strong&gt;⌘N&lt;/strong&gt; in Xcode, because I prefer to right click the group where I want the new file to be placed and select &amp;ldquo;New file&amp;rdquo; there. This way, the new file will be created where I want it to, and I don&amp;rsquo;t have to move it myself afterwards in the group where it belongs). There&amp;rsquo;s also &lt;strong&gt;⌘F&lt;/strong&gt; for &amp;ldquo;Find in current file&amp;rdquo;, and &lt;strong&gt;⌘⇧F&lt;/strong&gt; for &amp;ldquo;Find in Project&amp;rdquo;. I use these pretty often. For indentation, there&amp;rsquo;s &lt;strong&gt;⌘[&lt;/strong&gt; and &lt;strong&gt;⌘]&lt;/strong&gt; to indent left or right. Those are all very common shortcuts and not necessarily particular to Xcode. The ones that follow here are the Xcode specific ones I use most often.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Navigation shortcuts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You know how you can go back and forward in Xcode, to show the file you had opened before or the one you came back from? You can do that using the arrow buttons in Xcode, in the toolbar of the editing area. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/backFwd.png" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also swipe with two fingers left or right in the editing area (unless you have a storyboard open and swiping left or right actually pans it). Swiping it also gives it a transition animation, which takes around one second. Not very efficient, but pretty cool. However, you can press &lt;strong&gt;⌘^←&lt;/strong&gt; and &lt;strong&gt;⌘^→&lt;/strong&gt; to get the same result. And this comes without the animation (so, faster) and without moving your hands from the keyboard. I learnt this shortcut from &lt;a href="https://twitter.com/tobiasdm"&gt;Tobias Due Munk&lt;/a&gt; at an NSCoderNight some years ago.&lt;/p&gt;
+
+&lt;p&gt;Back in the days when we were doing Objective-C, there was also &lt;strong&gt;⌘^↑&lt;/strong&gt; and &lt;strong&gt;⌘^↓&lt;/strong&gt;, to switch between the .h and the .m files of the same class. I&amp;rsquo;ve been using that a lot and I found it very convenient, but when I switched to Swift one and a half years ago I didn&amp;rsquo;t need it anymore.&lt;/p&gt;
+
+&lt;p&gt;Probably the shortcut I use most is quick open: &lt;strong&gt;⌘⇧O&lt;/strong&gt;. This pops up a dialogue similar to Spotlight in macOS and searches for a file you want as you type its name. I find this a super convenient and fast way to open the files I need. This feature is a bit broken in the latest Xcode release (it seems that it still focuses on the file that matches your search string most closely, but the list of results is scrolled to a wrong position), but I hope it will be fixed soon. Even with this minor glitch, I still use it every time. I learned this shortcut from &lt;a href="https://twitter.com/kasperwelner"&gt;Kasper Welner&lt;/a&gt; when I started at &lt;a href="https://nodesagency.com"&gt;Nodes&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/quickopen2.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Another one I learnt from Kasper is &lt;strong&gt;⌘L&lt;/strong&gt; in a source file, which opens a dialogue similar to the quick open one, in which you type a line number, press enter and you&amp;rsquo;re taken to that line in the file you currently have open. Very handy when you know exactly which line number you want to go to, but that&amp;rsquo;s rarely the case.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/jumpToLine2.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using the Assistant Editor&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Xcode has this thing called the Assistant Editor, which splits the editing area vertically into two and shows a file on the right side. This is one of the most known features, even for beginners, because you use this to drag outlets and actions from Interface Builder. The special key that triggers the assistant editor is &lt;strong&gt;⌥&lt;/strong&gt;. &lt;strong&gt;⌥ - click&lt;/strong&gt; on a file and it will open in the assistant editor. Even if you don&amp;rsquo;t have the assistant editor open (the 2 column editing area), it will switch to that and open the file you right-clicked on the right side. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/altClick2.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;As in any IDE, you can &lt;strong&gt;⌘ - click&lt;/strong&gt; on a class or method to view its declaration (or definition). Well, in Xcode you can &lt;strong&gt;⌘⌥ - click&lt;/strong&gt; on a class or method to view its declaration in the assistant editor.&lt;/p&gt;
+
+&lt;p&gt;You can also combine the assistant editor with the quick open. &lt;strong&gt;⌘⇧O&lt;/strong&gt; for quick open, type the name of your class, then &lt;strong&gt;⌥- enter&lt;/strong&gt; to open it in the assistant editor.&lt;/p&gt;
+
+&lt;p&gt;To close the assistant editor and use a single - column editor view, press &lt;strong&gt;⌘ - enter&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;The assistant editor is great and I use it a lot. However, on a small screen, the assistant editor is annoyingly small, but on a big one, it can really make a difference.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Other editor shortcuts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the quick open to open files means that you won&amp;rsquo;t always have the file you&amp;rsquo;re currently editing highlighted in the project navigation area on the left. If you want to see it there, you can always press &lt;strong&gt;⌘⇧J&lt;/strong&gt; to open any groups, subgroups necessary and highlight the file you&amp;rsquo;re currently editing.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/cmdShiftJ2.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;You can &lt;strong&gt;⌘/&lt;/strong&gt; on one or many lines to comment them. For me, sometimes, this keyboard shortcut fails, and I have to go to Editor - Structure - Comment selection. Then the keyboard shortcut works again. I don&amp;rsquo;t know what causes this, but I hope it gets fixed soon.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Product shortcuts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that we&amp;rsquo;re done with the navigation keyboard shortcuts, let&amp;rsquo;s go quickly through the Product ones. &lt;strong&gt;⌘B&lt;/strong&gt; builds the project. &lt;strong&gt;⌘R&lt;/strong&gt; runs the project. &lt;strong&gt;⌘.&lt;/strong&gt; stops it and &lt;strong&gt;⌘U&lt;/strong&gt; runs the tests (I thought of Unit tests to remembering this shortcut. &lt;strong&gt;⌘T&lt;/strong&gt; will just open a new tab)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Finally&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s it from me regarding keyboard shortcuts as ways to improve your Xcode productivity. Again, I want to emphasise that trying to remember all the shortcuts at once after reading this article will probably accomplish nothing. So choose one or two shortcuts that you feel you need the most, remember them, use them as much as possible for 2 weeks or so, until they&amp;rsquo;ve become a reflex, and then come back and learn some more shortcuts. &lt;/p&gt;
+
+&lt;p&gt;Those are definitely not the only shortcuts. They&amp;rsquo;re the ones I use most. For a complete list of shortcuts, see &lt;a href="https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/MenuCommands/MenuCommands014.html"&gt;Apple&amp;rsquo;s documentation&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>My first iOS app</title>
     <link rel="alternate" href="https://mariusc.github.io/2016-04-12-my-first-ios-app.html"/>
     <id>https://mariusc.github.io/2016-04-12-my-first-ios-app.html</id>
     <published>2016-04-12T19:01:00+00:00</published>
-    <updated>2016-08-20T15:58:24+00:00</updated>
+    <updated>2016-08-29T20:58:48+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -42,7 +112,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
     <id>https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html</id>
     <published>2016-02-03T19:48:00+00:00</published>
-    <updated>2016-08-20T15:58:24+00:00</updated>
+    <updated>2016-08-29T20:58:48+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -90,7 +160,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html"/>
     <id>https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T10:46:00+00:00</published>
-    <updated>2016-08-20T15:58:24+00:00</updated>
+    <updated>2016-08-29T20:58:48+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -123,7 +193,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html"/>
     <id>https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html</id>
     <published>2015-11-09T21:10:00+00:00</published>
-    <updated>2016-08-20T15:58:24+00:00</updated>
+    <updated>2016-08-29T20:58:48+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -145,7 +215,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-01-writing-challenge.html"/>
     <id>https://mariusc.github.io/2015-11-01-writing-challenge.html</id>
     <published>2015-11-01T18:26:00+00:00</published>
-    <updated>2016-08-20T15:58:24+00:00</updated>
+    <updated>2016-08-29T20:58:48+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -161,28 +231,6 @@
 &lt;p&gt;One article per week isn’t very much, but compared to my usual writing frequency, it’s a lot. And in the end, the goal of this is to create a habit for writing, not just to add 4 more articles to my blog. Because, as &lt;a href="https://www.youtube.com/watch?v=SjjvnrqDjpM"&gt;Ash Furrow says&lt;/a&gt;, sharing your knowledge makes you a better developer in the end.&lt;/p&gt;
 
 &lt;p&gt;Here’s to hoping I can finish the challenge🍷!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>One week with the Apple Watch</title>
-    <link rel="alternate" href="https://mariusc.github.io/2015-07-03-one-week-with-the-apple-watch.html"/>
-    <id>https://mariusc.github.io/2015-07-03-one-week-with-the-apple-watch.html</id>
-    <published>2015-07-03T13:33:00+00:00</published>
-    <updated>2016-08-20T15:58:24+00:00</updated>
-    <author>
-      <name>Marius Constantinescu</name>
-    </author>
-    <content type="html">&lt;p&gt;When we got the Apple Watch delivered at Nodes, I was very happy and I was hoping that I would get to use it for a while, to see how it is and what it can do. I got to try it for about one week, and my first impression wasn&amp;rsquo;t very flattering for the company in Cupertino. &lt;/p&gt;
-
-&lt;p&gt;Most of the features that are advertised so hard by Apple didn&amp;rsquo;t really impress me. Yes, I could get all the notifications on my wrist too, not only on the phone. The important question is if I really want that. I&amp;rsquo;m not sure I want to feel a tap on my wrist every time a work colleague assigns me a Trello ticket, or when another recruiter wants to connect with me on LinkedIn. And yes, I know I can disable some or all of the notifications, but if I do that, what am I left with? An overpriced watch that doesn&amp;rsquo;t really look that good and that needs to be charged daily. However, towards the end of my week wearing the Apple Watch, I also found some nice features that I really appreciated. &lt;/p&gt;
-
-&lt;p&gt;When at home, I usually leave my phone in a room and don&amp;rsquo;t carry it with me around the house or in the yard. This means that I can&amp;rsquo;t hear it when it rings. However, with the Apple Watch, this problem is solved, because the watch vibrates when I get a call. This is probably the feature that I appreciated the most.&lt;/p&gt;
-
-&lt;p&gt;Another thing I really liked about the watch was the glance in which I could ping the iPhone. It sometimes (more often than I&amp;rsquo;d like to) happens to me to forget where I left my iPhone. One way to find it would be to ask someone to give me a call, but if the phone is on silent mode, this doesn&amp;rsquo;t help. I could also log in to iCloud and use Find my iPhone to make it ring. But that&amp;rsquo;s a bit more hassle than I&amp;rsquo;d like to. Using the Apple Watch, I can ping my iPhone in just 2 taps.&lt;/p&gt;
-
-&lt;p&gt;Another very cool thing is the way it vibrates. The taptic engine gives a much more human touch to it, instead of the artificial vibration we are used to. This somehow reminds me of the power LED on the MacBook Pros, that instead of flashing intermitently and mecanical, at regular intervals, it mimics the breathing frequency of a human being. It&amp;rsquo;s a nice touch which I really appreciated. As a downside, after not wearing the watch anymore, I thought I felt a couple of ghost taps on my wrist. &lt;/p&gt;
-
-&lt;p&gt;My conclusion for the Apple Watch is that it&amp;rsquo;s a decent device, with some features that I find as nice to have, some that I don&amp;rsquo;t need and one that I absolutely loved. The downsides are the huge price, the fact that I&amp;rsquo;m not fond of how it looks and that in order to wear one, I have to give up my current watch, which has sentimental value to me, and it&amp;rsquo;s not something I&amp;rsquo;m prepared to let go easily. I&amp;rsquo;m definitely not going to get an Apple Watch soon. But who knows what future models will bring?&lt;/p&gt;
 </content>
   </entry>
 </feed>
