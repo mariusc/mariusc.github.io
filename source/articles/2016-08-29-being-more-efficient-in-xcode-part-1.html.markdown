@@ -1,5 +1,5 @@
 ---
-title: Being more efficient in Xcode
+title: Being more efficient in Xcode - Part 1
 date: 2016-08-29 07:36 UTC
 tags:
 background_image: /img/blogposts/alesund.JPG
