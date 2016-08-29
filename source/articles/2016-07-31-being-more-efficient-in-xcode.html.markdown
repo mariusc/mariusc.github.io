@@ -2,6 +2,7 @@
 title: Being more efficient in Xcode
 date: 2016-07-31 07:36 UTC
 tags:
+background_image: /img/blogposts/alesund.JPG
 ---
 
 
