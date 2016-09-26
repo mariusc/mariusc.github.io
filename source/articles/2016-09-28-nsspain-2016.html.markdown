@@ -1,0 +1,73 @@
+---
+title: NSSpain 2016
+date: 2016-09-28 11:19 UTC
+tags:
+background_image: /img/blogposts/nsspain2016.jpg
+---
+
+At the end of 2014, I decided to try and attend at least one iOS conference per year. And after [MCE 2015](http://2015.mceconf.com/), this year I chose [NSSpain](http://2016.nsspain.com/). 
+
+NSSpain is a conference I've been eyeing for a while, I've followed it closely in 2014 and 2015, seriously considered to attend, but due to one reason or another, I didn't do it. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sad to miss <a href="https://twitter.com/NSSpain">@NSSpain</a> again. Looks like the best combination between iOS and wine. I really hope I can be there in 2016.</p>&mdash; MariusConstantinescu (@marius_const) <a href="https://twitter.com/marius_const/status/643683417230561280">September 15, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+This year I was so determined to be there that I got a ticket as soon as they started selling them.
+
+##NSSpain##
+
+NSSpain takes place in the city of Logroño, in northern Spain, in the Rioja region (yes, the one that produces the great wine). The conference is organised by [Luis](https://twitter.com/Lascorbe) and [Borja](https://twitter.com/borjareinares), two great people who I got the pleasure to meet. Although there were some minor hiccups in the organisation now and then, the quality of the conference is amazing for something put together by 2 persons in their own free time.
+
+The event was spread over 3 days: one workshop day (for 40 persons) and 2 conference days (with more than 200 people taking part).
+
+From the workshops day, I must highlight [Jorge Ortiz](https://twitter.com/jdortiz)'s architecture workshop. It was informative, high quality and on the subject.
+
+During the 2 actual conference days, I attended all 21 sessions, and I was impressed by most of the talks. There were some that, in my opinion, failed to deliver, but there weren't that many and they didn't change my overall impression of the conference. 
+
+I'll shortly write about 3 talks that I think are worth mentioning.
+
+####The Road to CocoaPods 1.0####
+
+[Samuel Giddins](https://twitter.com/segiddins) has been the lead developer of the CocoaPods project for the last two years or so. CocoaPods is a huge project, indexing over 23000 libraries that are used in more of 1.1 million apps. It has 8500 stars on GitHub, and it has had in total almost 5000 issues. There are around 400 contributors who worked on this project during the 5 years of its existence. Imagine being the lead developer for a project this size. And doing that in your free time. 
+
+Samuel told us the road to CocoaPods 1.0, with all its ups and downs. And towards the end of the talk, Samuel announced that he's stepping down as lead developer, letting others take that role. At the end of his talk, the organisers showed a video message for Samuel from [Eloy Durán](https://twitter.com/alloy), the previous lead developer of CocoaPods and Samuel's mentor. It was an emotional moment, and this was definitely the talk that got the most applauses. And they were not "what a great talk" applauses, they were well deserved "thanks for everything" applauses. 
+
+This talk reminded us that, although CocoaPods makes the lives of hundreds of thousands of developers easier, the biggest thing it did for the iOS development industry is that it shaped the community into what it is today. And that is much more important. 
+
+####The Design of Everyday Language Apps####
+
+[Natasha Nazari](http://www.twitter.com/natasha_nazari) gave a talk about designing a language learning app ([slides here](https://speakerdeck.com/natashanazari/the-design-of-everyday-language-apps)). The talk was very informative and it drew attention towards some things that developers don't usually give much thought to: making your app usable by people everywhere. 
+
+A short story she told stuck with me. She was learning Chinese through a language learning app. And although she mastered 2000 Chinese characters, when she got to Taipei she couldn't recognise most of them, because the handwriting used in Taipei different than the font in the language learning app she was using. It's minor things like varying the font in the app which make a big difference in this case. 
+
+I really enjoyed the talk. Most topics discussed at this kind of conferences are architecture, testing, new, better approaches to doing the same old things. We don't talk enough about localisation, about thinking of your users, about all the different scenarios your app can be used in, and about making your app useful for more people. We need more of this.
+
+####Burnout####
+
+The organisers also prepared a round of lightning talks. And I was really impressed by [Marin Todorov](https://twitter.com/icanzilb)'s. Marin is a successful iOS developer, instructor and book author, probably one of the most appreciated in our community. He gave a talk about burnout. He showed that burnout can happen to everyone, and we need to be better at preventing it and at helping others who are dealing with it. Burnout is more common than we want to admit in our industry, and seeing well-known developers draw attention to it and talk about it will hopefully make us more aware of burnout and help us prevent it for ourselves and for our friends and colleagues. 
+
+Please, read Marin's talk [turned into a blogpost](https://medium.com/@marin.todorov/burnout-awareness-at-nsspain-6b852b1222d4) and share it with your colleagues.
+
+##Activities##
+Besides the workshops and the talks, there were other things that the organisers prepared for us. Lunch was offered for participants, in the same venue as the conference, so we could socialise and meet other people every day at lunch. And the food was very good. Also, big thumbs up for serving wine at lunch 🍷. 
+
+In the first evening, after the workshops ended, we had a guided tour of the city. Very informative, and a good way to find out more tips about the local tapas bars. This was also our introduction to Calle del Laurel, a street famous for its tapas bars. 
+
+And the last day, after lunch, Marin Todorov organised a presentation karaoke. Participants volunteered to be on stage and give a presentation based on some slides that they've never seen before and that were so unrelated to each other, unexpected and hilarious that we, in the audience, just couldn't stop laughing. The best talk was considered to be [Yvette](https://twitter.com/ynzc)'s, who won a ticket to next year's NSSpain. A ticket that she's willing to donate to someone from an underrepresented category who's starting in iOS.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/NSSpain">@nsspain</a> <a href="https://twitter.com/Lascorbe">@lascorbe</a> <a href="https://twitter.com/borjareinares">@borjareinares</a>. Can we make this happen? P.S. Doesn’t mean I won’t be there  <a href="https://twitter.com/hashtag/nsspain16?src=hash">#nsspain16</a> <a href="https://t.co/Ypjpiypr4P">pic.twitter.com/Ypjpiypr4P</a></p>&mdash; Yvette (@ynzc) <a href="https://twitter.com/ynzc/status/776802131974193152">September 16, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+##San Mateo##
+Another great thing about NSSpain is that the day after NSSpain ends, the 1-week long San Mateo wine festival begins. This is the biggest festivity of the year in Logroño. People roam the streets, dance, sing, there are marching bands, the tapas bars are full, everybody drinks wine and eats traditional tapas. It's a crazy feast where the whole city centre turns into a big ambulant party. Many of the NSSpain attendees and speakers also stay for the first weekend of the festival.
+
+##Aftermath##
+What I really enjoy about conferences is the atmosphere. You get to meet so many people that are in the same line of work as you are, and the amount of inspiration you can get is incredible. You can gain so much just by talking to people.
+
+But besides that, there's also another positive side effect: when you're back, you just want to do things, try all the stuff you learned about, play with new frameworks and SDKs, you feel full of energy, very motivated and very productive. 
+
+
+
+<center><img src = "img/blogposts/inline/nsspain_speakers.jpg" class="img-responsive"/></center>
+<br><br><br>
+#####*Parts of this blogpost will also be used for an article on the [Nodes blog](https://www.nodesagency.com/blog/)*
