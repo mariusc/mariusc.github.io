@@ -5,16 +5,97 @@
   <id>https://mariusc.github.io/</id>
   <link href="https://mariusc.github.io/"/>
   <link href="https://mariusc.github.io/feed.xml" rel="self"/>
-  <updated>2016-08-29T07:36:00+00:00</updated>
+  <updated>2016-09-28T11:19:00+00:00</updated>
   <author>
     <name>Marius Constantinescu</name>
   </author>
+  <entry>
+    <title>NSSpain 2016</title>
+    <link rel="alternate" href="https://mariusc.github.io/2016-09-28-nsspain-2016.html"/>
+    <id>https://mariusc.github.io/2016-09-28-nsspain-2016.html</id>
+    <published>2016-09-28T11:19:00+00:00</published>
+    <updated>2016-09-28T20:25:20+00:00</updated>
+    <author>
+      <name>Marius Constantinescu</name>
+    </author>
+    <content type="html">&lt;p&gt;At the end of 2014, I decided to try and attend at least one iOS conference per year. And after &lt;a href="http://2015.mceconf.com/"&gt;MCE 2015&lt;/a&gt;, this year I chose &lt;a href="http://2016.nsspain.com/"&gt;NSSpain&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;NSSpain is a conference I&amp;rsquo;ve been eyeing for a while, I&amp;rsquo;ve followed it closely in 2014 and 2015, seriously considered to attend, but due to one reason or another, I didn&amp;rsquo;t do it. &lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Sad to miss &lt;a href="https://twitter.com/NSSpain"&gt;@NSSpain&lt;/a&gt; again. Looks like the best combination between iOS and wine. I really hope I can be there in 2016.&lt;/p&gt;&amp;mdash; MariusConstantinescu (@marius_const) &lt;a href="https://twitter.com/marius_const/status/643683417230561280"&gt;September 15, 2015&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;This year I was so determined to be there that I got a ticket as soon as they started selling them.&lt;/p&gt;
+
+&lt;h2 id="nsspain"&gt;NSSpain&lt;/h2&gt;
+
+&lt;p&gt;NSSpain takes place in the city of Logroño, in northern Spain, in the Rioja region (yes, the one that produces the great wine). The conference is organised by &lt;a href="https://twitter.com/Lascorbe"&gt;Luis&lt;/a&gt; and &lt;a href="https://twitter.com/borjareinares"&gt;Borja&lt;/a&gt;, two great people who I got the pleasure to meet. Although there were some minor hiccups in the organisation now and then, the quality of the conference is amazing for something put together by 2 persons in their own free time.&lt;/p&gt;
+
+&lt;p&gt;The event was spread over 3 days: one workshop day (for 40 persons) and 2 conference days (with more than 200 people taking part).&lt;/p&gt;
+
+&lt;p&gt;From the workshops day, I must highlight &lt;a href="https://twitter.com/jdortiz"&gt;Jorge Ortiz&lt;/a&gt;&amp;rsquo;s architecture workshop. It was informative, high quality and on the subject.&lt;/p&gt;
+
+&lt;p&gt;During the 2 actual conference days, I attended all 21 sessions, and I was impressed by most of the talks. There were some that, in my opinion, failed to deliver, but there weren&amp;rsquo;t that many and they didn&amp;rsquo;t change my overall impression of the conference. &lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll shortly write about 3 talks that I think are worth mentioning.&lt;/p&gt;
+
+&lt;h4 id="the-road-to-cocoapods-1-0"&gt;The Road to CocoaPods 1.0&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href="https://twitter.com/segiddins"&gt;Samuel Giddins&lt;/a&gt; has been the lead developer of the CocoaPods project for the last two years or so. CocoaPods is a huge project, indexing over 23000 libraries that are used in more of 1.1 million apps. It has 8500 stars on GitHub, and it has had in total almost 5000 issues. There are around 400 contributors who worked on this project during the 5 years of its existence. Imagine being the lead developer for a project this size. And doing that in your free time. &lt;/p&gt;
+
+&lt;p&gt;Samuel told us the road to CocoaPods 1.0, with all its ups and downs. And towards the end of the talk, Samuel announced that he&amp;rsquo;s stepping down as lead developer, letting others take that role. At the end of his talk, the organisers showed a video message for Samuel from &lt;a href="https://twitter.com/alloy"&gt;Eloy Durán&lt;/a&gt;, the previous lead developer of CocoaPods and Samuel&amp;rsquo;s mentor. It was an emotional moment, and this was definitely the talk that got the most applauses. And they were not &amp;ldquo;what a great talk&amp;rdquo; applauses, they were well deserved &amp;ldquo;thanks for everything&amp;rdquo; applauses. &lt;/p&gt;
+
+&lt;p&gt;This talk reminded us that, although CocoaPods makes the lives of hundreds of thousands of developers easier, the biggest thing it did for the iOS development industry is that it shaped the community into what it is today. And that is much more important. &lt;/p&gt;
+
+&lt;h4 id="the-design-of-everyday-language-apps"&gt;The Design of Everyday Language Apps&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href="http://www.twitter.com/natasha_nazari"&gt;Natasha Nazari&lt;/a&gt; gave a talk about designing a language learning app (&lt;a href="https://speakerdeck.com/natashanazari/the-design-of-everyday-language-apps"&gt;slides here&lt;/a&gt;). The talk was very informative and it drew attention towards some things that developers don&amp;rsquo;t usually give much thought to: making your app usable by people everywhere. &lt;/p&gt;
+
+&lt;p&gt;A short story she told stuck with me. She was learning Chinese through a language learning app. And although she mastered 2000 Chinese characters, when she got to Taipei she couldn&amp;rsquo;t recognise most of them, because the handwriting used in Taipei different than the font in the language learning app she was using. It&amp;rsquo;s minor things like varying the font in the app which make a big difference in this case. &lt;/p&gt;
+
+&lt;p&gt;I really enjoyed the talk. Most topics discussed at this kind of conferences are architecture, testing, new, better approaches to doing the same old things. We don&amp;rsquo;t talk enough about localisation, about thinking of your users, about all the different scenarios your app can be used in, and about making your app useful for more people. We need more of this.&lt;/p&gt;
+
+&lt;h4 id="burnout"&gt;Burnout&lt;/h4&gt;
+
+&lt;p&gt;The organisers also prepared a round of lightning talks. And I was really impressed by &lt;a href="https://twitter.com/icanzilb"&gt;Marin Todorov&lt;/a&gt;&amp;rsquo;s. Marin is a successful iOS developer, instructor and book author, probably one of the most appreciated in our community. He gave a talk about burnout. He showed that burnout can happen to everyone, and we need to be better at preventing it and at helping others who are dealing with it. Burnout is more common than we want to admit in our industry, and seeing well-known developers draw attention to it and talk about it will hopefully make us more aware of burnout and help us prevent it for ourselves and for our friends and colleagues. &lt;/p&gt;
+
+&lt;p&gt;Please, read Marin&amp;rsquo;s talk &lt;a href="https://medium.com/@marin.todorov/burnout-awareness-at-nsspain-6b852b1222d4"&gt;turned into a blogpost&lt;/a&gt; and share it with your colleagues.&lt;/p&gt;
+
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+
+&lt;p&gt;Besides the workshops and the talks, there were other things that the organisers prepared for us. Lunch was offered for participants, in the same venue as the conference, so we could socialise and meet other people every day at lunch. And the food was very good. Also, big thumbs up for serving wine at lunch 🍷. &lt;/p&gt;
+
+&lt;p&gt;In the first evening, after the workshops ended, we had a guided tour of the city. Very informative, and a good way to find out more tips about the local tapas bars. This was also our introduction to Calle del Laurel, a street famous for its tapas bars. &lt;/p&gt;
+
+&lt;p&gt;And the last day, after lunch, Marin Todorov organised a presentation karaoke. Participants volunteered to be on stage and give a presentation based on some slides that they&amp;rsquo;ve never seen before and that were so unrelated to each other, unexpected and hilarious that we, in the audience, just couldn&amp;rsquo;t stop laughing. The best talk was considered to be &lt;a href="https://twitter.com/ynzc"&gt;Yvette&lt;/a&gt;&amp;rsquo;s, who won a ticket to next year&amp;rsquo;s NSSpain. A ticket that she&amp;rsquo;s willing to donate to someone from an underrepresented category who&amp;rsquo;s starting in iOS.&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hey &lt;a href="https://twitter.com/NSSpain"&gt;@nsspain&lt;/a&gt; &lt;a href="https://twitter.com/Lascorbe"&gt;@lascorbe&lt;/a&gt; &lt;a href="https://twitter.com/borjareinares"&gt;@borjareinares&lt;/a&gt;. Can we make this happen? P.S. Doesn’t mean I won’t be there  &lt;a href="https://twitter.com/hashtag/nsspain16?src=hash"&gt;#nsspain16&lt;/a&gt; &lt;a href="https://t.co/Ypjpiypr4P"&gt;pic.twitter.com/Ypjpiypr4P&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yvette (@ynzc) &lt;a href="https://twitter.com/ynzc/status/776802131974193152"&gt;September 16, 2016&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;h2 id="san-mateo"&gt;San Mateo&lt;/h2&gt;
+
+&lt;p&gt;Another great thing about NSSpain is that the day after NSSpain ends, the 1-week long San Mateo wine festival begins. This is the biggest festivity of the year in Logroño. People roam the streets, dance, sing, there are marching bands, the tapas bars are full, everybody drinks wine and eats traditional tapas. It&amp;rsquo;s a crazy feast where the whole city centre turns into a big ambulant party. Many of the NSSpain attendees and speakers also stay for the first weekend of the festival.&lt;/p&gt;
+
+&lt;h2 id="aftermath"&gt;Aftermath&lt;/h2&gt;
+
+&lt;p&gt;What I really enjoy about conferences is the atmosphere. You get to meet so many people that are in the same line of work as you are, and the amount of inspiration you can get is incredible. You can gain so much just by talking to people.&lt;/p&gt;
+
+&lt;p&gt;But besides that, there&amp;rsquo;s also another positive side effect: when you&amp;rsquo;re back, you just want to do things, try all the stuff you learned about, play with new frameworks and SDKs, you feel full of energy, very motivated and very productive. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/nsspain_speakers.jpg" class="img-responsive"/&gt;&lt;/center&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h5 id="parts-of-this-blogpost-will-also-be-used-for-an-article-on-the-nodes-blog"&gt;&lt;em&gt;Parts of this blogpost will also be used for an article on the &lt;a href="https://www.nodesagency.com/blog/"&gt;Nodes blog&lt;/a&gt;&lt;/em&gt;&lt;/h5&gt;
+</content>
+  </entry>
   <entry>
     <title>Being more efficient in Xcode - Part 1</title>
     <link rel="alternate" href="https://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html"/>
     <id>https://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html</id>
     <published>2016-08-29T07:36:00+00:00</published>
-    <updated>2016-09-28T20:11:49+00:00</updated>
+    <updated>2016-09-28T20:25:20+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -84,7 +165,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-04-12-my-first-ios-app.html"/>
     <id>https://mariusc.github.io/2016-04-12-my-first-ios-app.html</id>
     <published>2016-04-12T19:01:00+00:00</published>
-    <updated>2016-09-28T20:11:49+00:00</updated>
+    <updated>2016-09-28T20:25:20+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -112,7 +193,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
     <id>https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html</id>
     <published>2016-02-03T19:48:00+00:00</published>
-    <updated>2016-09-28T20:11:49+00:00</updated>
+    <updated>2016-09-28T20:25:20+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -160,7 +241,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html"/>
     <id>https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T10:46:00+00:00</published>
-    <updated>2016-09-28T20:11:49+00:00</updated>
+    <updated>2016-09-28T20:25:20+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -193,7 +274,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html"/>
     <id>https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html</id>
     <published>2015-11-09T21:10:00+00:00</published>
-    <updated>2016-09-28T20:11:49+00:00</updated>
+    <updated>2016-09-28T20:25:20+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -208,29 +289,6 @@
 &lt;p&gt;Then we thought that the idea was to complex: we just wanted to make a simple app to see what’s up with tvOS. So we thought of making 9GAG for Apple TV. We were very pleased with the idea, until we realised that there’s no official API for 9GAG, nor an RSS feed for it. So we looked into other similar websites (BoredPanda, BuzzFeed, etc), with no success: none of them had a good API or RSS feed.&lt;/p&gt;
 
 &lt;p&gt;So in the end, we chose to make a simple game. Three hours later, we had our first prototype running. Now we need to add more complexity, make it pretty and make it catchy. More about that in a future post.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Writing Challenge</title>
-    <link rel="alternate" href="https://mariusc.github.io/2015-11-01-writing-challenge.html"/>
-    <id>https://mariusc.github.io/2015-11-01-writing-challenge.html</id>
-    <published>2015-11-01T18:26:00+00:00</published>
-    <updated>2016-09-28T20:11:49+00:00</updated>
-    <author>
-      <name>Marius Constantinescu</name>
-    </author>
-    <content type="html">&lt;p&gt;There’s this thing I found out about on Twitter that people call “&lt;em&gt;NaBloWriMo&lt;/em&gt;”. It actually is a derived version of “&lt;em&gt;NaNoWriMo&lt;/em&gt;”, which stands for National Novel Writing Month. Shortly, &lt;em&gt;NaNoWriMo&lt;/em&gt; is a challenge where people have to write daily for one month, and in the end have a 50.000 words fictional novel. I didn’t know this exists, but I found of its other version, “&lt;em&gt;NaBloWriMo&lt;/em&gt;” (ok, I’ve got to admit, I think this name sounds silly) from &lt;a href="https://twitter.com/mennenia/status/660769278715633664"&gt;Maxim Cramer&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;The rules I’ll follow during this challenge are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;write every day&lt;/li&gt;
-&lt;li&gt;publish at least one article per week&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;One article per week isn’t very much, but compared to my usual writing frequency, it’s a lot. And in the end, the goal of this is to create a habit for writing, not just to add 4 more articles to my blog. Because, as &lt;a href="https://www.youtube.com/watch?v=SjjvnrqDjpM"&gt;Ash Furrow says&lt;/a&gt;, sharing your knowledge makes you a better developer in the end.&lt;/p&gt;
-
-&lt;p&gt;Here’s to hoping I can finish the challenge🍷!&lt;/p&gt;
 </content>
   </entry>
 </feed>
