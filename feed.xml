@@ -5,16 +5,70 @@
   <id>https://mariusc.github.io/</id>
   <link href="https://mariusc.github.io/"/>
   <link href="https://mariusc.github.io/feed.xml" rel="self"/>
-  <updated>2016-09-28T11:19:00+00:00</updated>
+  <updated>2016-10-09T10:25:00+00:00</updated>
   <author>
     <name>Marius Constantinescu</name>
   </author>
+  <entry>
+    <title>Being more efficient in Xcode - Part 2</title>
+    <link rel="alternate" href="https://mariusc.github.io/2016-10-09-being-more-efficient-in-xcode-part-2.html"/>
+    <id>https://mariusc.github.io/2016-10-09-being-more-efficient-in-xcode-part-2.html</id>
+    <published>2016-10-09T10:25:00+00:00</published>
+    <updated>2016-11-05T14:54:30+00:00</updated>
+    <author>
+      <name>Marius Constantinescu</name>
+    </author>
+    <content type="html">&lt;p&gt;This is my second article in the &amp;ldquo;Being more efficient in Xcode&amp;rdquo; series. The first part, which you can read &lt;a href="http://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html"&gt;here&lt;/a&gt;, was focused on keyboard shortcuts. &lt;/p&gt;
+
+&lt;p&gt;Besides the keyboard shortcuts, there are other tips and tricks an iOS developer should know, to be able to improve his productivity when using Xcode.&lt;/p&gt;
+
+&lt;h3 id="breakpoints"&gt;Breakpoints&lt;/h3&gt;
+
+&lt;p&gt;It&amp;rsquo;s a pretty good idea to add an &amp;lsquo;All exceptions&amp;rsquo; breakpoint. This way, when your app crashes, you&amp;rsquo;ll get stopped exactly when that happens and you can see the whole backtrace and debug the problem more easily. A good idea is to also add a debugger command action on that breakpoint to print the exception you&amp;rsquo;re encountering. Open the breakpoint in the Breakpoint navigator, right click your All exception breakpoint, press Edit, press Add action and add this debugger command &lt;code&gt;po $arg1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/backFwd.png" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;However, sometimes (especially if you&amp;rsquo;re using Swift), you might notice that your app always stops in the AppDelegate when launching it. You can manually continue over that, but it&amp;rsquo;s still annoying. To stop that from happening, you can edit your exceptions breakpoint to only stop for Objective-C exceptions, ignoring other types of exceptions such as C++ ones. Depending on your project, this could be a bad idea, but in most cases it will be fine. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/objc_exceptions_breakopint.png" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also use breakpoints to print variables: just add a po command.&lt;/p&gt;
+
+&lt;h3 id="editor"&gt;Editor&lt;/h3&gt;
+
+&lt;p&gt;As we all know and we&amp;rsquo;ve all been complaining about, there&amp;rsquo;s no refactoring in Swift. There is, however, a better-than-nothing alternative, which in some cases can be used instead of rename-refactoring. Select a variable (double click on it), go to Editor - Edit all in scope. Enter the new name and it will be renamed everywhere in the current scope. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/EditAllInScope.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;As the name says, this only edits in the current scope.&lt;/p&gt;
+
+&lt;p&gt;Another command that affects only the current scope is &amp;#39;Fix all in scope&amp;rsquo;. This makes the changes suggested by Xcode for all the warnings and errors. This also only affects the current scope. And sometimes, Xcode&amp;rsquo;s suggestions are not exactly what you had in mind. Nevertheless, this command can still be useful sometimes.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/FixAllInScope.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id="code-structure"&gt;Code structure&lt;/h3&gt;
+
+&lt;p&gt;Use the Document items list. Open the list (either press on it, or use the shortcut control - 6) and you can see all the classes, extensions, methods, etc in your file. If you start typing, it will begin filtering them in a way similar to quick open, but it will search for entries inside the currently open file. &lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/ListOfMethods.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s also a very good idea to use &lt;code&gt;//MARK:&lt;/code&gt; in your source. This allows you to organize the methods and other items in your code in a better way. They&amp;rsquo;re also visible in the Document items list. And also, if for example you have a &lt;code&gt;//MARK: - UITableViewDelegate&lt;/code&gt; you can command - click on the &lt;code&gt;UITableViewDelegate&lt;/code&gt; and it will take you to the UITableView interface, where you can see all the available methods and their documentation.&lt;/p&gt;
+
+&lt;h3 id="interface-builder"&gt;Interface builder&lt;/h3&gt;
+
+&lt;p&gt;And one last tip about interface builder. Did you ever need, for example, to move a button on top of another view, but not make it a subview of that view? By default, when you drop a button over a view, IB will make the button a subview of that view and you will also lose all its positioning constraints. But if you press &lt;strong&gt;⌘&lt;/strong&gt; while dropping the button, it will not be a subview, but a sibling of that view.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/Cmd.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;There are lots of shortcuts in Xcode, and lots of things you can do to increase your speed when using it. The important thing is to take them one at a time.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>NSSpain 2016</title>
     <link rel="alternate" href="https://mariusc.github.io/2016-09-28-nsspain-2016.html"/>
     <id>https://mariusc.github.io/2016-09-28-nsspain-2016.html</id>
     <published>2016-09-28T11:19:00+00:00</published>
-    <updated>2016-09-28T20:36:39+00:00</updated>
+    <updated>2016-11-05T14:54:30+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -95,7 +149,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html"/>
     <id>https://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html</id>
     <published>2016-08-29T07:36:00+00:00</published>
-    <updated>2016-09-28T20:36:39+00:00</updated>
+    <updated>2016-11-05T14:54:30+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -165,7 +219,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-04-12-my-first-ios-app.html"/>
     <id>https://mariusc.github.io/2016-04-12-my-first-ios-app.html</id>
     <published>2016-04-12T19:01:00+00:00</published>
-    <updated>2016-09-28T20:36:39+00:00</updated>
+    <updated>2016-11-05T14:54:30+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -193,7 +247,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html"/>
     <id>https://mariusc.github.io/2016-02-03-how-i-got-my-first-job-as-an-ios-developer.html</id>
     <published>2016-02-03T19:48:00+00:00</published>
-    <updated>2016-09-28T20:36:39+00:00</updated>
+    <updated>2016-11-05T14:54:30+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -241,7 +295,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html"/>
     <id>https://mariusc.github.io/2015-11-29-uiviewcontentmodes.html</id>
     <published>2015-11-29T10:46:00+00:00</published>
-    <updated>2016-09-28T20:36:39+00:00</updated>
+    <updated>2016-11-05T14:54:30+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -267,28 +321,6 @@
 &lt;li&gt;&lt;code&gt;Scale to fill&lt;/code&gt; will scale both sides of the image to fill the entire view. This will obviously change the aspect ratio and stretch the image.&lt;/li&gt;
 &lt;li&gt;Even though &lt;code&gt;Redraw&lt;/code&gt; has the same effect here as &lt;code&gt;Scale to fill&lt;/code&gt;, behind the scenes they are very different. &lt;code&gt;Redraw&lt;/code&gt; forces a redraw of the view (calls &lt;code&gt;drawRect:&lt;/code&gt; in your view) in response to geometry changes (for example, a change of the frame&amp;rsquo;s value). It&amp;rsquo;s not generally used, and it doesn&amp;rsquo;t make sense to use it on standard system views. In this case, the result is the same because we used &lt;code&gt;Redraw&lt;/code&gt; on a standard view, with the default implementation of &lt;code&gt;drawRect:&lt;/code&gt; (which appears to be using the &lt;code&gt;Scale to fill&lt;/code&gt; mode).&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Making an app for tvOS - part 1</title>
-    <link rel="alternate" href="https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html"/>
-    <id>https://mariusc.github.io/2015-11-09-making-an-app-for-tvos-part-1.html</id>
-    <published>2015-11-09T21:10:00+00:00</published>
-    <updated>2016-09-28T20:36:39+00:00</updated>
-    <author>
-      <name>Marius Constantinescu</name>
-    </author>
-    <content type="html">&lt;p&gt;As curious iOS developers, having had the Apple TV for a week, &lt;a href="http://twitter.com/ruxandranistor"&gt;@RuxandraNistor&lt;/a&gt; and I decided that it’s time to try and make an Apple TV app. We didn’t have an idea for an app, but we knew we wanted to make one.  &lt;/p&gt;
-
-&lt;p&gt;Being two iOS developers with limited time for side projects, a lack of experience when it comes to digital design and a strong desire to not make any APIs or backend development, it was quite hard for us to come up with a good idea for an app. &lt;/p&gt;
-
-&lt;p&gt;As we had no content, we thought that we could either build a game, or find an external API to give us content. The one thing we always kept coming back to was that it’s very hard and annoying to input text in an Apple TV app. &lt;em&gt;So whatever app we were building, if we showed content to the user, that content had to be browsable, and not searchable.&lt;/em&gt; So I could say goodbye to my idea of making a beer journal (like Vivino, but for beers), an iOS project I started and never finished. &lt;/p&gt;
-
-&lt;p&gt;As I like tennis, I’d like an app that gives me real time scores for tennis games, ATP and WTA rankings, tournament draws and results and all other kind of tennis news. But all that content was not easy to find in a way that made it easy for us to show it on the Apple TV. &lt;/p&gt;
-
-&lt;p&gt;Then we thought that the idea was to complex: we just wanted to make a simple app to see what’s up with tvOS. So we thought of making 9GAG for Apple TV. We were very pleased with the idea, until we realised that there’s no official API for 9GAG, nor an RSS feed for it. So we looked into other similar websites (BoredPanda, BuzzFeed, etc), with no success: none of them had a good API or RSS feed.&lt;/p&gt;
-
-&lt;p&gt;So in the end, we chose to make a simple game. Three hours later, we had our first prototype running. Now we need to add more complexity, make it pretty and make it catchy. More about that in a future post.&lt;/p&gt;
 </content>
   </entry>
 </feed>
