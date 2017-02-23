@@ -68,5 +68,5 @@ markdown_files = (git.modified_files + git.added_files).select do |line|
   line.end_with?(".markdown")
 end
 
-prose.lint_files markdown_files
-check_spelling markdown_files
+# prose.lint_files markdown_files
+# check_spelling markdown_files
