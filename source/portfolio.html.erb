@@ -1,0 +1,68 @@
+---
+title: Portfolio
+---
+
+<!-- Page Header -->
+<%= partial("header", :locals => { :title => "Portfolio", :subtitle => "Things I make", :background_image => "img/work.jpg", :style => "site-heading" }) %>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+    	<p>I've been doing iOS development continuously since 2014, but I've been working on small iOS projects since 2011. My tools of the trade are Xcode, Zeplin, Charles and Carthage. I like to stay informed, so I take part in iOS conferences (I've been to <a href = "http://2015.mceconf.com/" target = "_about:blank">MCE 2015</a> and <a href = "http://2016.nsspain.com/" target = "_about:blank">NSSpain 2016</a>). I also have experience in building and maintaining frameworks (see my activity on <a href = "https://github.com/mariusc" target = "_about:blank">GitHub</a>)</p> 
+
+    	<p> I've worked on more than 30 apps that went live. Here are some of the apps where I was one of the main developers:</p>
+
+	</div>
+  </div>
+</div>
+
+<div class="container">
+	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    	<div class="row"> 
+
+
+			<% data.apps.apps.each do |f| %>
+				<h1>
+				<% if f.link %>
+					<a href = "<%= f.link %>" target = "_about:blank"><%= f.name %></a>
+				<% else %>
+					<%= f.name %>
+				<% end %>
+				</h1>
+
+				<% if f.image %>
+					<img src = "<%= f.image %>" class="img-responsive"/>
+				<% else %>
+					<% if f.video %>
+						<video autoplay loop width="700" height="461" name="<%= f.name %>" src="<%= f.video %>"></video>
+					<% end %>
+
+				<% end %>
+
+				<% if f.about %>
+					<%= simple_format(f.about) %>
+				<% end %>
+
+				<% if f.technologies %>
+					<b>Technologies: </b><%= f.technologies %>
+				<% end %>
+				<br><br>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+    	<p>If you're really curious, <a href = "/work.html">here</a> you can also find my small side-projects which never made it to the app store.</p> 
+
+	</div>
+  </div>
+</div>
+
