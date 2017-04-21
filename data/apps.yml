@@ -18,7 +18,7 @@ apps:
    link: https://itunes.apple.com/dk/app/fitness-dk-everythingcounts/id1183040627?mt=8
    year: 2016-2017
 
- - name: Pensionstjek
+ - name: PensionsTjek
    image: img/portfolio/new/pensionstjek.jpg
    about: |+
      Danica Pension is the life insurance and pension company owned by Danske Bank, the biggest bank in Denmark. We built an app for their customers to be able to check their pension contributions and status on an iPhone. The app had some very custom design for some controllers that allowed the customers to increase or decrease their contributions. 
