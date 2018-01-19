@@ -1,6 +1,6 @@
 ---
 title: Understanding code signing for iOS apps
-date: 2017-02-23 20:28 UTC
+date: 2016-11-27 20:28 UTC
 tags:
 ---
 **NOTE: This article was first published on the [Nodes Engineering Blog](https://engineering.nodesagency.com/articles/iOS/Understanding-code-signing-for-iOS-apps/)  in October 2016.**
