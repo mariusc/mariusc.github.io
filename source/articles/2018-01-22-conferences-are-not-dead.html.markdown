@@ -4,8 +4,6 @@ date: 2018-01-22 22:56 UTC
 tags:
 ---
 
-*This will be a pretty chaotic post, with lots of ideas bouncing back and forth*.
-
 I read Chris Adamson's [post on conferences](http://subfurther.com/blog/2018/01/15/the-final-conf-down/) last week. A few hours later, I also found Marco Arment's [reply](https://marco.org/2018/01/17/end-of-conference-era). And Friday afternoon, Dave Verwer also [wrote about this](https://iosdevweekly.com/issues/335#start) in his newsletter, which drew even more attention to this topic. 
 
 While all three make some great points, there's one thing which I completely disagree with: conferences are not a thing of the past.
