@@ -49,7 +49,7 @@ apps:
    video: img/portfolio/new/tattoodo.mov
    about: |+
      Tattoodo is a social networking app for tatoo enthusiasts. After my colleagues implemented the 1.0 version of the app, I worked on a redesign and a whole new onboarding experience for the next update. 
-     I was not involved with the work o the 1.0 version, nor with the updates following this redesign. I was the only iOS developer working on those features.
+     I was not involved with the work on the 1.0 version, nor with the updates following this redesign. I was the only iOS developer working on those features.
    technologies: Swift, custom segues and transitions, RazzleDazzle
    link: https://itunes.apple.com/us/app/tattoodo-1-tattoo-community/id1057590314?mt=8
    year: 2016
