@@ -1,5 +1,5 @@
 ---
-title: Conferences
+title: Conferences are not dead
 date: 2018-01-22 22:56 UTC
 tags:
 ---
@@ -21,7 +21,7 @@ Also, counting the conferences that are already announced for 2018, we have 28 i
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-Years ago people went to conferences to hear the talks. Now almost all are recorded and you can watch them from home. The main advantage of going to conferences nowadays is talking to people face to face. There are lots of opportunities. New collaborations can start, which lead to [great books being published](https://www.objc.io/books/app-architecture/).
+Years ago people went to conferences to hear the talks. Now almost all the presentations are recorded and you can watch them from home. The main advantage of going to conferences nowadays is talking to face to face to other people in your line of work. There are lots of opportunities. New collaborations can start, which lead to [great books being published](https://www.objc.io/books/app-architecture/).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Without Andyy, I don&#39;t think I would&#39;ve met <a href="https://twitter.com/cocoawithlove?ref_src=twsrc%5Etfw">@cocoawithlove</a> in person, and we wouldn&#39;t have started this. Conferences can be pretty useful, if only for bringing people together. Thanks Andyy ❤️ <a href="https://t.co/2KJre51Fhf">https://t.co/2KJre51Fhf</a></p>&mdash; Chris Eidhof (@chriseidhof) <a href="https://twitter.com/chriseidhof/status/954392456157687808?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -33,14 +33,16 @@ You make new friends at a conference.
 
 I know people who got new jobs after attending conferences. I know people who got new contracts, new clients after conferences. Conferences are nice :).
 
-But yes, they're not perfect. There are problems. They're expensive, they usually lack diversity (both in speakers and in participants), most of them have the same speakers, some speakers give the same talk to multiple conferences. Some people say that due to the speakers being mostly the same at all conferences, some kind of "elite" is created, which does not help the community. 
+But yes, they're not perfect. There are problems. They're expensive, they usually lack diversity (both in speakers and in participants), most of them have the same speakers, some even giving the same talk to multiple conferences. Some people say that due to the speakers being mostly the same at all conferences, some kind of "elite" is created, which does not help the community. 
 
 On the other hand, try to see the things from the perspective of the organizers. I've organized summer schools for around 70 student attendees in Romania, and I'm trying to organize CocoaHeads Bucharest. It's hard. You don't find people who want to give talks that easily. And it's a lot of effort and you need to spend a lot of time to make an event. Now try to think of the scale of a conference. There's a lot of work involved in making a conference. And let's say you want to start a new one. If you bring all new speakers, people will be reluctant to attend because they haven't heard of any of the ones giving the talks. If you bring speakers who already have a reputation, you can be criticised for lacking diversity. All those critiques have a high impact on your morale, which again won't help with the organization of the event. And imagine doing this for years and years in a row. There's no wonder some conferences stop having new editions.
 
-But since a lot of people seem to agree that the "hallway track" is at least as important as the actual talks, it's clear that conferences can be improved, or "fixed". It's hard to say how, but there's progress in that direction too. The Swift Alps is a different kind of conference, with a [unique concept](https://medium.com/@swiftalps/the-concept-behind-the-swift-alps-5b07e04c7ed1). I didn't get to participate yet, but I'd like to, and I've heard good things about it. I don't know if it's the way to "fix" conferences, but it'I think it's a step forward.
+But with all this effort required to make a conference, the number of events (at least in Europe) is growing. So hats off to you 🙇, conference organizers everywhere! Thank you for giving us opportunities to meet each other and learn together.
+
+I've heard developers saying they go to conferences mostly for the people and the experience, and not for the talks. Many seem to agree that the "hallway track" is at least as important as the actual talks. So it's clear that at least in this direction, conferences need to improve. It's hard to say how, but some of them are trying. The Swift Alps is a different kind of conference, with a [unique concept](https://medium.com/@swiftalps/the-concept-behind-the-swift-alps-5b07e04c7ed1). I didn't get to participate yet, but I'd like to, and I've heard good things about it. I don't know if it's the way to "fix" conferences, but I think it's a step forward.
 
 Quick summary:
 
 - I don't think conferences are dead. There are more now than before. Here's a list to inspire you: [https://github.com/Lascorbe/CocoaConferences](https://github.com/Lascorbe/CocoaConferences)
-- Making a conference is hard and expensive. Which explains why some of them stop.
+- Making a conference is hard and expensive. Which explains why some of them stop. And why we should be more appreciative of their organizers.
 - There are many things at conferences that can be improved, and it's hard to know how. But some conferences are already trying (The Swift Alps, Swift Aveiro).
