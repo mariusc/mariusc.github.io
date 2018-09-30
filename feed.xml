@@ -5,16 +5,94 @@
   <id>https://mariusc.github.io/</id>
   <link href="https://mariusc.github.io/"/>
   <link href="https://mariusc.github.io/feed.xml" rel="self"/>
-  <updated>2018-01-22T22:56:00+00:00</updated>
+  <updated>2018-09-20T07:56:00+00:00</updated>
   <author>
     <name>Marius Constantinescu</name>
   </author>
+  <entry>
+    <title>Making iOS Goodies</title>
+    <link rel="alternate" href="https://mariusc.github.io/2018-09-20-making-ios-goodies.html"/>
+    <id>https://mariusc.github.io/2018-09-20-making-ios-goodies.html</id>
+    <published>2018-09-20T07:56:00+00:00</published>
+    <updated>2018-09-30T13:09:21+00:00</updated>
+    <author>
+      <name>Marius Constantinescu</name>
+    </author>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s been a bit over one year since I&amp;rsquo;ve been sending iOS Goodies constantly, every week, to our subscribers. It&amp;rsquo;s been a good year, both rewarding and challenging, with ups and downs.&lt;/p&gt;
+
+&lt;h3 id="the-beginnings"&gt;The beginnings&lt;/h3&gt;
+
+&lt;p&gt;My first contribution to iOS Goodies was in May 2015, &lt;a href="https://github.com/iOS-Goodies/iOS-Goodies/pull/130"&gt;fixing a wrong link&lt;/a&gt;. I can&amp;rsquo;t remember exactly how I found out about the newsletter, but I think that I was following &lt;a href="https://twitter.com/peres"&gt;Rui Peres&lt;/a&gt;, one of its founders, on Twitter. And what I really loved about it was the fact that it was open source, and everyone had the opportunity to contribute to it.&lt;/p&gt;
+
+&lt;p&gt;Since that first commit, I started contributing more often. Initially only with a few articles, then with more. Whenever I found an iOS article that I found interesting, I submitted it to iOS Goodies, for everyone else to read it. I like to keep up to date with the most recent articles in the iOS dev world, which means I read a lot of them. So contributing to iOS Goodies was more about sharing with the others what I found, instead of a goal in itself. I didn&amp;rsquo;t look for articles for iOS Goodies, I read iOS dev articles and when I liked them, I submitted them to the newsletter.&lt;/p&gt;
+
+&lt;p&gt;Initially, the process of submitting an article was a bit cumbersome. You had to fork the &lt;a href="https://github.com/iOS-Goodies/iOS-Goodies"&gt;GitHub repo&lt;/a&gt;, edit your fork, and make a pull request. This &lt;em&gt;is&lt;/em&gt; the normal way of working on open source projects on GitHub. However, for submitting an article for a newsletter, I thought it was a bit annoying. But at some point (can&amp;rsquo;t remember when) I discovered GitHub added the possibility to edit a file on a repo in the browser, and if you didn&amp;rsquo;t have write access to that repo, it would open a pull request. I  can&amp;rsquo;t remember if this was a new feature or if it was new only for me, but this made it so much easier for me to contribute to the newsletter.&lt;/p&gt;
+
+&lt;p&gt;One of the problems that I would run into when contributing to iOS Goodies was that if the PRs weren&amp;rsquo;t reviewed fast enough and other people also submitted articles, our PRs would get into a conflict. One PR would get merged, the other would have to be rebased. This was less than ideal. But about one year later, probably due to the fact that I contributed a lot to the repo, I was granted access to the repo, so I didn&amp;rsquo;t have to submit PRs anymore. Instead, I could edit the current issue directly, and I could also help merge the other PRs faster, to minimize the number of merge conflicts. Currently, with GitHub&amp;rsquo;s new feature of fixing merge conflicts in the web editor, I&amp;rsquo;m fixing the conflicts myself before merging other people&amp;rsquo;s PRs. I think the most common practice for an open source project is for the one who opened the PR to fix the conflicts, but in our case, I want it to be as easy as possible for everyone to contribute. This means that if they submitted an article via a PR, I wouldn&amp;rsquo;t want to ask them to rebase, so I just do that myself in the web editor. &lt;/p&gt;
+
+&lt;h3 id="chef-marius-constantinescu-cooked-your-goodies"&gt;Chef Marius Constantinescu cooked your goodies&lt;/h3&gt;
+
+&lt;p&gt;Last year, after a period where &lt;a href="https://twitter.com/_tiagoalmeida"&gt;Tiago&lt;/a&gt; and &lt;a href="https://twitter.com/peres"&gt;Rui&lt;/a&gt; were very busy, they asked me if I want to take over it. I thought about it and I decided I wanted to give it a try. One year later, I&amp;rsquo;m still sending it :). Of course, this is only possible with the help from our community. We have a few constant contributors, some of them have write access to the repo and can review and merge other contributor&amp;rsquo;s suggestions. So even though I&amp;rsquo;m sending the newsletter and writing the initial comment, this is a team effort, and I&amp;rsquo;m very thankful to all our contributors and maintainers.&lt;/p&gt;
+
+&lt;h4 id="how-i-choose-what-goes-in"&gt;How I choose what goes in&lt;/h4&gt;
+
+&lt;p&gt;One thing I know people are wondering a lot is how I choose what goes in the newsletter and what doesn&amp;rsquo;t. First of all, the article has to be of good quality to get into the newsletter. It happened (very rarely, though) that I decided not to publish an article because I thought it wasn&amp;rsquo;t good enough. The more often case is when we have too many articles submitted, and we only have to choose 5 (but in those cases, I usually allow 6 or 7). &lt;/p&gt;
+
+&lt;p&gt;Regarding the criteria for what makes it in the newsletter, I usually like to give priority to the &amp;ldquo;less famous&amp;rdquo; authors. However, that&amp;rsquo;s not a strict rule, if someone who already has a large following on Twitter writes a great article, I will still include it. In the end, there&amp;rsquo;s a little bit of subjectivity from my side too. I will, of course, be tempted to share what I find interesting and relevant. Other people may find other articles more relevant. So there will always be a bit of subjectivity to iOS Goodies, which I can&amp;rsquo;t really do anything about. We brand as a community newsletter, but it&amp;rsquo;s borderline, as I&amp;rsquo;m the one selecting what actually goes in the newsletter. Yes, anyone can contribute. And yes, there are editions where most of the links are sent by other contributors. But I&amp;rsquo;m the one writing the initial comment, and I&amp;rsquo;m the one that in the end decides what goes in and what not. So I can understand why some people could have problems calling iOS Goodies a community newsletter. It&amp;rsquo;s something I think about quite a lot. &lt;/p&gt;
+
+&lt;p&gt;I started as a contributor, I added whatever links I found interesting. Now there are weeks where I also find other interesting articles that weren&amp;rsquo;t submitted by our contributors yet. It&amp;rsquo;s very complicated to choose what goes in. Should I add the links I find interesting, even if that means we&amp;rsquo;ll end up with too many and I&amp;rsquo;ll have to ignore some of the ones submitted by other people? Are we still a community newsletter if I do that? It&amp;rsquo;s much more complicated than it seems, keeping a community around the newsletter, choosing the best articles, promoting new voices, not discouraging new contributors by rejecting their proposals&amp;hellip;&lt;/p&gt;
+
+&lt;h4 id="time-spent"&gt;Time spent&lt;/h4&gt;
+
+&lt;p&gt;It depends a lot on what you count as &amp;ldquo;iOS Goodies time&amp;rdquo;. I&amp;rsquo;m an iOS developer, I read iOS development articles and news and I keep up to date with the latest trends. That probably takes me around 1.5 hours per day, maybe even more. I usually do that while using public transport, but sometimes also in the morning before work or in the evenings, after work. I don&amp;rsquo;t usually do it on the weekends, though, because I also want to have some time to spend with family and friends. Merging PRs, replying to emails and messages, that could also take around 1 hour per week. Luckily, with merging PRs, &lt;a href="https://twitter.com/rbarbosa"&gt;Rui Barbosa&lt;/a&gt; helps a lot. And unfortunately, replying to emails and messages is something I need to get better at. Currently, my response times are a bit too long. Actually choosing what goes in the newsletter, writing the intro, creating the new post on the website and sending out the campaign, that could also take 1-2 hours every Thursday. &lt;/p&gt;
+
+&lt;h4 id="sponsorships"&gt;Sponsorships&lt;/h4&gt;
+
+&lt;p&gt;We have taken some sponsorships every now and then, only to keep the newsletter sustainable. I don&amp;rsquo;t take sponsorships just to make money for iOS Goodies. I&amp;rsquo;m trying to keep this as ad-free as possible, without having to pay for the newsletter&amp;rsquo;s maintenance costs myself. And by maintenance costs, I mean hosting, MailerLite subscription, etc. The iOS Goodies team isn&amp;rsquo;t paid to send out the newsletter every week. I don&amp;rsquo;t reach out to sponsors, they&amp;rsquo;ve always been the ones who contacted me, and I&amp;rsquo;ve turned most of them down. We only take sponsorships very rarely, from sponsors we know and we trust, and which we think can have interesting messages for our readers.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also tried something different a few times: we had a partnership with Swift Island, where we were community partners of the conference, promoting each other. And we also tried with ADDC to give a free ticket to a lucky subscriber. I hope those experiments were well received.&lt;/p&gt;
+
+&lt;h4 id="regrets-mistakes"&gt;Regrets / mistakes&lt;/h4&gt;
+
+&lt;p&gt;One of the things I&amp;rsquo;m sure I could&amp;rsquo;ve done better is how I handled the GDPR stuff. I didn&amp;rsquo;t realise it would affect iOS Goodies until very late, and when I did I followed MailerLite&amp;rsquo;s suggestions on this topic and sent out an email to our subscribers, asking them to reconfirm their subscription. We lost more than half of our subscribers at that point.&lt;/p&gt;
+
+&lt;h4 id="difficulties"&gt;Difficulties&lt;/h4&gt;
+
+&lt;p&gt;The hardest categories are the business and design. And mostly design. There&amp;rsquo;s a lot of “15 trends for this summer”, “5 ways to make your app pop”, etc. I&amp;rsquo;m seriously wondering if I should strive to find UX/UI links or just have one link in the weeks where I find a really good one. That&amp;rsquo;s actually one of the big questions I’m having: should I add articles in a category even if I didn’t find good ones that week? It could be that I just don&amp;rsquo;t know where to find good design resources for developers. But judging by the limited number of good design/business articles in other iOS dev newsletters, I&amp;rsquo;m thinking it&amp;rsquo;s more of a general problem.&lt;/p&gt;
+
+&lt;h4 id="statistics"&gt;Statistics&lt;/h4&gt;
+
+&lt;p&gt;We pride on being an open source newsletter, but so far we weren&amp;rsquo;t too open about the number of subscribers. I can&amp;rsquo;t really say I know the reason for that. Anyway, here goes&amp;hellip; We were at around 4300 subscribers before GDPR, then after asking them to reconfirm their subscription we were left with a bit less than 1600. Now we&amp;rsquo;re almost 2000 and growing.&lt;/p&gt;
+
+&lt;p&gt;However, I don&amp;rsquo;t think it&amp;rsquo;s the number of subscribers that make a newsletter great, it&amp;rsquo;s the quality of the content. And I think we&amp;rsquo;re doing pretty well there. Of course, I&amp;rsquo;d like to have more subscribers, because I think we do a pretty good job and we could help more people find great iOS dev articles. I&amp;rsquo;ve often seen cases where an article or library that we shared is picked one or two weeks later by one of the bigger newsletters, and then a lot of people I follow on Twitter find out about it for the first time. I get a weird mix of feelings of satisfaction, knowing that I helped spread the word about that, but also a bit of annoyance, because iOS Goodies shared it 2 weeks before, and people only find out about it now.&lt;/p&gt;
+
+&lt;p&gt;But one of the things I&amp;rsquo;m most proud of is that we didn&amp;rsquo;t miss a single edition this whole year. That was one of my main focuses and goals, to get iOS Goodies back to a regular schedule. And I&amp;rsquo;m happy to say we did that :)&lt;/p&gt;
+
+&lt;h4 id="getting-feedback"&gt;Getting feedback&lt;/h4&gt;
+
+&lt;p&gt;Getting feedback is awesome. There are periods of weeks, even months, where I just send out the newsletter and that&amp;rsquo;s it. No feedback, no comment. I sometimes make changes (like writing a few words before the links in every email or adding the tool&amp;rsquo;s short description). I got a few messages from people that were happy with the new approach. That is awesome and it &amp;ldquo;validates&amp;rdquo; my ideas. I&amp;rsquo;d like to get more feedback, both good and bad. On the other hand, getting too much feedback would probably be overwhelming, and then iOS Goodies would need even more time from my side. &lt;/p&gt;
+
+&lt;h4 id="other-newsletters"&gt;Other newsletters&lt;/h4&gt;
+
+&lt;p&gt;I like to keep up with the trends in what I do, so I subscribe to other newsletters too. Of course, iOS Dev Weekly (for which I even &lt;a href="https://iosdevweekly.com/issues/297#start"&gt;wrote an issue 1.5 years ago&lt;/a&gt;), I&amp;rsquo;m subscribed to Ray Wenderlich&amp;rsquo;s newsletter, I used to be subscribed to NatashaTheRobot&amp;rsquo;s newsletter (but that&amp;rsquo;s stopped now), and I follow Indie iOS Focus, Swift Developments, Swift Weekly Brief and Awesome iOS.&lt;/p&gt;
+
+&lt;h3 id="future-plans"&gt;Future plans&lt;/h3&gt;
+
+&lt;p&gt;For the future, I&amp;rsquo;m hoping to be able to keep sending out the newsletter every week. The process is time-consuming, and it would be nice if I could automate it a bit. I&amp;rsquo;ve been looking at &lt;a href="https://github.com/SwiftWeekly/swiftweekly.github.io"&gt;Swift Weekly Brief&lt;/a&gt;, they have a very nice workflow for sending out the newsletter and publishing an article each week. Adopting something like that for iOS Goodies would be quite a big change, and I&amp;rsquo;m still considering if that&amp;rsquo;s something I&amp;rsquo;d like to implement or not.&lt;/p&gt;
+
+&lt;p&gt;Another thing I&amp;rsquo;ll probably do before the end of this year is to remove Google Analytics form our website. Currently, we use Google Analytics. However, I&amp;rsquo;ve discovered I only looked at the statistics twice. I don&amp;rsquo;t really need them, and that&amp;rsquo;s why I don&amp;rsquo;t really feel comfortable for a big company to have our user&amp;rsquo;s tracked like that. We currently use Tumblr for hosting. I&amp;rsquo;d like to move towards a static website hosted on GitHub Pages, so we can have full control over the website. On the long term, the plan would be to get rid of all the trackers. That would only leave MailerLite to track some data (the number of subscribers, among others). That&amp;rsquo;s the only statistic I&amp;rsquo;m looking at. &lt;/p&gt;
+
+&lt;p&gt;MailerLite also gives other details, such as which link got clicked the most in each newsletter issue, etc, but I discovered it&amp;rsquo;s not a good idea to look at those. Sometimes, the most clicked link is, unfortunately, the one with a catchy title. This doesn&amp;rsquo;t say too much about the quality of the article. Seeing this made me think of adding a few words for each link, like most other newsletters do. However, this is one thing that keeps us different from the rest, and I&amp;rsquo;m not sure it&amp;rsquo;s a good idea to change that. That&amp;rsquo;s actually one of the things I like about iOS Goodies: we just share the links. I don&amp;rsquo;t think my personal opinion about each article linked by the newsletter is that important. If I linked to it, then I think it&amp;rsquo;s good. If the subscribers want to read the article, they shouldn&amp;rsquo;t need my opinion about it. I realise that writing a few words before each link would improve a lot the user&amp;rsquo;s engagement, they&amp;rsquo;ll click the links more often. But I don&amp;rsquo;t really want to do that. Our subscribers would get a list of links submitted by the community, and, in some cases, selected by me. That&amp;rsquo;s it. I don&amp;rsquo;t really want to force upon them my opinions about the articles too. I like the idea of iOS Goodies being a community newsletter, and I&amp;rsquo;m trying to keep it that way :)&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Header photo by&lt;/em&gt; &lt;a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@emmafranceslogan?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Emma Frances Logan"&gt;&lt;span style="display:inline-block;padding:2px 3px"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style="display:inline-block;padding:2px 3px"&gt;Emma Frances Logan&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Conferences are not dead</title>
     <link rel="alternate" href="https://mariusc.github.io/2018-01-22-conferences-are-not-dead.html"/>
     <id>https://mariusc.github.io/2018-01-22-conferences-are-not-dead.html</id>
     <published>2018-01-22T22:56:00+00:00</published>
-    <updated>2018-01-23T20:37:39+00:00</updated>
+    <updated>2018-09-30T13:09:21+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -68,7 +146,7 @@
     <link rel="alternate" href="https://mariusc.github.io/2017-07-21-what-this-wwdc-means-for-us.html"/>
     <id>https://mariusc.github.io/2017-07-21-what-this-wwdc-means-for-us.html</id>
     <published>2017-07-21T23:28:00+00:00</published>
-    <updated>2018-01-23T20:37:39+00:00</updated>
+    <updated>2018-09-30T13:09:21+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -118,7 +196,7 @@ Image sources:
     <link rel="alternate" href="https://mariusc.github.io/2017-05-21-haptic-feedback-makes-you-vibrate.html"/>
     <id>https://mariusc.github.io/2017-05-21-haptic-feedback-makes-you-vibrate.html</id>
     <published>2017-05-21T23:28:00+00:00</published>
-    <updated>2018-01-23T20:37:39+00:00</updated>
+    <updated>2018-09-30T13:09:21+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -246,7 +324,7 @@ Image sources:
     <link rel="alternate" href="https://mariusc.github.io/2017-04-01-serpent-more-than-just-another-json-mapping-framework.html"/>
     <id>https://mariusc.github.io/2017-04-01-serpent-more-than-just-another-json-mapping-framework.html</id>
     <published>2017-04-01T23:28:00+00:00</published>
-    <updated>2018-01-23T20:37:39+00:00</updated>
+    <updated>2018-09-30T13:09:21+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -318,7 +396,7 @@ We had been using our own internal parsing framework for Objective-C for a long 
     <link rel="alternate" href="https://mariusc.github.io/2016-11-27-understanding-code-signing-for-ios-apps.html"/>
     <id>https://mariusc.github.io/2016-11-27-understanding-code-signing-for-ios-apps.html</id>
     <published>2016-11-27T20:28:00+00:00</published>
-    <updated>2018-01-23T20:37:39+00:00</updated>
+    <updated>2018-09-30T13:09:21+00:00</updated>
     <author>
       <name>Marius Constantinescu</name>
     </author>
@@ -413,60 +491,6 @@ We had been using our own internal parsing framework for Objective-C for a long 
 &lt;li&gt;&lt;a href="https://developer.apple.com/support/code-signing/"&gt;Code Signing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://medium.com/ios-os-x-development/ios-code-signing-provisioning-in-a-nutshell-d5b247760bef"&gt;iOS Code Signing &amp;amp; Provisioning in a Nutshell&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Being more efficient in Xcode - Part 2</title>
-    <link rel="alternate" href="https://mariusc.github.io/2016-10-09-being-more-efficient-in-xcode-part-2.html"/>
-    <id>https://mariusc.github.io/2016-10-09-being-more-efficient-in-xcode-part-2.html</id>
-    <published>2016-10-09T10:25:00+00:00</published>
-    <updated>2018-01-23T20:37:39+00:00</updated>
-    <author>
-      <name>Marius Constantinescu</name>
-    </author>
-    <content type="html">&lt;p&gt;This is my second article in the &amp;ldquo;Being more efficient in Xcode&amp;rdquo; series. The first part, which you can read &lt;a href="http://mariusc.github.io/2016-08-29-being-more-efficient-in-xcode-part-1.html"&gt;here&lt;/a&gt;, was focused on keyboard shortcuts. &lt;/p&gt;
-
-&lt;p&gt;Besides the keyboard shortcuts, there are other tips and tricks an iOS developer should know, to be able to improve his productivity when using Xcode.&lt;/p&gt;
-
-&lt;h3 id="breakpoints"&gt;Breakpoints&lt;/h3&gt;
-
-&lt;p&gt;It&amp;rsquo;s a pretty good idea to add an &amp;lsquo;All exceptions&amp;rsquo; breakpoint. This way, when your app crashes, you&amp;rsquo;ll get stopped exactly when that happens and you can see the whole backtrace and debug the problem more easily. A good idea is to also add a debugger command action on that breakpoint to print the exception you&amp;rsquo;re encountering. Open the breakpoint in the Breakpoint navigator, right click your All exception breakpoint, press Edit, press Add action and add this debugger command &lt;code&gt;po $arg1&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts/backFwd.png" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;However, sometimes (especially if you&amp;rsquo;re using Swift), you might notice that your app always stops in the AppDelegate when launching it. You can manually continue over that, but it&amp;rsquo;s still annoying. To stop that from happening, you can edit your exceptions breakpoint to only stop for Objective-C exceptions, ignoring other types of exceptions such as C++ ones. Depending on your project, this could be a bad idea, but in most cases it will be fine. &lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/objc_exceptions_breakopint.png" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;You can also use breakpoints to print variables: just add a po command.&lt;/p&gt;
-
-&lt;h3 id="editor"&gt;Editor&lt;/h3&gt;
-
-&lt;p&gt;As we all know and we&amp;rsquo;ve all been complaining about, there&amp;rsquo;s no refactoring in Swift. There is, however, a better-than-nothing alternative, which in some cases can be used instead of rename-refactoring. Select a variable (double click on it), go to Editor - Edit all in scope. Enter the new name and it will be renamed everywhere in the current scope. &lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/EditAllInScope.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;As the name says, this only edits in the current scope.&lt;/p&gt;
-
-&lt;p&gt;Another command that affects only the current scope is &amp;#39;Fix all in scope&amp;rsquo;. This makes the changes suggested by Xcode for all the warnings and errors. This also only affects the current scope. And sometimes, Xcode&amp;rsquo;s suggestions are not exactly what you had in mind. Nevertheless, this command can still be useful sometimes.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/FixAllInScope.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;h3 id="code-structure"&gt;Code structure&lt;/h3&gt;
-
-&lt;p&gt;Use the Document items list. Open the list (either press on it, or use the shortcut control - 6) and you can see all the classes, extensions, methods, etc in your file. If you start typing, it will begin filtering them in a way similar to quick open, but it will search for entries inside the currently open file. &lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/ListOfMethods.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s also a very good idea to use &lt;code&gt;//MARK:&lt;/code&gt; in your source. This allows you to organize the methods and other items in your code in a better way. They&amp;rsquo;re also visible in the Document items list. And also, if for example you have a &lt;code&gt;//MARK: - UITableViewDelegate&lt;/code&gt; you can command - click on the &lt;code&gt;UITableViewDelegate&lt;/code&gt; and it will take you to the UITableView interface, where you can see all the available methods and their documentation.&lt;/p&gt;
-
-&lt;h3 id="interface-builder"&gt;Interface builder&lt;/h3&gt;
-
-&lt;p&gt;And one last tip about interface builder. Did you ever need, for example, to move a button on top of another view, but not make it a subview of that view? By default, when you drop a button over a view, IB will make the button a subview of that view and you will also lose all its positioning constraints. But if you press &lt;strong&gt;⌘&lt;/strong&gt; while dropping the button, it will not be a subview, but a sibling of that view.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&lt;img src = "img/blogposts/inline/XcodeShortcuts2/Cmd.gif" class="img-responsive"/&gt;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;There are lots of shortcuts in Xcode, and lots of things you can do to increase your speed when using it. The important thing is to take them one at a time.&lt;/p&gt;
 </content>
   </entry>
 </feed>
