@@ -1,0 +1,76 @@
+---
+title: Making iOS Goodies
+date: 2018-09-30 07:56 UTC
+tags:
+background_image: /img/blogposts/	emma-frances-logan-401965-unsplash.jpg
+---
+
+It's been a bit over one year since I've been sending iOS Goodies constantly, every week, to our subscribers. It's been a good year, both rewarding and challenging, with ups and downs.
+
+### The beginnings
+
+My first contribution to iOS Goodies was in May 2015, [fixing a wrong link](https://github.com/iOS-Goodies/iOS-Goodies/pull/130). I can't remember exactly how I found out about the newsletter, but I think that I was following [Rui Peres](https://twitter.com/peres), one of its founders, on Twitter. And what I really loved about it was the fact that it was open source, and everyone had the opportunity to contribute to it.
+
+Since that first commit, I started contributing more often. Initially only with a few articles, then with more. Whenever I found an iOS article that I found interesting, I submitted it to iOS Goodies, for everyone else to read it. I like to keep up to date with the most recent articles in the iOS dev world, which means I read a lot of them. So contributing to iOS Goodies was more about sharing with the others what I found, instead of a goal in itself. I didn't look for articles for iOS Goodies, I read iOS dev articles and when I liked them, I submitted them to the newsletter.
+
+Initially, the process of submitting an article was a bit cumbersome. You had to fork the [GitHub repo](https://github.com/iOS-Goodies/iOS-Goodies), edit your fork, and make a pull request. This _is_ the normal way of working on open source projects on GitHub. However, for submitting an article for a newsletter, I thought it was a bit annoying. But at some point (can't remember when) I discovered GitHub added the possibility to edit a file on a repo in the browser, and if you didn't have write access to that repo, it would open a pull request. I  can't remember if this was a new feature or if it was new only for me, but this made it so much easier for me to contribute to the newsletter.
+
+One of the problems that I would run into when contributing to iOS Goodies was that if the PRs weren't reviewed fast enough and other people also submitted articles, our PRs would get into a conflict. One PR would get merged, the other would have to be rebased. This was less than ideal. But about one year later, probably due to the fact that I contributed a lot to the repo, I was granted access to the repo, so I didn't have to submit PRs anymore. Instead, I could edit the current issue directly, and I could also help merge the other PRs faster, to minimize the number of merge conflicts. Currently, with GitHub's new feature of fixing merge conflicts in the web editor, I'm fixing the conflicts myself before merging other people's PRs. I think the most common practice for an open source project is for the one who opened the PR to fix the conflicts, but in our case, I want it to be as easy as possible for everyone to contribute. This means that if they submitted an article via a PR, I wouldn't want to ask them to rebase, so I just do that myself in the web editor. 
+
+### Chef Marius Constantinescu cooked your goodies
+
+Last year, after a period where [Tiago](https://twitter.com/_tiagoalmeida) and [Rui](https://twitter.com/peres) were very busy, they asked me if I want to take over it. I thought about it and I decided I wanted to give it a try. One year later, I'm still sending it :). Of course, this is only possible with the help from our community. We have a few constant contributors, some of them have write access to the repo and can review and merge other contributor's suggestions. So even though I'm sending the newsletter and writing the initial comment, this is a team effort, and I'm very thankful to all our contributors and maintainers.
+
+#### How I choose what goes in
+
+One thing I know people are wondering a lot is how I choose what goes in the newsletter and what doesn't. First of all, the article has to be of good quality to get into the newsletter. It happened (very rarely, though) that I decided not to publish an article because I thought it wasn't good enough. The more often case is when we have too many articles submitted, and we only have to choose 5 (but in those cases, I usually allow 6 or 7). 
+
+Regarding the criteria for what makes it in the newsletter, I usually like to give priority to the "less famous" authors. However, that's not a strict rule, if someone who already has a large following on Twitter writes a great article, I will still include it. In the end, there's a little bit of subjectivity from my side too. I will, of course, be tempted to share what I find interesting and relevant. Other people may find other articles more relevant. So there will always be a bit of subjectivity to iOS Goodies, which I can't really do anything about. We brand as a community newsletter, but it's borderline, as I'm the one selecting what actually goes in the newsletter. Yes, anyone can contribute. And yes, there are editions where most of the links are sent by other contributors. But I'm the one writing the initial comment, and I'm the one that in the end decides what goes in and what not. So I can understand why some people could have problems calling iOS Goodies a community newsletter. It's something I think about quite a lot. 
+
+I started as a contributor, I added whatever links I found interesting. Now there are weeks where I also find other interesting articles that weren't submitted by our contributors yet. It's very complicated to choose what goes in. Should I add the links I find interesting, even if that means we'll end up with too many and I'll have to ignore some of the ones submitted by other people? Are we still a community newsletter if I do that? It's much more complicated than it seems, keeping a community around the newsletter, choosing the best articles, promoting new voices, not discouraging new contributors by rejecting their proposals...
+
+#### Time spent
+
+It depends a lot on what you count as "iOS Goodies time". I'm an iOS developer, I read iOS development articles and news and I keep up to date with the latest trends. That probably takes me around 1.5 hours per day, maybe even more. I usually do that while using public transport, but sometimes also in the morning before work or in the evenings, after work. I don't usually do it on the weekends, though, because I also want to have some time to spend with family and friends. Merging PRs, replying to emails and messages, that could also take around 1 hour per week. Luckily, with merging PRs, [Rui Barbosa](https://twitter.com/rbarbosa) helps a lot. And unfortunately, replying to emails and messages is something I need to get better at. Currently, my response times are a bit too long. Actually choosing what goes in the newsletter, writing the intro, creating the new post on the website and sending out the campaign, that could also take 1-2 hours every Thursday. 
+
+#### Sponsorships
+
+We have taken some sponsorships every now and then, only to keep the newsletter sustainable. I don't take sponsorships just to make money for iOS Goodies. I'm trying to keep this as ad-free as possible, without having to pay for the newsletter's maintenance costs myself. And by maintenance costs, I mean hosting, MailerLite subscription, etc. The iOS Goodies team isn't paid to send out the newsletter every week. I don't reach out to sponsors, they've always been the ones who contacted me, and I've turned most of them down. We only take sponsorships very rarely, from sponsors we know and we trust, and which we think can have interesting messages for our readers.
+
+I've also tried something different a few times: we had a partnership with Swift Island, where we were community partners of the conference, promoting each other. And we also tried with ADDC to give a free ticket to a lucky subscriber. I hope those experiments were well received.
+
+#### Regrets / mistakes
+
+One of the things I'm sure I could've done better is how I handled the GDPR stuff. I didn't realise it would affect iOS Goodies until very late, and when I did I followed MailerLite's suggestions on this topic and sent out an email to our subscribers, asking them to reconfirm their subscription. We lost more than half of our subscribers at that point.
+
+#### Difficulties
+
+The hardest categories are the business and design. And mostly design. There's a lot of “15 trends for this summer”, “5 ways to make your app pop”, etc. I'm seriously wondering if I should strive to find UX/UI links or just have one link in the weeks where I find a really good one. That's actually one of the big questions I’m having: should I add articles in a category even if I didn’t find good ones that week? It could be that I just don't know where to find good design resources for developers. But judging by the limited number of good design/business articles in other iOS dev newsletters, I'm thinking it's more of a general problem.
+
+#### Statistics
+
+We pride on being an open source newsletter, but so far we weren't too open about the number of subscribers. I can't really say I know the reason for that. Anyway, here goes... We were at around 4300 subscribers before GDPR, then after asking them to reconfirm their subscription we were left with a bit less than 1600. Now we're almost 2000 and growing.
+
+However, I don't think it's the number of subscribers that make a newsletter great, it's the quality of the content. And I think we're doing pretty well there. Of course, I'd like to have more subscribers, because I think we do a pretty good job and we could help more people find great iOS dev articles. I've often seen cases where an article or library that we shared is picked one or two weeks later by one of the bigger newsletters, and then a lot of people I follow on Twitter find out about it for the first time. I get a weird mix of feelings of satisfaction, knowing that I helped spread the word about that, but also a bit of annoyance, because iOS Goodies shared it 2 weeks before, and people only find out about it now.
+
+But one of the things I'm most proud of is that we didn't miss a single edition this whole year. That was one of my main focuses and goals, to get iOS Goodies back to a regular schedule. And I'm happy to say we did that :)
+
+#### Getting feedback
+
+Getting feedback is awesome. There are periods of weeks, even months, where I just send out the newsletter and that's it. No feedback, no comment. I sometimes make changes (like writing a few words before the links in every email or adding the tool's short description). I got a few messages from people that were happy with the new approach. That is awesome and it "validates" my ideas. I'd like to get more feedback, both good and bad. On the other hand, getting too much feedback would probably be overwhelming, and then iOS Goodies would need even more time from my side. 
+
+#### Other newsletters
+
+I like to keep up with the trends in what I do, so I subscribe to other newsletters too. Of course, iOS Dev Weekly (for which I even [wrote an issue 1.5 years ago](https://iosdevweekly.com/issues/297#start)), I'm subscribed to Ray Wenderlich's newsletter, I used to be subscribed to NatashaTheRobot's newsletter (but that's stopped now), and I follow Indie iOS Focus, Swift Developments, Swift Weekly Brief and Awesome iOS.
+
+
+
+### Future plans
+
+For the future, I'm hoping to be able to keep sending out the newsletter every week. The process is time-consuming, and it would be nice if I could automate it a bit. I've been looking at [Swift Weekly Brief](https://github.com/SwiftWeekly/swiftweekly.github.io), they have a very nice workflow for sending out the newsletter and publishing an article each week. Adopting something like that for iOS Goodies would be quite a big change, and I'm still considering if that's something I'd like to implement or not.
+
+Another thing I'll probably do before the end of this year is to remove Google Analytics form our website. Currently, we use Google Analytics. However, I've discovered I only looked at the statistics twice. I don't really need them, and that's why I don't really feel comfortable for a big company to have our user's tracked like that. We currently use Tumblr for hosting. I'd like to move towards a static website hosted on GitHub Pages, so we can have full control over the website. On the long term, the plan would be to get rid of all the trackers. That would only leave MailerLite to track some data (the number of subscribers, among others). That's the only statistic I'm looking at. 
+
+MailerLite also gives other details, such as which link got clicked the most in each newsletter issue, etc, but I discovered it's not a good idea to look at those. Sometimes, the most clicked link is, unfortunately, the one with a catchy title. This doesn't say too much about the quality of the article. Seeing this made me think of adding a few words for each link, like most other newsletters do. However, this is one thing that keeps us different from the rest, and I'm not sure it's a good idea to change that. That's actually one of the things I like about iOS Goodies: we just share the links. I don't think my personal opinion about each article linked by the newsletter is that important. If I linked to it, then I think it's good. If the subscribers want to read the article, they shouldn't need my opinion about it. I realise that writing a few words before each link would improve a lot the user's engagement, they'll click the links more often. But I don't really want to do that. Our subscribers would get a list of links submitted by the community, and, in some cases, selected by me. That's it. I don't really want to force upon them my opinions about the articles too. I like the idea of iOS Goodies being a community newsletter, and I'm trying to keep it that way :)
+
+*Header photo by* <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@emmafranceslogan?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Emma Frances Logan"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Emma Frances Logan</span></a>
