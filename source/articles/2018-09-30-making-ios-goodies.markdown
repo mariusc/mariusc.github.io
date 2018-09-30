@@ -2,7 +2,7 @@
 title: Making iOS Goodies
 date: 2018-09-30 07:56 UTC
 tags:
-background_image: /img/blogposts/	emma-frances-logan-401965-unsplash.jpg
+background_image: /img/blogposts/emma-frances-logan-401965-unsplash.jpg
 ---
 
 It's been a bit over one year since I've been sending iOS Goodies constantly, every week, to our subscribers. It's been a good year, both rewarding and challenging, with ups and downs.
