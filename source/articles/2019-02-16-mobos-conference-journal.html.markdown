@@ -39,4 +39,4 @@ We want diversity in the speaker lineup to encourage diversity for the attendees
 
 ***
 
-Writing is hard. And I noticed that sometimes my ideas aren't too organized. So for this blogpost I chose to follow a style I firsst saw at [Brent Simmon](http://inessential.com/) and which, on this moment, suited me better. Hoping I'll be able to publish this before I board my plane.
+Writing is hard. And I noticed that sometimes my ideas aren't too organized. So for this blogpost I chose to follow a style I first saw at [Brent Simmon](http://inessential.com/) and which, on this moment, suited me better. Hoping I'll be able to publish this before I board my plane.
