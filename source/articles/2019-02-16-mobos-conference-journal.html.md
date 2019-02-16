@@ -1,6 +1,6 @@
 ---
 title: MobOS conference journal
-date: 2018-02-16 18:30 UTC
+date: 2019-02-16 18:30 UTC
 background_image: 
 ---
 
