@@ -1,7 +1,7 @@
 ---
 title: MobOS conference journal
-date: 2019-02-16 18:30 UTC
-background_image: 
+date: 2019-02-16 17:30 UTC
+
 ---
 
 I'm sitting in the domestic departures terminal of the Cluj Airport. Used to the traffic in Bucharest, I left as soon as the workshop ended, hoping to catch my flight. I was surprised to be in front of my departure gate 30 minutes after I left the workshop. Now I hope I can also finish a blogpost before I board the plane.
